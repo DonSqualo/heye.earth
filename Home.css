@@ -556,14 +556,14 @@
 
   .skeleton{
     width: clamp(30%, 500px, calc(100% - 2rem));
-    height: 50px;
+    height: 20px;
     border-radius: 5rem;
     animation: skeleton-loading-light 1s linear infinite alternate;
     margin: 1rem 0 0 1rem;
   }
   .skeleton.skeleton-title{
     width: clamp(30%, 400px, 80%);
-    height: 20px;
+    height: 50px;
   }
 
   html.global-dark-theme .skeleton{
