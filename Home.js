@@ -367,6 +367,18 @@ navLinks.forEach((item, i) => {
     }
     window.preventPushingToHistory = false;
 
+    //add skeleton
+    const skeleton = document.createElement("div");
+    skeleton.classList.add("skeleton");
+    for(let i = 0; i < height / 30; i++){
+      var iteratingSkeleton = skeleton.cloneNode();
+      lazyLoadedContent.appendChild(iteratingSkeleton);
+    }
+    lazyLoadedContent.firstChild.classList.add("skeleton-title");
+
+    window.disableBgChangeOnChange = true;
+    scrollTo(window.innerHeight - 70, 1000);
+
     fetch(e.target.href)
     .then(html => {
       return html.text();
@@ -423,9 +435,6 @@ navLinks.forEach((item, i) => {
           iframe.setAttribute("src", link);
           document.querySelector(".LazyLoad").appendChild(iframe);
         }
-
-        window.disableBgChangeOnChange = true;
-        scrollTo(window.innerHeight - 70, 1000);
       }
       catch(e){
       }

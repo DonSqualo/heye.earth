@@ -47,7 +47,8 @@ let runUntilHtmlLoaded = setInterval(() => {
 
 const valueFromStorage = localStorage.getItem(IS_USER_THEME_PREFERENCE_DARK_LOCAL_STORAGE_KEY);
 console.log("valueFromStorage",valueFromStorage);
-const initializedAsDark = updateTheme(valueFromStorage != null ? valueFromStorage : (window.matchMedia('(prefers-color-scheme: dark)').matches));
+//default dark theme if user has not intentionally set it to light mode
+const initializedAsDark = updateTheme(valueFromStorage != null ? valueFromStorage : /*(window.matchMedia('(prefers-color-scheme: dark)').matches)*/ true);
 setTimeout(() => {
   updateButtonSVG(themeSwitcherButton, initializedAsDark);
 }, 1);

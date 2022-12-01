@@ -274,6 +274,7 @@
   .lp-ll-content {
     background-color: rgb(15,15,15);
     color: white;
+    overflow:auto;
   }
   
   .lp-ll-content .notion-semantic-string{
@@ -535,6 +536,39 @@
   .notion-external-object__details{
     color:white;
   }
+
+  @keyframes skeleton-loading-light{
+    0% {
+      background-color: rgb(230,230,230);
+    }
+    100%{
+      background-color: rgb(180,180,180);
+    }
+  }
+  @keyframes skeleton-loading-dark{
+    0% {
+      background-color: rgb(15,15,15);
+    }
+    100%{
+      background-color: rgb(50,50,50);
+    }
+  }
+
+  .skeleton{
+    width: clamp(30%, 500px, calc(100% - 2rem));
+    height: 50px;
+    border-radius: 5rem;
+    animation: skeleton-loading-light 1s linear infinite alternate;
+    margin: 1rem 0 0 1rem;
+  }
+  .skeleton.skeleton-title{
+    width: clamp(30%, 400px, 80%);
+    height: 20px;
+  }
+
+  html.global-dark-theme .skeleton{
+    animation: skeleton-loading-dark 1s linear infinite alternate;
+  }
   
   @media only screen and (min-width: 745px){
     .lp-read-more-button{
@@ -566,9 +600,7 @@
       animation: MoveUpDown 1.5s linear infinite;
     }
   }
-  .transition-none{
-    transition: none;
-  }
+
   @media only screen and (max-width: 745px){
     .lp-super-root{
       flex-direction: column-reverse;
@@ -580,7 +612,14 @@
     }
     .lp-notion-navbar:not(.lp-scrolled){
       background: transparent !important;
+      color: white;
       position: absolute;
+    }
+    .lp-notion-navbar:not(.lp-scrolled) .notion-breadcrumb__icon{
+      filter: brightness(100%;) !important;
+    }
+    .lp-notion-navbar:not(.lp-scrolled) .notion-icon__search-path{
+      fill: white !important;
     }
     .lp-notion-navbar.lp-scrolled{
     }
