@@ -402,15 +402,15 @@ navLinks.forEach((item, i) => {
         lazyLoadedContent.innerHTML = "";
         lazyLoadedContent.append(article);
 
-        if(e.target.href.includes("/a7f848340ec243ceae734f29ba7c1f43")){
+        if(e.target.href.includes("/make-machines-learn-explainer")){
           document.querySelector(".notion-embed__loader").remove();
           document.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/Machine-Learning-Explainer" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>Machine-Learning-Explainer</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
         }
-        else if(e.target.href.includes("/69d1754ecf634e68acba1af2627ef082")){
+        else if(e.target.href.includes("/nxtone")){
           document.querySelector(".notion-embed__loader").remove();
           document.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/naext-one-plugin" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>naext-one-plugin</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
         }
-        else if(e.target.href.includes("/dw-db/deepwave")){
+        else if(e.target.href.includes("/deepwave")){
           document.querySelector(".notion-embed__loader").remove();
 
           var link = "https://www.deepwave.org/icrs-filmfestival-2022/"
