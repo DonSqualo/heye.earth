@@ -1,0 +1,729 @@
+.gg-chevron-down{
+    box-sizing:border-box;
+    position:relative;
+    display: block;
+    transform: scale(var(--ggs,2));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius:100px
+  }
+  .gg-chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid; 
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px
+  }
+  
+  .lp-super-root{
+  }
+  .lp-super-content{
+    height: 100%;
+  }
+  .lp-super-content>article.notion-root{
+    display: block;
+    height: 100%;
+  }
+  .lp-super-content>article.notion-root>*:last-child{
+    display: none;
+  }
+  .lp-super-content>.notion-root>.notion-column-list{
+    height: calc(100vh - 70px);;
+  }
+  .lp-super-footer{
+    display: none !important;
+  }
+  
+  .lp-selector-upper-notion > .notion-column{
+    display: none !important;
+  }
+  
+  .lp-nav-container{
+    display: flex;
+  }
+  
+  div.notion-navbar__title notion-breadcrumb__title {
+    margin-inline-start: 12px;
+  }
+  .notion-breadcrumb__item span {
+    width: 26px !important;
+    height: 32px !important;
+  }
+  
+  .default-bg-pic-container-style{
+    box-sizing: border-box; 
+    display: block; 
+    overflow: hidden; 
+    width: initial; 
+    height: initial; 
+    background: none; 
+    opacity: 1; 
+    border: 0px none; 
+    margin: 0px; 
+    padding: 0px; 
+    position: absolute; 
+    inset: 0px;
+  }
+  .default-bg-pic-style{
+    position: absolute; 
+    inset: 0px; 
+    box-sizing: border-box; 
+    padding: 0px; 
+    border: medium none; 
+    margin: auto; 
+    display: block; 
+    width: 0px; 
+    height: 0px; 
+    min-width: 100%; 
+    max-width: 100%; 
+    min-height: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+    object-position: center 50%;
+  
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+  
+  /*.lp-notion-navbar{
+    border: none !important;
+    color: white;
+    background: rgba(15, 15, 15, 0);
+    transition: all 2s cubic-bezier(0.25, 1, 0.5, 1);
+  }*/
+  .lp-notion-navbar{
+    border: none !important;
+    color: white;
+    transition: all 2s cubic-bezier(0.25, 1, 0.5, 1);
+    background: rgba(25,25,25,1);
+  }
+  html.global-dark-theme .lp-notion-navbar.lp-scrolled{
+    background: rgba(25,25,25,1);
+  }
+  html.global-dark-theme .notion-navbar {
+    background:rgba(25, 25, 25, 0);
+  }
+  .lp-notion-icon__search-path{
+    fill: white;
+  }
+  
+  .lp-theme-switcher{
+    display: none;
+  }
+  
+  .lp-theme-switcher > a {
+    padding: 6px;
+    display: flex;
+    cursor: pointer;
+  }
+  .lp-theme-switcher > a:hover {
+    color: white !important;
+  }
+  .lp-theme-switcher > a:hover > svg > circle {
+    fill: black !important;
+  }
+  
+  .lp-custom-navbar-progress{
+      position: absolute;
+      height: 1px;
+      top: 69px;
+      left: 0;
+      width: 5%;
+      background-color: white;
+      opacity: 0.6;
+      transition: all 1s ease-out;
+  }
+  .lp-notion-navbar.lp-scrolled .lp-custom-navbar-progress{
+    width: 100%;
+    transition: all 2.4s ease-in-out;
+  }
+  
+  .lp-bg-pics{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .lp-bg-pics > span {
+    top: -70px !important;
+  }
+  .lp-bg-pic{
+    height: calc(100% + 70px);
+    width: auto;
+  }
+  .lp-bg-pic.active-bg  .default-bg-pic-style{
+    transform: scale(1.05) !important;
+    opacity: 1;
+  }
+  .lp-dark-bg{
+    width: 100%;
+    height: 100vh;
+    top: -70px;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(55deg, rgb(0, 0, 0) 15%, rgba(0,0,0,0.8) 30%, transparent 100%);
+    background-size: 200%;
+    background-position: 50% 50%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .lp-effect-line-upper-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    height: calc(100% - 70px);
+    overflow: hidden;
+  }
+  .lp-effect-line-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .lp-effect-line{
+      position: absolute;
+      bottom: -44%;
+      left: 340px;
+      width: 1px;
+      height: 100%;
+      z-index: 3;
+      background-color: white;
+      transform: rotate(-12deg);
+      opacity: 0.6;
+      transition: all 1s ease-out;
+  }
+  .lp-notion-navbar.lp-scrolled ~ .super-content-wrapper .lp-effect-line{
+    bottom: 0;
+    left: calc(265px - 1px);
+    width: 1px;
+    color: var(--color-border-default);
+    transform: rotate(0deg) ;
+    transition: all 2.4s ease-in-out;
+  }
+  
+  .lp-nav-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 0 0 3rem 3rem;
+    line-height: 3.4rem;
+  }
+  .lp-desktop-navlink{
+    color: white !important;
+    font-size: 1.5rem !important;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    filter: brightness(70%);
+    line-height: 2.3rem;
+    font-family: var(--primary-font);
+    position: relative;
+  }
+  
+  .lp-desktop-navlink.lp-active{
+    filter:brightness(100%);
+  }
+  
+  .lp-desktop-navlink>.notion-link.link{
+    display: inline-block;
+  }
+  
+  .lp-navigation-link-left-border{
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: -10px;
+    height: 0;
+    width: 1px;
+    background: white;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .lp-desktop-navlink.lp-active .lp-navigation-link-left-border{
+    bottom: auto;
+    top: 0;
+    height: 100%;
+  }
+  
+  .lp-nav-container:hover .lp-desktop-navlink>a{
+    filter:brightness(70%);
+  }
+  .lp-mobile-nav-upper-container{
+    display: none;
+  }
+  .lp-selector-upper-notion.selecting-from-menu .lp-dark-bg{
+    background-position: 0% 0%;
+  }
+  
+  .lp-desktop-navlink.lp-active > a{
+    color: white !important;
+    filter: brightness(100%) !important;
+  }
+  
+  .lp-ll-content {
+    background-color: rgb(15,15,15);
+    color: white;
+  }
+  
+  .lp-ll-content .notion-semantic-string{
+    color: white;
+  }
+  
+  .lp-ll-content .notion-root > .notion-column-list > .notion-column:first-child{
+    background-color: rgb(15,15,15) !important;
+  }
+  
+  .lp-bg-texts{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    overflow: hidden;
+  }
+  
+  .lp-text{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-out;
+  }
+  .lp-text > span{
+    box-sizing:border-box;
+    display:block;
+    overflow:hidden;
+    width:initial;
+    height:initial;
+    background:none;
+    opacity:1;
+    border:0;
+    margin:0;
+    padding:0;
+    position:relative;
+    width: 100%;
+    height: 100%;
+  }
+  .lp-text > span > span{
+    box-sizing:border-box;
+    display:block;
+    width:initial;
+    height:initial;
+    background:none;
+    opacity:1;
+    border:0;
+    margin:0;
+    padding:0;
+    padding-top:72.24919093851133%;
+  }
+  .lp-text > span > img {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    box-sizing:border-box;
+    padding:0;
+    border:none;
+    margin:auto;
+    display:block;
+    width:0;
+    height:0;
+    min-width:100%;
+    max-width:100%;
+    min-height:100%;
+    max-height:100%;
+    object-fit:contain;
+    object-position:center;
+    transform: translateY(-50px);
+    transition: all 0.1s ease-out;
+  }
+  
+  .lp-text > image{
+    width: 100%;
+    height: 100%;
+  }
+  .lp-text.active-bg-text{
+    opacity: 1;
+  }
+  .lp-text.active-bg-text > span > img {
+    transform: translateY(0px);
+    transition: all 0.4s ease-out;
+  }
+  
+  .lp-text-future-forum{
+    top: calc(50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 406px;
+  }
+  .lp-text-writings img{
+    object-position: top right!important;
+  }
+  .lp-text-naext img{
+  
+  }
+  .lp-text-arcadia img {
+    object-position: bottom right!important;
+  }
+  .lp-text-ml-explainer img{
+    object-position: bottom right!important;
+  }
+  .lp-text-deepwave img {
+    object-position: top left!important;
+  }
+  .lp-text-the-hike img{
+   object-position: top left!important;
+   margin-top: 70px!important;
+  }
+  .lp-text-fake-news{
+    top: calc(50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 406px;
+  }
+  .lp-text-ai-art img {
+    object-position: top left!important;
+  }
+  .lp-text-onna-anna img{
+    object-position: bottom right!important;
+  }
+  .lp-text-about-me img{
+  
+  }
+  
+  .lp-read-more-button-upper-container{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+  }
+  .lp-read-more-button-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .lp-read-more-button{
+    width: calc(100% - 320px);
+    height: calc(100% - 70px);
+    right: 10px;
+    top: 70px;
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    opacity: 0;
+    /*transition: all 0.2s ease-in-out;*/
+  }
+  .lp-read-more-button:hover > span > i{
+    transform: scale(2.5);
+    
+  }
+  .lp-read-more-button > span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    right: 11%;
+    animation: MoveUpDown 1.5s linear infinite;
+  }
+  @keyframes MoveUpDown {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      bottom: 55px;
+      opacity: 0;
+    }
+    95% {
+      bottom: 45px;
+      opacity: 1;
+    }
+    100% {
+      bottom: 45px;
+      opacity: 0;
+    }
+  }
+  @keyframes MoveUpDownMobile {
+    0% {
+      opacity: 0;
+      bottom: -25px;
+    }
+    20% {
+      bottom: 0px;
+      opacity: 0;
+    }
+    95% {
+      bottom: -25px;
+      opacity: 1;
+    }
+    100% {
+      bottom: -25px;
+      opacity: 0;
+    }
+  }
+  
+  .lp-read-more-button:hover {
+    opacity: 1;
+  }
+  [data-current-bg="lp-read-more-button-writings"]{
+  }
+  .bg-writings img {
+  
+  }
+  [data-current-bg="lp-read-more-button-naext"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-arcadia"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-ml-explainer"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-deepwave"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-future-forum"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-the-hike"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-fake-news"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-onna-anna"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-about-me"]{
+  
+  }
+  
+  .notion-collection-card.gallery{
+    background-color: rgb(30,30,30);
+  }
+  
+  .notion-bookmark__content{
+    color:white;
+  }
+  
+  .notion-bookmark:hover{
+    background-color: rgb(30,30,30);
+  }
+  
+  .notion-external-object__details{
+    color:white;
+  }
+  
+  @media only screen and (min-width: 745px){
+    .lp-read-more-button{
+      width: calc(100% - 320px);
+      height: calc(100% - 70px);
+      right: 10px;
+      top: 70px;
+      position: absolute;
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 1.5rem;
+      color: white;
+      border: none;
+      opacity: 1;
+      /*transition: all 0.2s ease-in-out;*/
+    }
+    .lp-read-more-button:hover > span > i{
+      transform: scale(2.5);
+      
+    }
+    .lp-read-more-button > span{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      bottom: 50px;
+      right: 11%;
+      animation: MoveUpDown 1.5s linear infinite;
+    }
+  }
+  .transition-none{
+    transition: none;
+  }
+  @media only screen and (max-width: 745px){
+    .lp-super-root{
+      flex-direction: column-reverse;
+    }
+    .lp-notion-navbar{
+      position: sticky;
+      top: unset;
+      bottom: 0;
+    }
+    .lp-notion-navbar:not(.lp-scrolled){
+      background: transparent !important;
+      position: absolute;
+    }
+    .lp-notion-navbar.lp-scrolled{
+    }
+    .lp-nav-container{
+      display: none;
+    }
+    .lp-dark-bg{
+      background: none; 
+    }
+    .lp-custom-navbar-progress{
+      top: -1px;
+    }
+    .lp-bg-texts{
+      top:0px;
+      height: unset;
+      bottom: 90px;
+    }
+    .lp-super-content > .notion-root > .notion-column-list{
+      height: 100vh;
+    }
+  
+    .lp-read-more-button-upper-container{
+      display: none;
+    }
+    .lp-read-more-button-container{
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.8) 15%, transparent 100%); 
+      height: calc(100% - 60px);
+    }
+    .lp-read-more-button{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10%;
+      top: unset;
+      width: 100%;
+      bottom: 0px;
+      font-size: 1.5rem;
+      color: white;
+      border: 3px solid white;
+      padding: 0.5rem 2rem;
+      border-radius: 50px; 
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+      background: transparent;
+      border: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .lp-read-more-button > span{
+      position: relative;
+      animation: MoveUpDownMobile 1.5s linear infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      right:auto;
+      bottom:auto;
+      width: auto;
+    }
+  
+    .lp-text-naext > span{
+    }
+    .lp-text-future-forum > span{
+      transform: scale(50%);
+    }
+    .lp-text-writings {
+      transform: scale(150%);
+      left: -35%;
+      top: 25%;
+    }
+    .lp-text-the-hike{
+      left: 0px;
+      width: 200%;
+      top: -40px;
+    }
+  
+    .lp-text-ai-art{
+      transform: translateY(-21px);
+    }
+    .lp-text-onna-anna{
+      transform: translateY(-50px);
+    }
+    .lp-text-ml-explainer{
+      transform: translateY(-60px);
+      width: 120%;
+      left: -25%;
+    }
+    .lp-text-about-me {
+      transform: scale(150%);
+      left: -10%;
+    }
+    .lp-mobile-nav-upper-container{
+      position: absolute;
+      bottom: 85px;
+      color: white;
+      height: 200px;
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      overflow-x: hidden;
+      z-index: 5;
+    }
+    .lp-text-arcadia {
+      transform: translateY(-30px);
+    }
+    .lp-mobile-nav-container{
+      display: flex;
+      position: relative;
+      align-items: flex-end;
+      transition: all 600ms ease 0s;
+    }
+  
+    .lp-mobile-navlink{
+      display: inline-block;
+      font-size: 1.1rem;
+      width: 50%;
+      text-align: center;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      font-family: var(--primary-font);
+    }
+  
+    .lp-mobile-navlink.lp-mobile-active{
+      transform: translateY(-50%);
+    }
+  
+    .lp-mobile-navlink > a{
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: white;
+    }
+  
+    .lp-selector-upper-notion{
+      background: linear-gradient(0deg, rgb(0, 0, 0) 00%, rgba(0,0,0,0.3) 15%, transparent 100%); 
+    }
+  
+    .lp-effect-line-upper-container{
+      height: 100vh;
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.66) 25%, transparent 100%);
+      z-index: 3;
+      bottom: 0;
+    }
+    .lp-effect-line-container{
+      display: none;
+    }
+  }
+      
