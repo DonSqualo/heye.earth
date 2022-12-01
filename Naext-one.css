@@ -1,0 +1,7 @@
+
+@media only screen and (max-width: 745px){
+  .notion-collection-gallery{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
