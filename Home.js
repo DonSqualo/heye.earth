@@ -372,6 +372,7 @@ navLinks.forEach((item, i) => {
     skeleton.classList.add("skeleton");
     for(let i = 0; i < height / 30; i++){
       var iteratingSkeleton = skeleton.cloneNode();
+      iteratingSkeleton.style.width = `clamp(30%, calc(600px + ${Math.random() * 2 * 100}px), calc(100% - 2rem))`;
       lazyLoadedContent.appendChild(iteratingSkeleton);
     }
     lazyLoadedContent.firstChild.classList.add("skeleton-title");
