@@ -538,7 +538,7 @@ window.addEventListener('touchend', (e) => {
   console.log({"verticalDifference": verticalDifference});
   console.log({"horizontalDifference": horizontalDifference});
 
-  if(Math.abs(horizontalDifference) > window.innerHeight / 10){
+  if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){
     clearInterval(timerToSwitchBackground);
     timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
@@ -551,16 +551,16 @@ window.addEventListener('touchend', (e) => {
     e.preventDefault();
     return
   }
-  else if(Math.abs(verticalDifference) > 40){
+  else{
     clearInterval(timerToSwitchBackground);
     timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-    if(verticalDifference > 0){
-      switcToPreviousBackground();
+    if(verticalDifference < 0){
+      if(!navbar.classList.contains("lp-scrolled")){
+        document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+      }
     }
-    else{
-      switchBackground();
-    }
+
     e.preventDefault();
     return
   }
