@@ -5,6 +5,9 @@ const nativeMin = Math.min;
 window.disableBgChangeOnChange = false;
 window.preventPushingToHistory = false;
 
+const width = window.innerWidth;
+const height = window.innerHeight;
+
 console.count("Times this script ran");
 const perf0 = performance.now();
 
@@ -14,6 +17,21 @@ document.querySelector(".super-footer").classList.add("lp-super-footer");
 document.querySelector(".super-content").classList.add("lp-super-content");
 document.querySelector(".notion-navbar").classList.add("lp-notion-navbar");
 document.querySelector(".notion-icon__search-path").classList.add("lp-notion-icon__search-path");
+//#endregion
+
+//#region add mouse trailer
+const trailer = document.createElement("div");
+trailer.classList.add("lp-mouse-trailer");
+trailer.insertAdjacentHTML('beforeend', `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<g>
+	<g id="arrow_x5F_down">
+		<path d="M32,16.016l-5.672-5.664c0,0-3.18,3.18-6.312,6.312V0h-8.023v16.664l-6.32-6.32L0,16.016L16,32
+			L32,16.016z"/>
+	</g>
+</g>
+</svg>`);
+document.querySelector(".super-root").parentElement.appendChild(trailer);
 //#endregion
 
 //navigationParameterQuery is obtained by writing going to the page and executing "history.state" in the dev tool console
@@ -276,9 +294,6 @@ var upperMobileNavitationAnchorsContainer = document.createElement("div");
 upperMobileNavitationAnchorsContainer.classList.add("lp-mobile-nav-upper-container");
 upperMobileNavitationAnchorsContainer.appendChild(mobileNavitationAnchorsContainer);
 
-const width = window.innerWidth;
-const height = window.innerHeight;
-
 const lastIndexOfItems = landingPageItems.length - 1;
 
 mobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class="lp-mobile-navlink infinite-workaround" data-index="${lastIndexOfItems - 1}">
@@ -367,6 +382,19 @@ navLinks.forEach((item, i) => {
     }
     window.preventPushingToHistory = false;
 
+    //add skeleton
+    const skeleton = document.createElement("div");
+    skeleton.classList.add("skeleton");
+    for(let i = 0; i < height / 30; i++){
+      var iteratingSkeleton = skeleton.cloneNode();
+      iteratingSkeleton.style.width = `clamp(30%, calc(600px + ${Math.random() * 2 * 100}px), calc(100% - 2rem))`;
+      lazyLoadedContent.appendChild(iteratingSkeleton);
+    }
+    lazyLoadedContent.firstChild.classList.add("skeleton-title");
+
+    window.disableBgChangeOnChange = true;
+    scrollTo(window.innerHeight - 70, 1000);
+
     fetch(e.target.href)
     .then(html => {
       return html.text();
@@ -389,15 +417,15 @@ navLinks.forEach((item, i) => {
         lazyLoadedContent.innerHTML = "";
         lazyLoadedContent.append(article);
 
-        if(e.target.href.includes("/a7f848340ec243ceae734f29ba7c1f43")){
+        if(e.target.href.includes("/make-machines-learn-explainer")){
           document.querySelector(".notion-embed__loader").remove();
           document.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/Machine-Learning-Explainer" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>Machine-Learning-Explainer</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
         }
-        else if(e.target.href.includes("/69d1754ecf634e68acba1af2627ef082")){
+        else if(e.target.href.includes("/nxtone")){
           document.querySelector(".notion-embed__loader").remove();
           document.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/naext-one-plugin" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>naext-one-plugin</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
         }
-        else if(e.target.href.includes("/dw-db/deepwave")){
+        else if(e.target.href.includes("/deepwave")){
           document.querySelector(".notion-embed__loader").remove();
 
           var link = "https://www.deepwave.org/icrs-filmfestival-2022/"
@@ -423,9 +451,6 @@ navLinks.forEach((item, i) => {
           iframe.setAttribute("src", link);
           document.querySelector(".LazyLoad").appendChild(iframe);
         }
-
-        window.disableBgChangeOnChange = true;
-        scrollTo(window.innerHeight - 70, 1000);
       }
       catch(e){
       }
@@ -529,34 +554,68 @@ window.addEventListener('touchend', (e) => {
   console.log({"verticalDifference": verticalDifference});
   console.log({"horizontalDifference": horizontalDifference});
 
-  if(Math.abs(horizontalDifference) > window.innerHeight / 10){
-    clearInterval(timerToSwitchBackground);
-    timerToSwitchBackground = setInterval(switchBackground, timerTime);
+  if(horizontalDifference != verticalDifference){
+    if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){
+      clearInterval(timerToSwitchBackground);
+      timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-    if(horizontalDifference > 0){
-      switcToPreviousBackground();
+      if(horizontalDifference > 0){
+        switcToPreviousBackground();
+      }
+      else{
+        switchBackground();
+      }
+      e.preventDefault();
+      return
     }
     else{
-      switchBackground();
-    }
-    e.preventDefault();
-    return
-  }
-  else if(Math.abs(verticalDifference) > 40){
-    clearInterval(timerToSwitchBackground);
-    timerToSwitchBackground = setInterval(switchBackground, timerTime);
+      clearInterval(timerToSwitchBackground);
+      timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-    if(verticalDifference > 0){
-      switcToPreviousBackground();
+      if(verticalDifference < 0){
+        if(!navbar.classList.contains("lp-scrolled")){
+          document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+        }
+      }
+
+      e.preventDefault();
+      return
     }
-    else{
-      switchBackground();
-    }
-    e.preventDefault();
-    return
   }
 });
 
+
+//#region add mouse trailer
+if(width > 745){
+  const trailerAnimation = (e, interacting) => {
+    const x = e.clientX - trailer.offsetWidth * 0.5;
+    const y = e.clientY - trailer.offsetHeight * 0.5;
+
+    const positionAnimation = {
+      transform: `translate(${x}px, ${y}px) scale(${interacting ? 8 : 1})`
+    };
+
+    if(interacting && !trailer.classList.contains("show-arrow")){
+      trailer.classList.add("show-arrow");
+    }
+    else if(!interacting && trailer.classList.contains("show-arrow")){
+      trailer.classList.remove("show-arrow");
+    }
+
+    trailer.animate(positionAnimation, {
+      duration: 800,
+      fill: "forwards"
+    });
+
+  }
+  window.onmousemove = e => {
+    const interactable = e.target.closest(".lp-read-more-button");
+    const interacting =  interactable != null;
+
+    trailerAnimation(e, interacting);
+  }
+}
+//#endregion
   //window.addEventListener('touchmove', throttle((e) => {
     //console.log("touchmove fired");
     //// Different devices give different values with different decimal percentages.
