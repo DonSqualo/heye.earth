@@ -22,7 +22,8 @@ document.querySelector(".notion-icon__search-path").classList.add("lp-notion-ico
 //#region add mouse trailer
 const trailer = document.createElement("div");
 trailer.classList.add("lp-mouse-trailer");
-trailer.insertAdjacentHTML('beforeend', `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+trailer.insertAdjacentHTML('beforeend', `<i class="gg-chevron-down"></i>`);
+/*trailer.insertAdjacentHTML('beforeend', `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <g>
 	<g id="arrow_x5F_down">
@@ -30,7 +31,7 @@ trailer.insertAdjacentHTML('beforeend', `<svg version="1.1" id="Capa_1" xmlns="h
 			L32,16.016z"/>
 	</g>
 </g>
-</svg>`);
+</svg>`);*/
 document.querySelector(".super-root").parentElement.appendChild(trailer);
 //#endregion
 
