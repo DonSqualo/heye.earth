@@ -577,8 +577,35 @@
   html.global-dark-theme .skeleton{
     animation: skeleton-loading-dark 1s linear infinite alternate;
   }
-  
   @media only screen and (min-width: 745px){
+    .lp-mouse-trailer{
+      width: 20px;
+      height: 20px;
+      background-color: black;
+      border-radius: 20px;
+      position: fixed;
+      left: 0;
+      top:0;
+      z-index: 10;
+      opacity: 0;
+      transition: opacity 500ms ease;
+      fill: white;
+      pointer-events: none;
+    }
+    html.global-dark-theme .lp-mouse-trailer{
+      background-color: white;
+    }
+
+    body:hover .lp-mouse-trailer{
+      opacity: 1;
+    }
+    .lp-mouse-trailer.show-arrow{
+      background-color: transparent !important;
+    }
+    .lp-mouse-trailer:not(.show-arrow) > *:first-child{
+      display: none;
+    }
+
     .lp-read-more-button{
       width: calc(100% - 320px);
       height: calc(100% - 70px);
@@ -610,6 +637,10 @@
   }
 
   @media only screen and (max-width: 745px){
+    .lp-mouse-trailer{
+      display: none;
+    }
+  
     .lp-super-root{
       flex-direction: column-reverse;
     }

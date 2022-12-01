@@ -5,6 +5,9 @@ const nativeMin = Math.min;
 window.disableBgChangeOnChange = false;
 window.preventPushingToHistory = false;
 
+const width = window.innerWidth;
+const height = window.innerHeight;
+
 console.count("Times this script ran");
 const perf0 = performance.now();
 
@@ -14,6 +17,21 @@ document.querySelector(".super-footer").classList.add("lp-super-footer");
 document.querySelector(".super-content").classList.add("lp-super-content");
 document.querySelector(".notion-navbar").classList.add("lp-notion-navbar");
 document.querySelector(".notion-icon__search-path").classList.add("lp-notion-icon__search-path");
+//#endregion
+
+//#region add mouse trailer
+const trailer = document.createElement("div");
+trailer.classList.add("lp-mouse-trailer");
+trailer.insertAdjacentHTML('beforeend', `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<g>
+	<g id="arrow_x5F_down">
+		<path d="M32,16.016l-5.672-5.664c0,0-3.18,3.18-6.312,6.312V0h-8.023v16.664l-6.32-6.32L0,16.016L16,32
+			L32,16.016z"/>
+	</g>
+</g>
+</svg>`);
+document.querySelector(".super-root").parentElement.appendChild(trailer);
 //#endregion
 
 //navigationParameterQuery is obtained by writing going to the page and executing "history.state" in the dev tool console
@@ -275,9 +293,6 @@ mobileNavitationAnchorsContainer.classList.add("lp-mobile-nav-container");
 var upperMobileNavitationAnchorsContainer = document.createElement("div");
 upperMobileNavitationAnchorsContainer.classList.add("lp-mobile-nav-upper-container");
 upperMobileNavitationAnchorsContainer.appendChild(mobileNavitationAnchorsContainer);
-
-const width = window.innerWidth;
-const height = window.innerHeight;
 
 const lastIndexOfItems = landingPageItems.length - 1;
 
@@ -569,6 +584,38 @@ window.addEventListener('touchend', (e) => {
   }
 });
 
+
+//#region add mouse trailer
+if(width > 745){
+  const trailerAnimation = (e, interacting) => {
+    const x = e.clientX - trailer.offsetWidth * 0.5;
+    const y = e.clientY - trailer.offsetHeight * 0.5;
+
+    const positionAnimation = {
+      transform: `translate(${x}px, ${y}px) scale(${interacting ? 8 : 1})`
+    };
+
+    if(interacting && !trailer.classList.contains("show-arrow")){
+      trailer.classList.add("show-arrow");
+    }
+    else if(!interacting && trailer.classList.contains("show-arrow")){
+      trailer.classList.remove("show-arrow");
+    }
+
+    trailer.animate(positionAnimation, {
+      duration: 800,
+      fill: "forwards"
+    });
+
+  }
+  window.onmousemove = e => {
+    const interactable = e.target.closest(".lp-read-more-button");
+    const interacting =  interactable != null;
+
+    trailerAnimation(e, interacting);
+  }
+}
+//#endregion
   //window.addEventListener('touchmove', throttle((e) => {
     //console.log("touchmove fired");
     //// Different devices give different values with different decimal percentages.
