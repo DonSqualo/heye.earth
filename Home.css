@@ -104,6 +104,18 @@
     transition: all 2s cubic-bezier(0.25, 1, 0.5, 1);
     background: rgba(25,25,25,1);
   }
+
+  .lp-notion-navbar:not(.lp-scrolled){
+    background: transparent !important;
+    color: white;
+  }
+  .lp-notion-navbar:not(.lp-scrolled) .notion-breadcrumb__icon{
+    filter: brightness(100%) !important;
+  }
+  .lp-notion-navbar:not(.lp-scrolled) .notion-icon__search-path{
+    fill: white !important;
+  }
+
   html.global-dark-theme .lp-notion-navbar.lp-scrolled{
     background: rgba(25,25,25,1);
   }
@@ -115,7 +127,6 @@
   }
   
   .lp-theme-switcher{
-    display: none;
   }
   
   .lp-theme-switcher > a {
@@ -272,17 +283,17 @@
   }
   
   .lp-ll-content {
+    background-color: white;
+    color: black;
+    overflow:auto;
+  }
+  html.global-dark-theme .lp-ll-content{
     background-color: rgb(15,15,15);
     color: white;
-    overflow:auto;
   }
   
   .lp-ll-content .notion-semantic-string{
-    color: white;
-  }
-  
-  .lp-ll-content .notion-root > .notion-column-list > .notion-column:first-child{
-    background-color: rgb(15,15,15) !important;
+    color: inherit;
   }
   
   .lp-bg-texts{
@@ -521,10 +532,6 @@
   
   }
   
-  .notion-collection-card.gallery{
-    background-color: rgb(30,30,30);
-  }
-  
   .notion-bookmark__content{
     color:white;
   }
@@ -611,15 +618,7 @@
       bottom: 0;
     }
     .lp-notion-navbar:not(.lp-scrolled){
-      background: transparent !important;
-      color: white;
       position: absolute;
-    }
-    .lp-notion-navbar:not(.lp-scrolled) .notion-breadcrumb__icon{
-      filter: brightness(100%;) !important;
-    }
-    .lp-notion-navbar:not(.lp-scrolled) .notion-icon__search-path{
-      fill: white !important;
     }
     .lp-notion-navbar.lp-scrolled{
     }

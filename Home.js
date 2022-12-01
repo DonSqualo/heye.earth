@@ -538,31 +538,33 @@ window.addEventListener('touchend', (e) => {
   console.log({"verticalDifference": verticalDifference});
   console.log({"horizontalDifference": horizontalDifference});
 
-  if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){
-    clearInterval(timerToSwitchBackground);
-    timerToSwitchBackground = setInterval(switchBackground, timerTime);
+  if(horizontalDifference != verticalDifference){
+    if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){
+      clearInterval(timerToSwitchBackground);
+      timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-    if(horizontalDifference > 0){
-      switcToPreviousBackground();
+      if(horizontalDifference > 0){
+        switcToPreviousBackground();
+      }
+      else{
+        switchBackground();
+      }
+      e.preventDefault();
+      return
     }
     else{
-      switchBackground();
-    }
-    e.preventDefault();
-    return
-  }
-  else{
-    clearInterval(timerToSwitchBackground);
-    timerToSwitchBackground = setInterval(switchBackground, timerTime);
+      clearInterval(timerToSwitchBackground);
+      timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-    if(verticalDifference < 0){
-      if(!navbar.classList.contains("lp-scrolled")){
-        document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+      if(verticalDifference < 0){
+        if(!navbar.classList.contains("lp-scrolled")){
+          document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+        }
       }
-    }
 
-    e.preventDefault();
-    return
+      e.preventDefault();
+      return
+    }
   }
 });
 
