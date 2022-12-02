@@ -12,11 +12,16 @@ console.count("Times this script ran");
 const perf0 = performance.now();
 
 //#region assign classes so my css doesnt affect other nodes in different pages
-document.querySelector(".super-root").classList.add("lp-super-root");
-document.querySelector(".super-footer").classList.add("lp-super-footer");
-document.querySelector(".super-content").classList.add("lp-super-content");
-document.querySelector(".notion-navbar").classList.add("lp-notion-navbar");
-document.querySelector(".notion-icon__search-path").classList.add("lp-notion-icon__search-path");
+try{
+  document.querySelector(".super-root").classList.add("lp-super-root");
+  document.querySelector(".super-content").classList.add("lp-super-content");
+  document.querySelector(".notion-navbar").classList.add("lp-notion-navbar");
+  document.querySelector(".notion-icon__search-path").classList.add("lp-notion-icon__search-path");
+  document.querySelector(".super-footer").classList.add("lp-super-footer");
+}
+catch(e){
+
+}
 //#endregion
 
 //#region add mouse trailer
