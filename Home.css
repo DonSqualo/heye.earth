@@ -285,7 +285,6 @@
   .lp-ll-content {
     background-color: white;
     color: black;
-    overflow:auto;
   }
   html.global-dark-theme .lp-ll-content{
     background-color: rgb(15,15,15);
