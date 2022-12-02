@@ -21,7 +21,12 @@
     left: 4px;
     top: 2px
   }
-  
+  .lp-mouse-trailer .gg-chevron-down {
+    transform: none;
+  }
+  .lp-read-more-button.lp-show span {
+    display: none;
+  }
   .lp-super-root{
   }
   .lp-super-content{
