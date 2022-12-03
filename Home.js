@@ -8,6 +8,13 @@ window.preventPushingToHistory = false;
 const width = window.innerWidth;
 const height = window.innerHeight;
 
+updateVHWithJS();
+window.addEventListener('resize', updateVHWithJS);
+function updateVHWithJS(){
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
 console.count("Times this script ran");
 const perf0 = performance.now();
 
@@ -18,6 +25,7 @@ try{
   document.querySelector(".notion-navbar").classList.add("lp-notion-navbar");
   document.querySelector(".notion-icon__search-path").classList.add("lp-notion-icon__search-path");
   document.querySelector(".super-footer").classList.add("lp-super-footer");
+
 }
 catch(e){
 

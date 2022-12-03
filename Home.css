@@ -674,6 +674,7 @@
     }
     .lp-super-content > .notion-root > .notion-column-list{
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
     }
   
     .lp-read-more-button-upper-container{
@@ -784,6 +785,10 @@
       margin: 0 1.5rem;
       text-decoration: none;
       color: white;
+    }
+
+    .lp-super-root{
+      min-height: unset;
     }
   
     .lp-selector-upper-notion{
