@@ -177,3 +177,7 @@ html.global-dark-theme .super-footer{
 html.global-dark-theme .super-footer__footnote{
   color: var(--footer-text-color);
 }
+
+#block-62afdec900804ccb88139c02f3ae3e4f{
+  display: none;
+}
