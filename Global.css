@@ -181,3 +181,15 @@ html.global-dark-theme .super-footer__footnote{
 #block-62afdec900804ccb88139c02f3ae3e4f{
   display: none;
 }
+
+.notion-bookmark:hover, .notion-external-object__attributes:hover {
+  background: unset;
+}
+
+html.global-dark-theme .notion-bookmark:hover, html.global-dark-theme .notion-external-object__attributes:hover{
+  background: var(--color-ui-hover-bg);
+}
+
+html.global-dark-theme .notion-external-object__details{
+  color: white;
+}
