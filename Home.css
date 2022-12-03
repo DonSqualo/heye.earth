@@ -152,10 +152,15 @@
       top: 69px;
       left: 0;
       width: 5%;
-      background-color: white;
+      background-color: black;
       opacity: 0.6;
       transition: all 1s ease-out;
   }
+
+  html.global-dark-theme .lp-custom-navbar-progress{
+    background-color: white;
+  }
+
   .lp-notion-navbar.lp-scrolled .lp-custom-navbar-progress{
     width: 100%;
     transition: all 2.4s ease-in-out;
