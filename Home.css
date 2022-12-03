@@ -571,7 +571,7 @@
     border-radius: 5rem;
     animation: skeleton-loading-light 1s linear infinite alternate;
     margin: 1rem 0 0 1rem;
-    margin-left: clamp(0%, 500px, 100%) !important;
+    margin-left: 10% !important;
   }
   .skeleton.skeleton-title{
     width: clamp(30%, 400px, 80%);
