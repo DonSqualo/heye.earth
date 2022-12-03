@@ -6,7 +6,8 @@
     width: 22px;
     height: 22px;
     border: 2px solid transparent;
-    border-radius:100px
+    border-radius:100px;
+    color: white;
   }
   .gg-chevron-down::after {
     content: "";
@@ -19,7 +20,7 @@
     border-right: 2px solid;
     transform: rotate(45deg);
     left: 4px;
-    top: 2px
+    top: 2px;
   }
   .lp-mouse-trailer .gg-chevron-down {
     transform: none;
@@ -139,9 +140,11 @@
     display: flex;
     cursor: pointer;
   }
+
   .lp-theme-switcher > a:hover {
     color: white !important;
   }
+
   .lp-theme-switcher > a:hover > svg > circle {
     fill: black !important;
   }
