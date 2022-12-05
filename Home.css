@@ -132,27 +132,6 @@
     fill: white;
   }
   
-  .lp-theme-switcher{
-  }
-  
-  .lp-theme-switcher > a {
-    padding: 6px;
-    display: flex;
-    cursor: pointer;
-  }
-
-  .lp-theme-switcher > a:hover {
-    color: white !important;
-  }
-
-  .lp-theme-switcher > a:hover > svg {
-    transform: scale(88%);
-  }
-
-  .lp-theme-switcher > a:hover > svg > circle {
-    fill: black !important;
-  }
-  
   .lp-custom-navbar-progress{
       position: absolute;
       height: 1px;

@@ -86,18 +86,36 @@ a.notion-breadcrumb__item.has-icon span {width: 26px!important;
 }
 
 
-.lp-theme-switcher > a{
+.lp-theme-switcher{
+}
+
+.lp-theme-switcher > a {
+  padding: 6px;
+  display: flex;
   cursor: pointer;
 }
-.lp-theme-switcher{
-  padding-top: 4px;
-  margin-right: 5px;
+
+.lp-theme-switcher > a:hover {
+  color: black !important;
 }
+
+html.global-dark-theme .lp-theme-switcher > a:hover {
+  color: white !important;
+}
+
+.lp-theme-switcher > a > svg {
+  transform: scale(88%);
+}
+
+.lp-theme-switcher > a:hover > svg > circle {
+  fill: black !important;
+}
+html.global-dark-theme .lp-theme-switcher > a:hover > svg > circle {
+  fill: white !important;
+}
+
 .notion-navbar__search {
   margin-right: 5px !important;  
-}
-.lp-theme-switcher{
-  padding-top: 4px;
 }
 
 html body{
