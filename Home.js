@@ -29,7 +29,7 @@ const addLPClasses = [{
   },
   {
     selector: ".notion-navbar",
-    classToAdd: "notion-navbar"
+    classToAdd: "lp-notion-navbar"
   },
   {
     selector: ".notion-icon__search-path",
@@ -43,7 +43,7 @@ const addLPClasses = [{
 addLPClasses.forEach(lp => {
   var el = document.querySelector(lp.selector);
   if(el != null){
-    el.classList.add("lp-super-footer");
+    el.classList.add(lp.classToAdd);
   }
 });
 //#endregion
@@ -645,6 +645,22 @@ if(width > 745){
     trailerAnimation(e, interacting);
   }
 }
+document.onkeydown = function (event) {
+  switch (event.keyCode) {
+    case 37:
+      switcToPreviousBackground();
+      break;
+    case 38:
+      document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+      break;
+    case 39:
+      switchBackground();
+      break;
+    case 40:
+      document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+      break;
+  }
+};
 //#endregion
   //window.addEventListener('touchmove', throttle((e) => {
     //console.log("touchmove fired");
