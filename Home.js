@@ -646,19 +646,21 @@ if(width > 745){
   }
 }
 document.onkeydown = function (event) {
-  switch (event.keyCode) {
-    case 37:
-      switcToPreviousBackground();
-      break;
-    case 38:
-      document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
-      break;
-    case 39:
-      switchBackground();
-      break;
-    case 40:
-      document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
-      break;
+  if(!navbar.classList.contains("lp-scrolled")){
+    switch (event.keyCode) {
+      case 37:
+        switcToPreviousBackground();
+        break;
+      case 38:
+        switcToPreviousBackground();
+        break;
+      case 39:
+        switchBackground();
+        break;
+      case 40:
+        switchBackground();
+        break;
+    }
   }
 };
 //#endregion
