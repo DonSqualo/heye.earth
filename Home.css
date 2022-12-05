@@ -145,6 +145,10 @@
     color: white !important;
   }
 
+  .lp-theme-switcher > a:hover > svg {
+    transform: scale(88%);
+  }
+
   .lp-theme-switcher > a:hover > svg > circle {
     fill: black !important;
   }
