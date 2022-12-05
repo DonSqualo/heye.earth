@@ -846,10 +846,16 @@ function throttleAlt(func, limit) {
   }
 }
 
-function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts, mobileNavLinks, index){
+function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts, mobileNavLinks, index, resetCounter = true){
   //console.error("where is it being fired from");
   if(window.disableBgChangeOnChange == true){
     return;
+  }
+
+  if(resetCounter == true){
+    console.log("inside reset counter");
+    clearInterval(timerToSwitchBackground);
+    timerToSwitchBackground = setInterval(switchBackground, timerTime);
   }
 
   modifiedIndex = index >= itemArray.length ? 0 : index;
