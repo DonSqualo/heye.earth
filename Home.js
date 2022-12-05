@@ -423,7 +423,10 @@ navLinks.forEach((item, i) => {
     lazyLoadedContent.firstChild.classList.add("skeleton-title");
 
     window.disableBgChangeOnChange = true;
-    scrollTo(window.innerHeight - 70, 1000);
+    window.scrollTo({
+      top: window.innerHeight - 70,
+      behavior: 'smooth'
+    });
 
     fetch(e.target.href)
     .then(html => {
@@ -546,7 +549,11 @@ try{
     window.preventPushingToHistory = false;
 
     window.disableBgChangeOnChange = true;
-    scrollTo(0, 800);
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 }
 catch(e){
@@ -965,48 +972,6 @@ function utilGetPosition(e){
       y = e.clientY;
   }
   return {x, y};
-}
-
-/*--------------------------------------------
- Functions to make scroll with speed control - https://stackoverflow.com/questions/50589137/scrollto-speed-duration-setting
----------------------------------------------*/
-
-// Element or Position to move + Time in ms (milliseconds)
-function scrollTo(element, duration) {
-    var e = document.documentElement;
-    if(e.scrollTop===0){
-        var t = e.scrollTop;
-        ++e.scrollTop;
-        e = t+1===e.scrollTop--?e:document.body;
-    }
-    scrollToC(e, e.scrollTop, element, duration);
-}
-
-// Element to move, element or px from, element or px to, time in ms to animate
-function scrollToC(element, from, to, duration) {
-    if (duration <= 0) return;
-    if(typeof from === "object")from=from.offsetTop;
-    if(typeof to === "object")to=to.offsetTop;
-    // Choose one effect like easeInQuart
-    scrollToX(element, from, to, 0, 1/duration, 20, linearTween);
-}
-
-function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
-    if (t01 < 0 || t01 > 1 || speed<= 0) {
-       element.scrollTop = xTo;
-        return;
-    }
-    element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
-    t01 += speed * step;
-    
-    setTimeout(function() {
-        scrollToX(element, xFrom, xTo, t01, speed, step, motion);
-    }, step);
-}
-
-/* Effects List */
-function linearTween(t){
-    return t;
 }
 
 const perf1= performance.now();
