@@ -918,6 +918,14 @@ function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts
   backgroundTexts[modifiedIndex].classList.add("active-bg-text");
   mobileNavLinks[modifiedIndex].classList.add("lp-mobile-active");
 
+  //reset gif animations
+  const backgroundTextsImg = backgroundTexts[modifiedIndex].querySelector("img");
+  if(backgroundTextsImg.src.includes(".gif")){
+    const link = backgroundTextsImg.src;
+    backgroundTextsImg.src = "";
+    backgroundTextsImg.src = link;
+  }
+
   readMoreButton.setAttribute("data-current-bg", landingPageItems[modifiedIndex].currentBgForButton);
 
   let pixelsToTranslate = 0;
