@@ -6,7 +6,8 @@
     width: 22px;
     height: 22px;
     border: 2px solid transparent;
-    border-radius:100px
+    border-radius:100px;
+    color: white;
   }
   .gg-chevron-down::after {
     content: "";
@@ -19,7 +20,7 @@
     border-right: 2px solid;
     transform: rotate(45deg);
     left: 4px;
-    top: 2px
+    top: 2px;
   }
   .lp-mouse-trailer .gg-chevron-down {
     transform: none;
@@ -142,34 +143,23 @@
     fill: white;
   }
   
-  .lp-theme-switcher{
-  }
-  
-  .lp-theme-switcher > a {
-    padding: 6px;
-    display: flex;
-    cursor: pointer;
-  }
-  .lp-theme-switcher > a:hover {
-    color: white !important;
-  }
-  .lp-theme-switcher > a:hover > svg > circle {
-    fill: black !important;
-  }
-  
   .lp-custom-navbar-progress{
       position: absolute;
       height: 1px;
       top: 69px;
       left: 0;
       width: 5%;
-      background-color: white;
+      background-color: black;
       opacity: 0.6;
-      transition: all 1s ease-out;
+      transition: all 0.2s ease-in;
   }
+
+  html.global-dark-theme .lp-custom-navbar-progress{
+    background-color: white;
+  }
+
   .lp-notion-navbar.lp-scrolled .lp-custom-navbar-progress{
     width: 100%;
-    transition: all 2.4s ease-in-out;
   }
   
   .lp-bg-pics{
@@ -301,7 +291,6 @@
   .lp-ll-content {
     background-color: white;
     color: black;
-    overflow:auto;
   }
   html.global-dark-theme .lp-ll-content{
     background-color: rgb(15,15,15);
@@ -583,7 +572,7 @@
     border-radius: 5rem;
     animation: skeleton-loading-light 1s linear infinite alternate;
     margin: 1rem 0 0 1rem;
-    margin-left: clamp(0%, 500px, 100%) !important;
+    margin-left: 10% !important;
   }
   .skeleton.skeleton-title{
     width: clamp(30%, 400px, 80%);
@@ -686,6 +675,7 @@
     }
     .lp-super-content > .notion-root > .notion-column-list{
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
     }
   
     .lp-read-more-button-upper-container{
@@ -796,6 +786,10 @@
       margin: 0 1.5rem;
       text-decoration: none;
       color: white;
+    }
+
+    .lp-super-root{
+      min-height: unset;
     }
   
     .lp-selector-upper-notion{

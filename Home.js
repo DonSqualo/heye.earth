@@ -7,15 +7,44 @@ window.preventPushingToHistory = false;
 const width = window.innerWidth;
 const height = window.innerHeight;
 
+updateVHWithJS();
+window.addEventListener('resize', updateVHWithJS);
+function updateVHWithJS(){
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
 console.count("Times this script ran");
 const perf0 = performance.now();
 
 //#region assign classes so my css doesnt affect other nodes in different pages
-document.querySelector(".super-root").classList.add("lp-super-root");
-document.querySelector(".super-footer").classList.add("lp-super-footer");
-document.querySelector(".super-content").classList.add("lp-super-content");
-document.querySelector(".notion-navbar").classList.add("lp-notion-navbar");
-document.querySelector(".notion-icon__search-path").classList.add("lp-notion-icon__search-path");
+const addLPClasses = [{
+    selector: ".super-root",
+    classToAdd: "lp-super-root"
+  },
+  {
+    selector: ".super-content",
+    classToAdd: "lp-super-content"
+  },
+  {
+    selector: ".notion-navbar",
+    classToAdd: "lp-notion-navbar"
+  },
+  {
+    selector: ".notion-icon__search-path",
+    classToAdd: "lp-notion-icon__search-path"
+  },
+  {
+    selector: ".super-footer",
+    classToAdd: "lp-super-footer"
+  }
+];
+addLPClasses.forEach(lp => {
+  var el = document.querySelector(lp.selector);
+  if(el != null){
+    el.classList.add(lp.classToAdd);
+  }
+});
 //#endregion
 
 //#region add mouse trailer
@@ -393,7 +422,10 @@ navLinks.forEach((item, i) => {
     lazyLoadedContent.firstChild.classList.add("skeleton-title");
 
     window.disableBgChangeOnChange = true;
-    scrollTo(window.innerHeight - 70, 1000);
+    window.scrollTo({
+      top: window.innerHeight - 70,
+      behavior: 'smooth'
+    });
 
     fetch(e.target.href)
     .then(html => {
@@ -516,7 +548,11 @@ try{
     window.preventPushingToHistory = false;
 
     window.disableBgChangeOnChange = true;
-    scrollTo(0, 800);
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 }
 catch(e){
@@ -615,6 +651,24 @@ if(width > 745){
     trailerAnimation(e, interacting);
   }
 }
+document.onkeydown = function (event) {
+  if(!navbar.classList.contains("lp-scrolled")){
+    switch (event.keyCode) {
+      case 37:
+        switcToPreviousBackground();
+        break;
+      case 38:
+        switcToPreviousBackground();
+        break;
+      case 39:
+        switchBackground();
+        break;
+      case 40:
+        switchBackground();
+        break;
+    }
+  }
+};
 //#endregion
   //window.addEventListener('touchmove', throttle((e) => {
     //console.log("touchmove fired");
@@ -800,10 +854,16 @@ function throttleAlt(func, limit) {
   }
 }
 
-function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts, mobileNavLinks, index){
+function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts, mobileNavLinks, index, resetCounter = true){
   //console.error("where is it being fired from");
   if(window.disableBgChangeOnChange == true){
     return;
+  }
+
+  if(resetCounter == true){
+    console.log("inside reset counter");
+    clearInterval(timerToSwitchBackground);
+    timerToSwitchBackground = setInterval(switchBackground, timerTime);
   }
 
   modifiedIndex = index >= itemArray.length ? 0 : index;
@@ -959,6 +1019,7 @@ function linearTween(t){
 const aboutMe = document.querySelector(".lp-desktop-navlink:last-child a")
 aboutMe.insertAdjacentHTML('afterend', `<a href="mailto:me@heye.earth" class="notion-link lp-mail" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669925228/Heye.earth/Projects/mail-142_1_p9c3yd.svg"></a>`)
 aboutMe.insertAdjacentHTML('afterend', `<a href="https://twitter.com/HeyeGross" class="notion-link lp-twitter" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669936109/Heye.earth/Projects/icons8-twitter_v4kazt.svg"></a>`);
+
 const perf1= performance.now();
 console.log(`Performance between start and end of written script`);
 console.log(`Start: ${perf0}`);
