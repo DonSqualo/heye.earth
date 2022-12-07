@@ -211,3 +211,6 @@ html.global-dark-theme .notion-bookmark:hover, html.global-dark-theme .notion-ex
 html.global-dark-theme .notion-external-object__details{
   color: white;
 }
+.notion-root > .notion-column-list > .notion-column:nth-child(3){
+  width: 265px !important;
+}
