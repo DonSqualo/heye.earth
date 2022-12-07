@@ -5,9 +5,35 @@
     --collection-card-cover-size-large: 100% !important;
     --collection-card-cover-size-small: 48% !important;
 }
+.super-footer {
+  display: none !important;
+}
+/* not elegant, but I inserted one text block at the bottom in the template */
+.notion-root > div:last-child {
+  display: none;
+}
+.notion-root > .notion-column-list > .notion-column:nth-child(1) {
+    height:calc(100vh - 70px) !important;
+}
 .notion-root > .notion-column-list > .notion-column:nth-child(2) {
     max-width: 1000px !important;
 }
+.notion-root > .notion-column-list > .notion-column:nth-child(3) {
+  height: ; calc(100vh - 70px) !important;
+  width: 265px !important;
+  padding-left: 30px !important;
+  font-family: var(--primary-font)!important;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.notion-text {
+    min-height: auto;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.notion-root > .notion-column-list > .notion-column:nth-child(3)::-webkit-scrollbar {
+  display: none;
+}
+
 .notion-root > .notion-column-list > .notion-column:first-child a {
     opacity: 0.8 !important;
 }
