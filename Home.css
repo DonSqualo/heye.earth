@@ -293,7 +293,7 @@
     color: black;
   }
   html.global-dark-theme .lp-ll-content{
-    background-color: rgb(15,15,15);
+    background-color: var(--color-bg-default);
     color: white;
   }
   
