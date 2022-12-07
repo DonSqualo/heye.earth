@@ -27,6 +27,17 @@
   .lp-read-more-button.lp-show span {
     display: none;
   }
+  .lp-twitter img {
+    margin-bottom: -3px;
+    margin-left: 10px;
+    width: 23px;
+  }
+  .lp-mail img {
+    margin-bottom: -4px;
+    margin-left: 10px;
+    color: white;
+    width: 24px;
+  }
   .lp-super-root{
   }
   .lp-super-content{
