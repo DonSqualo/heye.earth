@@ -151,7 +151,7 @@
       width: 5%;
       background-color: black;
       opacity: 0.6;
-      transition: all 0.2s ease-in;
+      transition: all 0.6s ease-in-out;
   }
 
   html.global-dark-theme .lp-custom-navbar-progress{

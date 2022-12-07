@@ -1,5 +1,7 @@
+
 const nativeMax = Math.max;
 const nativeMin = Math.min;
+const smoothScrollDuration = 1000;
 
 window.disableBgChangeOnChange = false;
 window.preventPushingToHistory = false;
@@ -422,10 +424,12 @@ navLinks.forEach((item, i) => {
     lazyLoadedContent.firstChild.classList.add("skeleton-title");
 
     window.disableBgChangeOnChange = true;
-    window.scrollTo({
-      top: window.innerHeight - 70,
-      behavior: 'smooth'
-    });
+
+    smoothScrollTo(window.innerHeight - 70, smoothScrollDuration);
+    //window.scrollTo({
+      //top: window.innerHeight - 70,
+      //behavior: 'smooth'
+    //});
 
     fetch(e.target.href)
     .then(html => {
@@ -549,10 +553,7 @@ try{
 
     window.disableBgChangeOnChange = true;
 
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    smoothScrollTo(0, smoothScrollDuration);
   });
 }
 catch(e){
@@ -691,6 +692,33 @@ document.onkeydown = function (event) {
     //touchStartPosX = currentPageX;
   //}, 1000));
 
+function smoothScrollTo(to, duration) {
+  const element = document.scrollingElement || document.documentElement,
+    start = element.scrollTop,
+    change = to - start,
+    startDate = +new Date();
+
+  const easeInOutQuad = (t, b, c, d) => {
+    t /= d/2;
+    if (t < 1) return c/2*t*t + b;
+    t--;
+    return -c/2 * (t*(t-2) - 1) + b;
+  };
+
+  const animateScroll = _ => {
+    const currentDate = +new Date();
+    const currentTime = currentDate - startDate;
+    element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+    if(currentTime < duration) {
+      requestAnimationFrame(animateScroll);
+    }
+    else {
+      element.scrollTop = to;
+    }
+  };
+  animateScroll();
+};
+  
 function debounce(func, wait, options) {
   let lastArgs,
     lastThis,
@@ -971,48 +999,6 @@ function utilGetPosition(e){
       y = e.clientY;
   }
   return {x, y};
-}
-
-/*--------------------------------------------
- Functions to make scroll with speed control - https://stackoverflow.com/questions/50589137/scrollto-speed-duration-setting
----------------------------------------------*/
-
-// Element or Position to move + Time in ms (milliseconds)
-function scrollTo(element, duration) {
-    var e = document.documentElement;
-    if(e.scrollTop===0){
-        var t = e.scrollTop;
-        ++e.scrollTop;
-        e = t+1===e.scrollTop--?e:document.body;
-    }
-    scrollToC(e, e.scrollTop, element, duration);
-}
-
-// Element to move, element or px from, element or px to, time in ms to animate
-function scrollToC(element, from, to, duration) {
-    if (duration <= 0) return;
-    if(typeof from === "object")from=from.offsetTop;
-    if(typeof to === "object")to=to.offsetTop;
-    // Choose one effect like easeInQuart
-    scrollToX(element, from, to, 0, 1/duration, 20, linearTween);
-}
-
-function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
-    if (t01 < 0 || t01 > 1 || speed<= 0) {
-       element.scrollTop = xTo;
-        return;
-    }
-    element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
-    t01 += speed * step;
-    
-    setTimeout(function() {
-        scrollToX(element, xFrom, xTo, t01, speed, step, motion);
-    }, step);
-}
-
-/* Effects List */
-function linearTween(t){
-    return t;
 }
 
 //add Twitter
