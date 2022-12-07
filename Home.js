@@ -651,7 +651,7 @@ if(width > 745){
     };
 
     if(interacting && !trailer.classList.contains("show-arrow")){
-      changeCursor(trailer, e.target.getAttribute("data-current-bg"), e.target.getAttribute("currentBgForButton"));
+      changeCursor(trailer, e.target.getAttribute("data-current-bg"));
       trailer.classList.add("show-arrow");
     }
     else if(!interacting && trailer.classList.contains("show-arrow")){
@@ -691,7 +691,7 @@ document.onkeydown = function (event) {
   }
 };
 
-function changeCursor(mouseTrailerEl, cursorCode, cursorClass){
+function changeCursor(mouseTrailerEl, cursorCode){
   removeAllImageCursor(mouseTrailerEl);
 
   const lpItem = landingPageItems.find(lp => lp.currentBgForButton == cursorCode);
@@ -699,7 +699,7 @@ function changeCursor(mouseTrailerEl, cursorCode, cursorClass){
   if(cursorLink != null && cursorLink != ""){
     console.log(cursorLink);
     mouseTrailerEl.insertAdjacentHTML('afterbegin', 
-      `<img alt="Mouse trailer cursor" class="cursor-picture ${cursorClass}" src="${cursorLink}">`
+      `<img alt="Mouse trailer cursor" class="cursor-picture" src="${cursorLink}">`
     );
   }
 }
