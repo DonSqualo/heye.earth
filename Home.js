@@ -426,10 +426,6 @@ navLinks.forEach((item, i) => {
     window.disableBgChangeOnChange = true;
 
     smoothScrollTo(window.innerHeight - 70, smoothScrollDuration);
-    //window.scrollTo({
-      //top: window.innerHeight - 70,
-      //behavior: 'smooth'
-    //});
 
     fetch(e.target.href)
     .then(html => {
@@ -486,6 +482,17 @@ navLinks.forEach((item, i) => {
           iframe.setAttribute("frameborder", "0");
           iframe.setAttribute("src", link);
           document.querySelector(".LazyLoad").appendChild(iframe);
+        }
+
+        if(lazyLoadedContent.offsetHeight > height * 3){
+          const columns = lazyLoadedContent.querySelectorAll(".notion-column"); 
+          const leftSidebar = columns[0];
+          const rightSidebar = columns[columns.length - 1];
+          console.log(leftSidebar);
+          console.log(rightSidebar);
+
+          leftSidebar.classList.add("hide-sidebars");
+          rightSidebar.classList.add("hide-sidebars");
         }
       }
       catch(e){

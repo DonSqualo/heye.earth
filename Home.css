@@ -582,6 +582,12 @@
   html.global-dark-theme .skeleton{
     animation: skeleton-loading-dark 1s linear infinite alternate;
   }
+
+  .hide-sidebars{
+    transition: opacity 0.6s linear;
+    opacity: 0;
+  }
+
   @media only screen and (min-width: 745px){
     .lp-mouse-trailer{
       width: 20px;
