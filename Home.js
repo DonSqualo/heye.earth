@@ -85,7 +85,7 @@ const landingPageItems = [
       }
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/2_tuhqcg.svg";
     },
-    cursorLink: "",
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/v1670455121/Heye.earth/Projects/Arrows/Writing_Arrow_hzu1rv.svg",
     textClasses: "lp-text lp-text-writings",
     currentBgForButton: "lp-read-more-button-writings"
   },
