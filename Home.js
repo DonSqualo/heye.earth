@@ -699,7 +699,7 @@ function changeCursor(mouseTrailerEl, cursorCode){
   if(cursorLink != null && cursorLink != ""){
     console.log(cursorLink);
     mouseTrailerEl.insertAdjacentHTML('afterbegin', 
-      `<img alt="Mouse trailer cursor" class="cursor-picture" src="${cursorLink}">`
+      `<img alt="Mouse trailer cursor" class="cursor-picture ${cursorLink}" src="${cursorLink}">`
     );
   }
 }
