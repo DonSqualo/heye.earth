@@ -78,7 +78,7 @@ a.notion-breadcrumb__item.has-icon span {width: 26px!important;
     margin-right: auto!important;
     width: 100%;
 }
-.notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-bulleted-list, .notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-numbered-list, .notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-to-do {
+.notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-bulleted-list, .notion-root > .notion-column-list > .notion-column:nth-child(2) .notion-numbered-list, .notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-to-do {
     max-width: 700px !important;
     margin-left: auto!important;
     margin-right: auto!important;
