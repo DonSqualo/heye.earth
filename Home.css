@@ -151,7 +151,7 @@
       width: 5%;
       background-color: black;
       opacity: 0.6;
-      transition: all 0.2s ease-in;
+      transition: all 0.6s ease-in-out;
   }
 
   html.global-dark-theme .lp-custom-navbar-progress{
@@ -582,6 +582,12 @@
   html.global-dark-theme .skeleton{
     animation: skeleton-loading-dark 1s linear infinite alternate;
   }
+
+  .hide-sidebars{
+    transition: opacity 0.6s linear;
+    opacity: 0;
+  }
+
   @media only screen and (min-width: 745px){
     .lp-mouse-trailer{
       width: 20px;
@@ -607,7 +613,15 @@
     .lp-mouse-trailer.show-arrow{
       background-color: transparent !important;
     }
-    .lp-mouse-trailer:not(.show-arrow) > *:first-child{
+
+    .lp-mouse-trailer:not(.show-arrow) > *{
+      display: none;
+    }
+    .lp-mouse-trailer.show-arrow > .cursor-picture{
+      width: 22px;
+      height: 22px;
+    }
+    .lp-mouse-trailer.show-arrow > *:nth-child(2){
       display: none;
     }
 

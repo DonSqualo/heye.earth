@@ -1,5 +1,7 @@
+
 const nativeMax = Math.max;
 const nativeMin = Math.min;
+const smoothScrollDuration = 1000;
 
 window.disableBgChangeOnChange = false;
 window.preventPushingToHistory = false;
@@ -83,6 +85,7 @@ const landingPageItems = [
       }
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/2_tuhqcg.svg";
     },
+    cursorLink: "",
     textClasses: "lp-text lp-text-writings",
     currentBgForButton: "lp-read-more-button-writings"
   },
@@ -101,6 +104,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669276814/Heye.earth/Projects/Fonts/Naext-logo-combined_itagq1.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933106/Heye.earth/Projects/Arrows/Naext_arrow_oaoxwb.svg",
     textClasses: "lp-text lp-text-naext",
     currentBgForButton: "lp-read-more-button-naext"
   },
@@ -119,6 +123,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/5_fsguhv.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/Arcadia_Arrow_qthklm.svg",
     textClasses: "lp-text lp-text-arcadia",
     currentBgForButton: "lp-read-more-button-arcadia"
   },
@@ -137,6 +142,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_west,h_893,w_663/v1669001425/Heye.earth/Projects/Fonts/11_hiq2id.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Deepwave_arrow_azum1t.svg",
     textClasses: "lp-text lp-text-deepwave",
     currentBgForButton: "lp-read-more-button-deepwave"
   },
@@ -155,6 +161,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669844781/Heye.earth/Projects/Fonts/R2_Future-Forum-White-Logo-Animation_R1_qkldkz.gif";
     },
+    cursorLink: "",
     textClasses: "lp-text lp-text-future-forum",
     currentBgForButton: "lp-read-more-button-future-forum"
   },
@@ -173,6 +180,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/8_dux6mo.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/ML_Arrow_twf9fo.svg",
     textClasses: "lp-text lp-text-ml-explainer",
     currentBgForButton: "lp-read-more-button-ml-explainer"
   },
@@ -191,6 +199,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669011925/Heye.earth/Projects/Fonts/The_Hike_Font_octbmz.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/The_hike_arrow_abe3ea.svg",
     textClasses: "lp-text lp-text-the-hike",
     currentBgForButton: "lp-read-more-button-the-hike"
   },
@@ -212,7 +221,9 @@ const landingPageItems = [
       }
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669144557/Heye.earth/Projects/Fonts/AI_Art_Font_ymvkbz.svg";
     },
-    textClasses: "lp-text lp-text-ai-art"
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/AI_art_arrow_oucham.svg",
+    textClasses: "lp-text lp-text-ai-art",
+    currentBgForButton: "lp-read-more-button-ai-art"
   },/*
   {
     navigationText: "Fake News",
@@ -244,6 +255,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/14_mnl60i.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Onno_Anna_Tjark_arrow_igizy2.svg",
     textClasses: "lp-text lp-text-onna-anna",
     currentBgForButton: "lp-read-more-button-onna-anna"
   },
@@ -262,6 +274,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/16_e6kpjc.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/About_Me_arrow_ugfnsj.svg",
     textClasses: "lp-text lp-text-about-me",
     currentBgForButton: "lp-read-more-button-about-me"
   }
@@ -422,10 +435,8 @@ navLinks.forEach((item, i) => {
     lazyLoadedContent.firstChild.classList.add("skeleton-title");
 
     window.disableBgChangeOnChange = true;
-    window.scrollTo({
-      top: window.innerHeight - 70,
-      behavior: 'smooth'
-    });
+
+    smoothScrollTo(window.innerHeight - 70, smoothScrollDuration);
 
     fetch(e.target.href)
     .then(html => {
@@ -482,6 +493,17 @@ navLinks.forEach((item, i) => {
           iframe.setAttribute("frameborder", "0");
           iframe.setAttribute("src", link);
           document.querySelector(".LazyLoad").appendChild(iframe);
+        }
+
+        if(lazyLoadedContent.offsetHeight > height * 3){
+          const columns = lazyLoadedContent.querySelectorAll(".notion-column"); 
+          const leftSidebar = columns[0];
+          const rightSidebar = columns[columns.length - 1];
+          console.log(leftSidebar);
+          console.log(rightSidebar);
+
+          leftSidebar.classList.add("hide-sidebars");
+          rightSidebar.classList.add("hide-sidebars");
         }
       }
       catch(e){
@@ -549,10 +571,7 @@ try{
 
     window.disableBgChangeOnChange = true;
 
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    smoothScrollTo(0, smoothScrollDuration);
   });
 }
 catch(e){
@@ -632,9 +651,11 @@ if(width > 745){
     };
 
     if(interacting && !trailer.classList.contains("show-arrow")){
+      changeCursor(trailer, e.target.getAttribute("data-current-bg"));
       trailer.classList.add("show-arrow");
     }
     else if(!interacting && trailer.classList.contains("show-arrow")){
+      removeAllImageCursor(trailer);
       trailer.classList.remove("show-arrow");
     }
 
@@ -669,6 +690,25 @@ document.onkeydown = function (event) {
     }
   }
 };
+
+function changeCursor(mouseTrailerEl, cursorCode){
+  removeAllImageCursor(mouseTrailerEl);
+
+  const lpItem = landingPageItems.find(lp => lp.currentBgForButton == cursorCode);
+  const cursorLink = lpItem.cursorLink;
+  if(cursorLink != null && cursorLink != ""){
+    console.log(cursorLink);
+    mouseTrailerEl.insertAdjacentHTML('afterbegin', 
+      `<img alt="Mouse trailer cursor" class="cursor-picture" src="${cursorLink}">`
+    );
+  }
+}
+function removeAllImageCursor(mouseTrailerEl){
+  const cursors = Array.from(mouseTrailerEl.querySelectorAll(".cursor-picture"));
+  cursors.forEach(cursor => {
+    cursor.remove();
+  });
+}
 //#endregion
   //window.addEventListener('touchmove', throttle((e) => {
     //console.log("touchmove fired");
@@ -691,6 +731,33 @@ document.onkeydown = function (event) {
     //touchStartPosX = currentPageX;
   //}, 1000));
 
+function smoothScrollTo(to, duration) {
+  const element = document.scrollingElement || document.documentElement,
+    start = element.scrollTop,
+    change = to - start,
+    startDate = +new Date();
+
+  const easeInOutQuad = (t, b, c, d) => {
+    t /= d/2;
+    if (t < 1) return c/2*t*t + b;
+    t--;
+    return -c/2 * (t*(t-2) - 1) + b;
+  };
+
+  const animateScroll = _ => {
+    const currentDate = +new Date();
+    const currentTime = currentDate - startDate;
+    element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+    if(currentTime < duration) {
+      requestAnimationFrame(animateScroll);
+    }
+    else {
+      element.scrollTop = to;
+    }
+  };
+  animateScroll();
+};
+  
 function debounce(func, wait, options) {
   let lastArgs,
     lastThis,
@@ -890,6 +957,17 @@ function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts
   backgroundTexts[modifiedIndex].classList.add("active-bg-text");
   mobileNavLinks[modifiedIndex].classList.add("lp-mobile-active");
 
+  //reset gif animations
+  const backgroundTextsImg = backgroundTexts[modifiedIndex].querySelector("img");
+  if(backgroundTextsImg.src.includes(".gif")){
+    const link = backgroundTextsImg.src;
+    backgroundTextsImg.src = "";
+    backgroundTextsImg.src = link;
+  }
+
+  //update cursor
+  changeCursor(trailer, landingPageItems[modifiedIndex].currentBgForButton);
+
   readMoreButton.setAttribute("data-current-bg", landingPageItems[modifiedIndex].currentBgForButton);
 
   let pixelsToTranslate = 0;
@@ -971,48 +1049,6 @@ function utilGetPosition(e){
       y = e.clientY;
   }
   return {x, y};
-}
-
-/*--------------------------------------------
- Functions to make scroll with speed control - https://stackoverflow.com/questions/50589137/scrollto-speed-duration-setting
----------------------------------------------*/
-
-// Element or Position to move + Time in ms (milliseconds)
-function scrollTo(element, duration) {
-    var e = document.documentElement;
-    if(e.scrollTop===0){
-        var t = e.scrollTop;
-        ++e.scrollTop;
-        e = t+1===e.scrollTop--?e:document.body;
-    }
-    scrollToC(e, e.scrollTop, element, duration);
-}
-
-// Element to move, element or px from, element or px to, time in ms to animate
-function scrollToC(element, from, to, duration) {
-    if (duration <= 0) return;
-    if(typeof from === "object")from=from.offsetTop;
-    if(typeof to === "object")to=to.offsetTop;
-    // Choose one effect like easeInQuart
-    scrollToX(element, from, to, 0, 1/duration, 20, linearTween);
-}
-
-function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
-    if (t01 < 0 || t01 > 1 || speed<= 0) {
-       element.scrollTop = xTo;
-        return;
-    }
-    element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
-    t01 += speed * step;
-    
-    setTimeout(function() {
-        scrollToX(element, xFrom, xTo, t01, speed, step, motion);
-    }, step);
-}
-
-/* Effects List */
-function linearTween(t){
-    return t;
 }
 
 //add Twitter
