@@ -613,7 +613,15 @@
     .lp-mouse-trailer.show-arrow{
       background-color: transparent !important;
     }
-    .lp-mouse-trailer:not(.show-arrow) > *:first-child{
+
+    .lp-mouse-trailer:not(.show-arrow) > *{
+      display: none;
+    }
+    .lp-mouse-trailer.show-arrow > .cursor-picture{
+      width: 22px;
+      height: 22px;
+    }
+    .lp-mouse-trailer.show-arrow > *:nth-child(2){
       display: none;
     }
 

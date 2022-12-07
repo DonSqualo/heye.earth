@@ -85,6 +85,7 @@ const landingPageItems = [
       }
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/2_tuhqcg.svg";
     },
+    cursorLink: "",
     textClasses: "lp-text lp-text-writings",
     currentBgForButton: "lp-read-more-button-writings"
   },
@@ -103,6 +104,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669276814/Heye.earth/Projects/Fonts/Naext-logo-combined_itagq1.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933106/Heye.earth/Projects/Arrows/Naext_arrow_oaoxwb.svg",
     textClasses: "lp-text lp-text-naext",
     currentBgForButton: "lp-read-more-button-naext"
   },
@@ -121,6 +123,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/5_fsguhv.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/Arcadia_Arrow_qthklm.svg",
     textClasses: "lp-text lp-text-arcadia",
     currentBgForButton: "lp-read-more-button-arcadia"
   },
@@ -139,6 +142,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_west,h_893,w_663/v1669001425/Heye.earth/Projects/Fonts/11_hiq2id.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Deepwave_arrow_azum1t.svg",
     textClasses: "lp-text lp-text-deepwave",
     currentBgForButton: "lp-read-more-button-deepwave"
   },
@@ -157,6 +161,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669844781/Heye.earth/Projects/Fonts/R2_Future-Forum-White-Logo-Animation_R1_qkldkz.gif";
     },
+    cursorLink: "",
     textClasses: "lp-text lp-text-future-forum",
     currentBgForButton: "lp-read-more-button-future-forum"
   },
@@ -175,6 +180,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/8_dux6mo.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/ML_Arrow_twf9fo.svg",
     textClasses: "lp-text lp-text-ml-explainer",
     currentBgForButton: "lp-read-more-button-ml-explainer"
   },
@@ -193,6 +199,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669011925/Heye.earth/Projects/Fonts/The_Hike_Font_octbmz.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/The_hike_arrow_abe3ea.svg",
     textClasses: "lp-text lp-text-the-hike",
     currentBgForButton: "lp-read-more-button-the-hike"
   },
@@ -214,7 +221,9 @@ const landingPageItems = [
       }
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669144557/Heye.earth/Projects/Fonts/AI_Art_Font_ymvkbz.svg";
     },
-    textClasses: "lp-text lp-text-ai-art"
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/AI_art_arrow_oucham.svg",
+    textClasses: "lp-text lp-text-ai-art",
+    currentBgForButton: "lp-read-more-button-ai-art"
   },/*
   {
     navigationText: "Fake News",
@@ -246,6 +255,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/14_mnl60i.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Onno_Anna_Tjark_arrow_igizy2.svg",
     textClasses: "lp-text lp-text-onna-anna",
     currentBgForButton: "lp-read-more-button-onna-anna"
   },
@@ -264,6 +274,7 @@ const landingPageItems = [
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/16_e6kpjc.svg";
     },
+    cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/About_Me_arrow_ugfnsj.svg",
     textClasses: "lp-text lp-text-about-me",
     currentBgForButton: "lp-read-more-button-about-me"
   }
@@ -640,9 +651,11 @@ if(width > 745){
     };
 
     if(interacting && !trailer.classList.contains("show-arrow")){
+      changeCursor(trailer, e.target.getAttribute("data-current-bg"));
       trailer.classList.add("show-arrow");
     }
     else if(!interacting && trailer.classList.contains("show-arrow")){
+      removeAllImageCursor(trailer);
       trailer.classList.remove("show-arrow");
     }
 
@@ -677,6 +690,25 @@ document.onkeydown = function (event) {
     }
   }
 };
+
+function changeCursor(mouseTrailerEl, cursorCode){
+  removeAllImageCursor(mouseTrailerEl);
+
+  const lpItem = landingPageItems.find(lp => lp.currentBgForButton == cursorCode);
+  const cursorLink = lpItem.cursorLink;
+  if(cursorLink != null && cursorLink != ""){
+    console.log(cursorLink);
+    mouseTrailerEl.insertAdjacentHTML('afterbegin', 
+      `<img alt="Mouse trailer cursor" class="cursor-picture" src="${cursorLink}">`
+    );
+  }
+}
+function removeAllImageCursor(mouseTrailerEl){
+  const cursors = Array.from(mouseTrailerEl.querySelectorAll(".cursor-picture"));
+  cursors.forEach(cursor => {
+    cursor.remove();
+  });
+}
 //#endregion
   //window.addEventListener('touchmove', throttle((e) => {
     //console.log("touchmove fired");
@@ -932,6 +964,9 @@ function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts
     backgroundTextsImg.src = "";
     backgroundTextsImg.src = link;
   }
+
+  //update cursor
+  changeCursor(trailer, landingPageItems[modifiedIndex].currentBgForButton);
 
   readMoreButton.setAttribute("data-current-bg", landingPageItems[modifiedIndex].currentBgForButton);
 
