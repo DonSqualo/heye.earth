@@ -1,7 +1,7 @@
 # heye.earth
 
 This is the main code behind my website. It is custom coded for heye.earth, but with a little effort you could recreate it. 
-I estimate copying my entire website and adjusting it to your liking would take ony ~4h. I won't write up detailed comments on the code, so you have to now your JavaScript if you want to use my exact setup. But Cluster + super.so gets you nearly all the way.
+I estimate copying my entire website and adjusting it to your liking would take only ~4h. I won't write up detailed comments on the code, so you have to know your JavaScript. But Cluster + super.so gets you nearly all the way.
 Total cost is ~12 € per month + 40 € once, including the domain.
 
 ## Notion
@@ -11,7 +11,7 @@ You can just duplicate this, but I would suggest starting from scratch.
 
 
 ## Super.so
-I then use super.so to turn this Notion into a static website
+I then use super.so to turn this Notion into a static website.
 
 ## Cluster
 Additionally I use the theme Cluster, https://cluster.joshmillgate.co.uk/
