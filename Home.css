@@ -346,7 +346,7 @@
     padding:0;
     padding-top:72.24919093851133%;
   }
-  .lp-text > span > img {
+  .lp-text > span > img, .lp-text > span > video {
     position:absolute;
     top:0;
     left:0;
@@ -391,8 +391,8 @@
   .lp-text-writings img{
     object-position: top right!important;
   }
-  .lp-text-naext img{
-  
+  .lp-text-naext video{
+    transform: translate(5%, 0)!important;
   }
   .lp-text-arcadia img {
     object-position: bottom right!important;
@@ -536,7 +536,18 @@
   [data-current-bg="lp-read-more-button-about-me"]{
   
   }
-  
+img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/Arcadia_Arrow_qthklm.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Deepwave_arrow_azum1t.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/The_hike_arrow_abe3ea.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/AI_art_arrow_oucham.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/ML_Arrow_twf9fo.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Onno_Anna_Tjark_arrow_igizy2.svg"] {
+    transform: scale(1.1, 0.7);
+  }
+  img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933106/Heye.earth/Projects/Arrows/Naext_arrow_oaoxwb.svg"] {
+    transform: scale(1, 1.2);
+  }
+  img[src="https://res.cloudinary.com/deepwave-org/image/upload/v1670455121/Heye.earth/Projects/Arrows/Writing_Arrow_hzu1rv.svg"] {
+    transform: scale(1, 0.7);
+  }
+  img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/About_Me_arrow_ugfnsj.svg"]  {
+    transform: scale(2, 0.7);
+  }
   .notion-bookmark__content{
     color:white;
   }
@@ -730,7 +741,9 @@
       width: auto;
     }
   
-    .lp-text-naext > span{
+    .lp-bg-texts .lp-text-naext video{
+      transform: translate(0, -60px) scale(1.2) !important;
+      object-position: bottom!important;
     }
     .lp-text-future-forum > span{
       transform: scale(50%);
