@@ -1,4 +1,3 @@
-
 const nativeMax = Math.max;
 const nativeMin = Math.min;
 const smoothScrollDuration = 1000;
@@ -347,8 +346,10 @@ mobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class="lp
 
 landingPageItems.forEach((landingPageItem,i) => {
   bgPics.insertAdjacentHTML('beforeend', `<span class="default-bg-pic-container-style lp-bg-pic ${i == 0 ? "active-bg" : ""} ${landingPageItem.bgPictureClasses}">
+    ${i == 6 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670496048/Heye.earth/Projects/High%20Res%20Backgrounds/Hike-back-animated_sewivx.mp4" autoplay="" muted="" loop="" type="video/mp4" class="default-bg-pic-style" style="object-position: center 20%;">' : ""}
+    ${i == 8 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670499021/Heye.earth/Projects/High%20Res%20Backgrounds/ONNO_Background_Animated_k7wve5.mp4" autoplay="" muted="" type="video/mp4" class="default-bg-pic-style" style="object-position: center 20%;">' : ""}
     <img class="default-bg-pic-style" alt="${landingPageItem.bgPictureAlt}" src="${landingPageItem.bgPictureLinkGetter(width, height)}" decoding="async" data-nimg="fill" >
-  </span>`);
+  ${i == 6 || i == 8 ? "</video>" : ""}</span>`);
 
   navitationAnchorsContainer.insertAdjacentHTML('beforeend', `<span class="lp-desktop-navlink ${i == 0 ? "lp-active" : ""}">
     <a class="notion-link link" href="${landingPageItem.navigationPath}" data-parameter-query="${landingPageItem.navigationParameterQuery}">${landingPageItem.navigationText}</a>
@@ -360,7 +361,9 @@ landingPageItems.forEach((landingPageItem,i) => {
       <span>
         <span>
         </span>
+        ${i == 1 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670500323/Heye.earth/Projects/Fonts/Naext.one_Main_Animation_wbbwtm.webm" autoplay="" muted="" type="video/webm">' : ""}
         <img alt="image" src="${landingPageItem.textLinkGetter(width, height)}" decoding="async" data-nimg="responsive" >
+        ${i == 1 ? "</video>" : ""}
       </span>
     </div>`);
 
@@ -964,7 +967,18 @@ function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts
     backgroundTextsImg.src = "";
     backgroundTextsImg.src = link;
   }
-
+  const backgroundTextsVideo = backgroundTexts[modifiedIndex].querySelector("video");
+  if(backgroundTextsVideo){
+    backgroundTextsVideo.pause();
+    backgroundTextsVideo.currentTime = 0;
+    backgroundTextsVideo.load();
+  }
+  const backgroundVideo = backgroundPictures[modifiedIndex].querySelector("video");
+  if(backgroundVideo){
+    backgroundVideo.pause();
+    backgroundVideo.currentTime = 0;
+    backgroundVideo.load();
+  }
   //update cursor
   changeCursor(trailer, landingPageItems[modifiedIndex].currentBgForButton);
 
