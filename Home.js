@@ -281,6 +281,7 @@ const landingPageItems = [
 
 const navbar = document.querySelector(".lp-notion-navbar");
 navbar.insertAdjacentHTML('beforeend', `<div class="lp-custom-navbar-progress"></div>`);
+const navbarProgress = document.querySelector(".lp-custom-navbar-progress");
 
 const covers = document.querySelector(".notion-collection-card__cover");
 var contentNotionColumn = covers.parentElement.parentElement.parentElement.parentElement;
@@ -439,7 +440,7 @@ navLinks.forEach((item, i) => {
 
     window.disableBgChangeOnChange = true;
 
-    smoothScrollTo(window.innerHeight - 70, smoothScrollDuration);
+    smoothScrollTo(window.innerHeight - 60, smoothScrollDuration);
 
     fetch(e.target.href)
     .then(html => {
@@ -531,12 +532,12 @@ let lastScrollTop = document.documentElement.scrollTop || 0;
 window.addEventListener("scroll", e => {
   var st = window.pageYOffset || document.documentElement.scrollTop;
   if(!navbar.classList.contains("lp-scrolled")){
-    if(document.documentElement.scrollTop > 30){
+    if(st > 30){
       navbar.classList.add("lp-scrolled");
     }
   }
   else{
-    if(document.documentElement.scrollTop < 30){
+    if(st < 30){
       navbar.classList.remove("lp-scrolled");
 
       if(window.preventPushingToHistory == false){
@@ -548,6 +549,31 @@ window.addEventListener("scroll", e => {
       lazyLoadedContent.innerHTML = "";
     }
   }
+
+  if(width < 745){
+    const pixelsFromTop = Math.max(height - 60, st);
+    const navbarAnimation = {
+      top: `${pixelsFromTop}px`
+    };
+    navbar.animate(navbarAnimation, {
+      duration: 0,
+      fill: "forwards"
+    });
+
+    if(height - 60 >= st){
+      const progress = Math.min(1, st / (height - 60)) * 100;
+      console.log(navbarProgress);
+      console.log(progress);
+      const progressAnimation = {
+        width: `${progress}%`
+      };
+      navbarProgress.animate(progressAnimation, {
+        duration: 50,
+        fill: "forwards"
+      });
+    }
+  }
+
   lastScrollTop = st <= 0 ? 0 : st;
 }, false);
 
@@ -740,17 +766,14 @@ function smoothScrollTo(to, duration) {
     change = to - start,
     startDate = +new Date();
 
-  const easeInOutQuad = (t, b, c, d) => {
-    t /= d/2;
-    if (t < 1) return c/2*t*t + b;
-    t--;
-    return -c/2 * (t*(t-2) - 1) + b;
+  const linearTween = (t, b, c, d) => {
+    return c*t/d + b;
   };
 
   const animateScroll = _ => {
     const currentDate = +new Date();
     const currentTime = currentDate - startDate;
-    element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+    element.scrollTop = parseInt(linearTween(currentTime, start, change, duration));
     if(currentTime < duration) {
       requestAnimationFrame(animateScroll);
     }

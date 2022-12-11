@@ -158,10 +158,6 @@
     background-color: white;
   }
 
-  .lp-notion-navbar.lp-scrolled .lp-custom-navbar-progress{
-    width: 100%;
-  }
-  
   .lp-bg-pics{
     width: 100%;
     height: 100%;
@@ -636,6 +632,10 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       display: none;
     }
 
+    .lp-notion-navbar.lp-scrolled .lp-custom-navbar-progress{
+      width: 100%;
+    }
+
     .lp-read-more-button{
       width: calc(100% - 320px);
       height: calc(100% - 70px);
@@ -675,9 +675,8 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       flex-direction: column-reverse;
     }
     .lp-notion-navbar{
-      position: sticky;
-      top: unset;
-      bottom: 0;
+      position: absolute;
+      top: calc(100% - 60px);
     }
     .lp-notion-navbar:not(.lp-scrolled){
       position: absolute;
@@ -691,7 +690,9 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       background: none; 
     }
     .lp-custom-navbar-progress{
-      top: -1px;
+      top: 59px;
+      right: 0;
+      left: unset;
     }
     .lp-bg-texts{
       top:0px;
