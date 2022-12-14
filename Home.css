@@ -135,6 +135,7 @@
 
   html.global-dark-theme .lp-notion-navbar.lp-scrolled{
     background: rgba(25,25,25,1);
+    transition: none;
   }
   html.global-dark-theme .notion-navbar {
     background:rgba(25, 25, 25, 0);
