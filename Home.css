@@ -582,6 +582,13 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
     }
   }
 
+  .lp-ll-content{
+    padding-top: 20px;
+  }
+  .lp-ll-content:empty{
+    padding-top: 0px !important;;
+  }
+
   .skeleton{
     width: clamp(30%, 500px, calc(100% - 2rem));
     height: 20px;
@@ -593,6 +600,7 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
   .skeleton.skeleton-title{
     width: clamp(30%, 400px, 80%);
     height: 50px;
+    margin-top: 0;
   }
 
   html.global-dark-theme .skeleton{
