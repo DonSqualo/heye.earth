@@ -625,47 +625,54 @@ window.addEventListener("popstate", function(e) {
 });
 
 let touchStartPos = {x:0, y:0};
+const swipeThreshhold = width*0.05;
+let validToSwitchOnTouchMove = false;
 
 window.addEventListener('touchstart', (e) => {
   touchStartPos = utilGetPosition(e);
+  validToSwitchOnTouchMove = true;
 });
-window.addEventListener('touchend', (e) => {
+window.addEventListener('touchmove', (e) => {
   const currentPosition = utilGetPosition(e);
-  console.log(currentPosition);
   const verticalDifference = currentPosition.y - touchStartPos.y;
   const horizontalDifference = currentPosition.x - touchStartPos.x;
 
-  console.log({"verticalDifference": verticalDifference});
-  console.log({"horizontalDifference": horizontalDifference});
-
   if(horizontalDifference != verticalDifference){
-    if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){
-      clearInterval(timerToSwitchBackground);
-      timerToSwitchBackground = setInterval(switchBackground, timerTime);
+    if((Math.abs(touchStartPos.x - currentPosition.x) >= swipeThreshhold || Math.abs(touchStartPos.y - currentPosition.y) >= swipeThreshhold) && validToSwitchOnTouchMove == true)
+    {
+      console.log(validToSwitchOnTouchMove);
+      validToSwitchOnTouchMove = false;
+      if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){
+        clearInterval(timerToSwitchBackground);
+        timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-      if(horizontalDifference > 0){
-        switcToPreviousBackground();
+        if(horizontalDifference > 0){
+          switcToPreviousBackground();
+        }
+        else{
+          switchBackground();
+        }
+        e.preventDefault();
+        return
       }
       else{
-        switchBackground();
-      }
-      e.preventDefault();
-      return
-    }
-    else{
-      clearInterval(timerToSwitchBackground);
-      timerToSwitchBackground = setInterval(switchBackground, timerTime);
+        clearInterval(timerToSwitchBackground);
+        timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-      if(verticalDifference < 0){
-        if(!navbar.classList.contains("lp-scrolled")){
-          document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+        if(verticalDifference < 0){
+          if(!navbar.classList.contains("lp-scrolled")){
+            document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+          }
         }
-      }
 
-      e.preventDefault();
-      return
+        e.preventDefault();
+        return
+      }
     }
   }
+});
+window.addEventListener('touchend', (e) => {
+  validToSwitchOnTouchMove = true;
 });
 
 
