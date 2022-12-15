@@ -281,6 +281,7 @@ const landingPageItems = [
 
 const navbar = document.querySelector(".lp-notion-navbar");
 navbar.insertAdjacentHTML('beforeend', `<div class="lp-custom-navbar-progress"></div>`);
+const navbarProgress = document.querySelector(".lp-custom-navbar-progress");
 
 const covers = document.querySelector(".notion-collection-card__cover");
 var contentNotionColumn = covers.parentElement.parentElement.parentElement.parentElement;
@@ -439,7 +440,7 @@ navLinks.forEach((item, i) => {
 
     window.disableBgChangeOnChange = true;
 
-    smoothScrollTo(window.innerHeight - 70, smoothScrollDuration);
+    smoothScrollTo(window.innerHeight - 60, smoothScrollDuration);
 
     fetch(e.target.href)
     .then(html => {
@@ -531,12 +532,12 @@ let lastScrollTop = document.documentElement.scrollTop || 0;
 window.addEventListener("scroll", e => {
   var st = window.pageYOffset || document.documentElement.scrollTop;
   if(!navbar.classList.contains("lp-scrolled")){
-    if(document.documentElement.scrollTop > 30){
+    if(st > 30){
       navbar.classList.add("lp-scrolled");
     }
   }
   else{
-    if(document.documentElement.scrollTop < 30){
+    if(st < 30){
       navbar.classList.remove("lp-scrolled");
 
       if(window.preventPushingToHistory == false){
@@ -548,6 +549,31 @@ window.addEventListener("scroll", e => {
       lazyLoadedContent.innerHTML = "";
     }
   }
+
+  if(width < 745){
+    const pixelsFromTop = Math.max(height - 60, st);
+    const navbarAnimation = {
+      top: `${pixelsFromTop}px`
+    };
+    navbar.animate(navbarAnimation, {
+      duration: 0,
+      fill: "forwards"
+    });
+
+    if(height - 60 >= st){
+      const progress = Math.min(1, st / (height - 60)) * 100;
+      console.log(navbarProgress);
+      console.log(progress);
+      const progressAnimation = {
+        width: `${progress}%`
+      };
+      navbarProgress.animate(progressAnimation, {
+        duration: 50,
+        fill: "forwards"
+      });
+    }
+  }
+
   lastScrollTop = st <= 0 ? 0 : st;
 }, false);
 
@@ -599,47 +625,54 @@ window.addEventListener("popstate", function(e) {
 });
 
 let touchStartPos = {x:0, y:0};
+const swipeThreshhold = width*0.05;
+let validToSwitchOnTouchMove = false;
 
 window.addEventListener('touchstart', (e) => {
   touchStartPos = utilGetPosition(e);
+  validToSwitchOnTouchMove = true;
 });
-window.addEventListener('touchend', (e) => {
+window.addEventListener('touchmove', (e) => {
   const currentPosition = utilGetPosition(e);
-  console.log(currentPosition);
   const verticalDifference = currentPosition.y - touchStartPos.y;
   const horizontalDifference = currentPosition.x - touchStartPos.x;
 
-  console.log({"verticalDifference": verticalDifference});
-  console.log({"horizontalDifference": horizontalDifference});
-
   if(horizontalDifference != verticalDifference){
-    if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){
-      clearInterval(timerToSwitchBackground);
-      timerToSwitchBackground = setInterval(switchBackground, timerTime);
+    if((Math.abs(touchStartPos.x - currentPosition.x) >= swipeThreshhold || Math.abs(touchStartPos.y - currentPosition.y) >= swipeThreshhold) && validToSwitchOnTouchMove == true)
+    {
+      console.log(validToSwitchOnTouchMove);
+      validToSwitchOnTouchMove = false;
+      if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){
+        clearInterval(timerToSwitchBackground);
+        timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-      if(horizontalDifference > 0){
-        switcToPreviousBackground();
+        if(horizontalDifference > 0){
+          switcToPreviousBackground();
+        }
+        else{
+          switchBackground();
+        }
+        e.preventDefault();
+        return
       }
       else{
-        switchBackground();
-      }
-      e.preventDefault();
-      return
-    }
-    else{
-      clearInterval(timerToSwitchBackground);
-      timerToSwitchBackground = setInterval(switchBackground, timerTime);
+        clearInterval(timerToSwitchBackground);
+        timerToSwitchBackground = setInterval(switchBackground, timerTime);
 
-      if(verticalDifference < 0){
-        if(!navbar.classList.contains("lp-scrolled")){
-          document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+        if(verticalDifference < 0){
+          if(!navbar.classList.contains("lp-scrolled")){
+            document.querySelector(".lp-desktop-navlink.lp-active").querySelector("a").click();
+          }
         }
-      }
 
-      e.preventDefault();
-      return
+        e.preventDefault();
+        return
+      }
     }
   }
+});
+window.addEventListener('touchend', (e) => {
+  validToSwitchOnTouchMove = true;
 });
 
 
@@ -740,17 +773,14 @@ function smoothScrollTo(to, duration) {
     change = to - start,
     startDate = +new Date();
 
-  const easeInOutQuad = (t, b, c, d) => {
-    t /= d/2;
-    if (t < 1) return c/2*t*t + b;
-    t--;
-    return -c/2 * (t*(t-2) - 1) + b;
+  const linearTween = (t, b, c, d) => {
+    return c*t/d + b;
   };
 
   const animateScroll = _ => {
     const currentDate = +new Date();
     const currentTime = currentDate - startDate;
-    element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+    element.scrollTop = parseInt(linearTween(currentTime, start, change, duration));
     if(currentTime < duration) {
       requestAnimationFrame(animateScroll);
     }

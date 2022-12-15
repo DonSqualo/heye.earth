@@ -240,6 +240,22 @@ html.global-dark-theme .notion-external-object__details{
 .notion-root > .notion-column-list > .notion-column:nth-child(3){
   width: 265px !important;
 }
+
+html:not(.global-dark-theme) .notion-search__box{
+  background-color: white !important;
+}
+
+.notion-search__input{
+  background-color: inherit !important;
+}
+
+.notion-search__input input{
+  color:inherit;
+}
+
+html:not(.global-dark-theme) .notion-search__result-item.active, 
+html:not(.global-dark-theme) .notion-search__result-item:hover{
+  background: #DCDCDC;}
 .notion-root > .notion-column-list > .notion-column:nth-child(2) .notion-column:last-child {
 	width: 40%!important;
     padding-left: 30px;
