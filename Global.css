@@ -240,3 +240,7 @@ html.global-dark-theme .notion-external-object__details{
 .notion-root > .notion-column-list > .notion-column:nth-child(3){
   width: 265px !important;
 }
+.notion-root > .notion-column-list > .notion-column:nth-child(2) .notion-column:last-child {
+	width: 40%!important;
+    padding-left: 30px;
+}
