@@ -185,7 +185,7 @@
     left: 0;
     position: absolute;
     z-index: 2;
-    background: linear-gradient(55deg, rgb(0, 0, 0) 15%, rgba(0,0,0,0.8) 30%, transparent 100%);
+    background: linear-gradient(78deg, rgb(0, 0, 0) 15%, rgba(0,0,0,0.8) 30%, transparent 100%);
     background-size: 200%;
     background-position: 50% 50%;
     transition: all 0.5s ease-in-out;
@@ -280,7 +280,7 @@
     display: none;
   }
   .lp-selector-upper-notion.selecting-from-menu .lp-dark-bg{
-    background-position: 0% 0%;
+    background-position: 20% 20%;
   }
   
   .lp-desktop-navlink.lp-active > a{
@@ -833,4 +833,7 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       display: none;
     }
   }
-      
+  #block-f22d35e5b6df40edb75e08a662a3afec {
+  align-items: center;
+  justify-content: center;
+}
