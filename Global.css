@@ -255,5 +255,8 @@ html:not(.global-dark-theme) .notion-search__box{
 
 html:not(.global-dark-theme) .notion-search__result-item.active, 
 html:not(.global-dark-theme) .notion-search__result-item:hover{
-  background: #DCDCDC;
+  background: #DCDCDC;}
+.notion-root > .notion-column-list > .notion-column:nth-child(2) .notion-column:last-child {
+	width: 40%!important;
+    padding-left: 30px;
 }
