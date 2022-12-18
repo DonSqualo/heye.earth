@@ -1,7 +1,10 @@
 const themeSwitcherContainer = document.createElement("div");
 themeSwitcherContainer.classList.add("lp-theme-switcher");
 const themeSwitcherButton = document.createElement("a");
+themeSwitcherButton.id="desktop-theme-switcher";
 themeSwitcherContainer.appendChild(themeSwitcherButton);
+
+const themeSwitcherButtons = [themeSwitcherButton];
 
 const sunIconString = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
   <circle cx="12" cy="12" r="5">
@@ -39,7 +42,15 @@ let runUntilHtmlLoaded = setInterval(() => {
       var isDark = document.querySelector("html").classList.contains("global-dark-theme");
       updateTheme(!isDark);
 
-      updateButtonSVG(themeSwitcherButton, !isDark);
+      if(themeSwitcherButtons.length <= 1){
+        const mobileThemeSwitcher = document.querySelector("#mobile-theme-switcher");
+        if(mobileThemeSwitcher){
+          themeSwitcherButtons.push(mobileThemeSwitcher);
+        }
+      }
+      themeSwitcherButtons.forEach(button => {
+        updateButtonSVG(button, !isDark);
+      });
     });
     clearInterval(runUntilHtmlLoaded);
   }
@@ -50,7 +61,15 @@ console.log("valueFromStorage",valueFromStorage);
 //default dark theme if user has not intentionally set it to light mode
 const initializedAsDark = updateTheme(valueFromStorage != null ? valueFromStorage : /*(window.matchMedia('(prefers-color-scheme: dark)').matches)*/ true);
 setTimeout(() => {
-  updateButtonSVG(themeSwitcherButton, initializedAsDark);
+  if(themeSwitcherButtons.length <= 1){
+    const mobileThemeSwitcher = document.querySelector("#mobile-theme-switcher");
+    if(mobileThemeSwitcher){
+      themeSwitcherButtons.push(mobileThemeSwitcher);
+    }
+  }
+  themeSwitcherButtons.forEach(button => {
+    updateButtonSVG(button, initializedAsDark);
+  });
 }, 1);
 
 function updateTheme(isDark){
