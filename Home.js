@@ -21,29 +21,38 @@ const perf0 = performance.now();
 //#region assign classes so my css doesnt affect other nodes in different pages
 const addLPClasses = [{
     selector: ".super-root",
-    classToAdd: "lp-super-root"
+    classToAdd: ["lp-super-root"]
   },
   {
     selector: ".super-content",
-    classToAdd: "lp-super-content"
+    classToAdd: ["lp-super-content"]
   },
   {
     selector: ".notion-navbar",
-    classToAdd: "lp-notion-navbar"
+    classToAdd: ["lp-notion-navbar", "lp-desktop-notion-navbar"]
   },
   {
     selector: ".notion-icon__search-path",
-    classToAdd: "lp-notion-icon__search-path"
+    classToAdd: ["lp-notion-icon__search-path"]
   },
   {
     selector: ".super-footer",
-    classToAdd: "lp-super-footer"
+    classToAdd: ["lp-super-footer"]
+  },
+  {
+    selector: ".notion-navbar__search",
+    idToAssign: "desktop-search"
   }
 ];
 addLPClasses.forEach(lp => {
   var el = document.querySelector(lp.selector);
   if(el != null){
-    el.classList.add(lp.classToAdd);
+    if(lp.idToAssign){
+      el.id = lp.idToAssign;
+    }
+    else{
+      el.classList.add(...lp.classToAdd);
+    }
   }
 });
 //#endregion
@@ -281,7 +290,7 @@ const landingPageItems = [
 
 const navbar = document.querySelector(".lp-notion-navbar");
 navbar.insertAdjacentHTML('beforeend', `<div class="lp-custom-navbar-progress"></div>`);
-const navbarProgress = document.querySelector(".lp-custom-navbar-progress");
+let navbarProgress = document.querySelectorAll(".lp-custom-navbar-progress");
 
 const covers = document.querySelector(".notion-collection-card__cover");
 var contentNotionColumn = covers.parentElement.parentElement.parentElement.parentElement;
@@ -384,6 +393,69 @@ mobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class="lp
 upperNotionColumn.append(navitationAnchorsContainer);
 upperNotionColumn.append(upperMobileNavitationAnchorsContainer);
 
+//#region mobile topbar workaround
+var upperNotionColumn = document.querySelector(".lp-selector-upper-notion");
+
+var mobileNavbar = document.createElement("div");
+mobileNavbar.classList.add("notion-navbar", "lp-notion-navbar", "lp-mobile-notion-navbar");
+
+mobileNavbar.insertAdjacentHTML('beforeend', `<div class="notion-breadcrumb">
+  <a class="notion-link notion-breadcrumb__item single has-icon" href="/">
+    <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 16px; height: 16px; background: none; opacity: 1; border: 0px none; margin: 0px; padding: 0px; position: relative;"><img alt="Heye.Earth" srcset="https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/73d9389b-43e3-42e7-8b9b-11eb7e29be03.svg 1x, https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/73d9389b-43e3-42e7-8b9b-11eb7e29be03.svg 2x" src="https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/73d9389b-43e3-42e7-8b9b-11eb7e29be03.svg" decoding="async" data-nimg="fixed" class="notion-breadcrumb__icon" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: medium none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+    </span>
+    <div class="notion-navbar__title notion-breadcrumb__title">Heye.Earth</div>
+  </a>
+</div>
+<div id="mobile-theme-switcher" class="lp-theme-switcher topbar-icons">
+  <a>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+  </a>
+</div>
+<div id="mobile-search" class="notion-navbar__search topbar-icons">
+  <svg class="notion-icon notion-icon__search" viewBox="0 0 24 24" style="width: 1.25rem; height: 1.25rem; fill: var(--color-text-default-light);">
+    <path class="notion-icon__search-path lp-notion-icon__search-path" d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path>
+  </svg>
+</div>
+<div class="lp-custom-navbar-progress"></div>
+<div id="nav-toggle-mobile" class="js-menu menu topbar-icons">
+  <span class="bar"></span>
+</div>`);
+
+upperNotionColumn.parentNode.insertBefore(mobileNavbar, upperNotionColumn.nextSibling);
+
+const menuToggler = document.querySelector("#nav-toggle-mobile");
+menuToggler.addEventListener("click", function(){
+  const body = document.querySelector("body")
+  const sidebar = document.querySelector("article.notion-root > .notion-column-list > .notion-column:first-child");
+
+  if(sidebar){
+    if(sidebar.classList.contains("show-nav") == true){
+      //is open
+      sidebar.classList.remove("show-nav");
+      body.classList.remove("menu-open");
+      menuToggler.classList.remove("active");
+    }
+    else{
+      //is closed
+      sidebar.classList.add("show-nav");
+      body.classList.add("menu-open");
+      menuToggler.classList.add("active");
+    }
+  }
+});
+const mobileThemeSwitcher = document.querySelector("#mobile-theme-switcher");
+mobileThemeSwitcher.addEventListener("click", function(){
+  document.querySelector(`#desktop-theme-switcher`)?.click();
+});
+const mobileSearch = document.querySelector("#mobile-search");
+mobileSearch.addEventListener("click", function(){
+  console.log(document.querySelector("#desktop-search"));
+  document.querySelector("#desktop-search")?.click();
+});
+
+navbarProgress = document.querySelectorAll(".lp-custom-navbar-progress");
+
+//#endregion
 
 const timerTime = 10000;
 let timerToSwitchBackground = setInterval(switchBackground, timerTime);
@@ -410,10 +482,12 @@ navLinks.forEach((item, i) => {
 
     upperNotionColumn.classList.add("selecting-from-menu");
     navbar.classList.add("selecting-from-menu");
+    mobileNavbar.classList.add("selecting-from-menu");
     clearInterval(timerToSwitchBackground);
   };
   item.onmouseleave = () => {
     navbar.classList.remove("selecting-from-menu");
+    mobileNavbar.classList.remove("selecting-from-menu");
     upperNotionColumn.classList.remove("selecting-from-menu");
     timerToSwitchBackground = setInterval(switchBackground, timerTime);
   }
@@ -529,16 +603,19 @@ mobileNavLinks.forEach((item, i) => {
 
 
 let lastScrollTop = document.documentElement.scrollTop || 0;
+const topbarIcons = Array.from(document.querySelectorAll(".topbar-icons"));
 window.addEventListener("scroll", e => {
   var st = window.pageYOffset || document.documentElement.scrollTop;
   if(!navbar.classList.contains("lp-scrolled")){
     if(st > 30){
       navbar.classList.add("lp-scrolled");
+      mobileNavbar.classList.add("lp-scrolled");
     }
   }
   else{
     if(st < 30){
       navbar.classList.remove("lp-scrolled");
+      mobileNavbar.classList.remove("lp-scrolled");
 
       if(window.preventPushingToHistory == false){
         window.history.pushState(null, "", "/");
@@ -551,26 +628,28 @@ window.addEventListener("scroll", e => {
   }
 
   if(width < 745){
-    const pixelsFromTop = Math.max(height - 60, st);
-    const navbarAnimation = {
-      top: `${pixelsFromTop}px`
-    };
-    navbar.animate(navbarAnimation, {
-      duration: 0,
-      fill: "forwards"
-    });
-
     if(height - 60 >= st){
       const progress = Math.min(1, st / (height - 60)) * 100;
-      console.log(navbarProgress);
-      console.log(progress);
       const progressAnimation = {
         width: `${progress}%`
       };
-      navbarProgress.animate(progressAnimation, {
-        duration: 50,
-        fill: "forwards"
-      });
+      const topbarIconsAnimation = {
+        transform: `translateX(${Math.max(0, (32 - (32 / 100) * (progress * 3)))}px)`
+      }
+
+      navbarProgress.forEach(navbarProgresses => {
+        navbarProgresses.animate(progressAnimation, {
+          duration: 50,
+          fill: "forwards"
+        });
+      }) 
+
+      topbarIcons.forEach(topbarIcon => {
+        topbarIcon.animate(topbarIconsAnimation, {
+          duration: 0,
+          fill: "forwards"
+        })
+      })
     }
   }
 

@@ -118,7 +118,7 @@
   .lp-notion-navbar{
     border: none !important;
     color: white;
-    transition: all 2s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: background-color 2s cubic-bezier(0.25, 1, 0.5, 1);
     background: rgba(25,25,25,1);
   }
 
@@ -612,7 +612,25 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
     opacity: 0;
   }
 
+  .lp-notion-navbar.lp-mobile-notion-navbar{
+    position: sticky !important;
+    top: 0 !important;
+    overflow-x: hidden;
+  }
+
+  .lp-notion-navbar.lp-mobile-notion-navbar:not(.lp-scrolled){
+    background-color: rgba(0, 0, 0, 1) !important;
+  }
+
+  .topbar-icons{
+    transform: translateX(32px);
+  }
+
   @media only screen and (min-width: 745px){
+    .lp-mobile-notion-navbar{
+      display: none !important;
+    }
+
     .lp-mouse-trailer{
       width: 20px;
       height: 20px;
@@ -684,6 +702,10 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
   }
 
   @media only screen and (max-width: 745px){
+    .lp-desktop-notion-navbar{
+      display: none !important;
+    }
+
     .lp-mouse-trailer{
       display: none;
     }
@@ -718,7 +740,7 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
     }
     .lp-super-content > .notion-root > .notion-column-list{
       height: 100vh;
-      height: calc(var(--vh, 1vh) * 100);
+      height: calc(var(--vh, 1vh) * 100 - 60px);
     }
   
     .lp-read-more-button-upper-container{
@@ -794,7 +816,7 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
     }
     .lp-mobile-nav-upper-container{
       position: absolute;
-      bottom: 85px;
+      bottom: 25px;
       color: white;
       height: 200px;
       display: flex;
