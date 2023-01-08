@@ -626,6 +626,34 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
     transform: translateX(32px);
   }
 
+
+  .swipe-up{
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    animation: swipe-up 1s ease-out infinite;
+  }
+  .swipe-up > img{
+    height: 100%;
+    width: 100%;
+    filter: invert(1);
+  }
+
+  @keyframes swipe-up{
+    0% {
+      bottom: 11px;
+    } 
+    100% {
+      bottom: 25px;
+    } 
+    0%{
+      bottom: 11px
+    }
+  }
+
   @media only screen and (min-width: 745px){
     .lp-mobile-notion-navbar{
       display: none !important;
@@ -698,6 +726,10 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       bottom: 50px;
       right: 11%;
       animation: MoveUpDown 1.5s linear infinite;
+    }
+
+    .swipe-up{
+      display: none;
     }
   }
 
