@@ -743,18 +743,15 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       height: calc(var(--vh, 1vh) * 100 - 60px);
     }
   
-    .lp-read-more-button-upper-container{
-      display: none;
-    }
     .lp-read-more-button-container{
-      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.8) 15%, transparent 100%); 
+      background: none;
       height: calc(100% - 60px);
     }
     .lp-read-more-button{
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      height: 10%;
+      height: 100%;
       top: unset;
       width: 100%;
       bottom: 0px;
@@ -818,7 +815,7 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       position: absolute;
       bottom: 25px;
       color: white;
-      height: 200px;
+      height: 56px;
       display: flex;
       align-items: flex-end;
       width: 100%;
@@ -833,6 +830,7 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       position: relative;
       align-items: flex-end;
       transition: all 600ms ease 0s;
+      height: 100%;
     }
   
     .lp-mobile-navlink{
