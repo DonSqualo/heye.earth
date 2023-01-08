@@ -312,7 +312,7 @@ const readMoreButtonContainer = document.createElement("div");
 readMoreButtonContainer.classList.add("lp-read-more-button-container");
 readMoreButtonUpperContainer = document.createElement("div");
 readMoreButtonUpperContainer.classList.add("lp-read-more-button-upper-container");
-readMoreButtonContainer.insertAdjacentHTML('beforeend', `<button class="lp-read-more-button lp-show" data-current-bg="${landingPageItems[0].currentBgForButton}">
+readMoreButtonContainer.insertAdjacentHTML('beforeend', `<button class="lp-read-more-button lp-show" data-current-bg="${landingPageItems[0].currentBgForButton}" title="Expand post" aria-label="Expand post">
   <span>
     <i class="gg-chevron-down"></i>
   </span>
@@ -1176,8 +1176,12 @@ function utilGetPosition(e){
 
 //add Twitter
 const aboutMe = document.querySelector(".lp-desktop-navlink:last-child a")
-aboutMe.insertAdjacentHTML('afterend', `<a href="mailto:me@heye.earth" class="notion-link lp-mail" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669925228/Heye.earth/Projects/mail-142_1_p9c3yd.svg"></a>`)
-aboutMe.insertAdjacentHTML('afterend', `<a href="https://twitter.com/HeyeGross" class="notion-link lp-twitter" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669936109/Heye.earth/Projects/icons8-twitter_v4kazt.svg"></a>`);
+aboutMe.insertAdjacentHTML('afterend', `<a href="mailto:me@heye.earth" title="E-mail me" aria-label="E-mail me" class="notion-link lp-mail" target="_blank" rel="noopener noreferrer">
+  <img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669925228/Heye.earth/Projects/mail-142_1_p9c3yd.svg" alt="E-mail icon">
+</a>`)
+aboutMe.insertAdjacentHTML('afterend', `<a href="https://twitter.com/HeyeGross" title="Link to my twitter" aria-label="Link to my twitter" class="notion-link lp-twitter" target="_blank" rel="noopener noreferrer">
+  <img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669936109/Heye.earth/Projects/icons8-twitter_v4kazt.svg" alt="twitter icon">
+</a>`);
 
 const perf1= performance.now();
 console.log(`Performance between start and end of written script`);
