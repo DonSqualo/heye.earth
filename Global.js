@@ -42,9 +42,8 @@ observer.observe(document, {
   characterData: false,
   subtree: true
 });
-</script>
-<script>
-  const themeSwitcherContainer = document.createElement("div");
+
+const themeSwitcherContainer = document.createElement("div");
 themeSwitcherContainer.classList.add("lp-theme-switcher");
 const themeSwitcherButton = document.createElement("a");
 themeSwitcherButton.id="desktop-theme-switcher";
