@@ -312,11 +312,13 @@ const readMoreButtonContainer = document.createElement("div");
 readMoreButtonContainer.classList.add("lp-read-more-button-container");
 readMoreButtonUpperContainer = document.createElement("div");
 readMoreButtonUpperContainer.classList.add("lp-read-more-button-upper-container");
-readMoreButtonContainer.insertAdjacentHTML('beforeend', `<button class="lp-read-more-button lp-show" data-current-bg="${landingPageItems[0].currentBgForButton}">
+readMoreButtonContainer.insertAdjacentHTML('beforeend', `<button class="lp-read-more-button lp-show" data-current-bg="${landingPageItems[0].currentBgForButton}" title="Expand post" aria-label="Expand post">
   <span>
     <i class="gg-chevron-down"></i>
   </span>
 </button>`);
+
+readMoreButtonContainer.insertAdjacentHTML('beforeend', `<span class="swipe-up"><img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAACzklEQVRYhe2YW4hNURjHf8eZcRi5nIRyF0mORmaaOC+KiBc1pXinkFxCkbxMlAflieRWGqXIJQ+E3AYPKMWDoijlNiFErpOZo2/679pO5+x9zt5nnTkP/rVbe6/WWt9vf3utb31rE6KdwDNgXljDvpDB5XR9rTXIXQLr1mX334H5NcDWq07gMrAP+ANsBj4CB2uArVfjgRSwQ96bBowGhlUbpK5I/UuVKZUNwNMqMf2jfn1htBz9B4wrF4Bp4ADwSGXa5Qt4wbqpxPYJ4JT6vFV5UvWRVGkPDgFagQ5gispW1dcEYFJjfgB+qEzqiiQXczDnA0r69vOaASyk7qgdXQPaPl4P3ADWRVks1fCgQU5W4rGn3M6uAesEOAO4BmzR6i5ZYYD1KuO8iC2UN4qPCYWeo8DYUjqHGX4CPAfexQD0IL35Zyt6JXAFGBoX8DjQCLzKq58IrAE25GXZQYvAs7UMWAVMBzYCg8Mgy9U4AXvxLafsezgwCOgCzmrM8wox5sHVapuV537q+T2wPeytylGz5k8bMFvHgEVAu8br8Y31BfgmkITPZkrQj3W82A2srZQHG2XwsK/ukOrW6+zieXCUPqVpk9rMBUbofi8wAHgNvKgUoHniuj5di+pGAp+UwfzyAfq1AHgATADGCNA7hHUoHFVMzRrwrm+atPnmZXvAy5kmqd0RPd8GflcS0LRfRhbr2RbJTeAeMDOkb38tjKxLQPNClwaPKyeApmO+iR9HzgAzCiuXahXQdFpebCmhbTE5BWwS4JkYY9zRzuJMF/SpMxENPKxAQhKoOfLiiQh9G7T73HcJiBKGHm2F5SiTt6s4U1aGzpVpYKv6LXUNiNIrM7awxPZpZdudLvLCQpqqX8WWNMwKaWsHqat6oRXFGkX+ZxKg5fofY7JkolCWMlDhyRINO+ltc8ARKDsG3FJsswCcf30GLgJLAkcB/gLDn6fFC+P8QgAAAABJRU5ErkJggg==" alt="swipe up interaction indicator"></span>`);
 
 readMoreButtonUpperContainer.append(readMoreButtonContainer);
 upperNotionColumn.append(readMoreButtonUpperContainer);
@@ -1176,8 +1178,12 @@ function utilGetPosition(e){
 
 //add Twitter
 const aboutMe = document.querySelector(".lp-desktop-navlink:last-child a")
-aboutMe.insertAdjacentHTML('afterend', `<a href="mailto:me@heye.earth" class="notion-link lp-mail" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669925228/Heye.earth/Projects/mail-142_1_p9c3yd.svg"></a>`)
-aboutMe.insertAdjacentHTML('afterend', `<a href="https://twitter.com/HeyeGross" class="notion-link lp-twitter" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669936109/Heye.earth/Projects/icons8-twitter_v4kazt.svg"></a>`);
+aboutMe.insertAdjacentHTML('afterend', `<a href="mailto:me@heye.earth" title="E-mail me" aria-label="E-mail me" class="notion-link lp-mail" target="_blank" rel="noopener noreferrer">
+  <img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669925228/Heye.earth/Projects/mail-142_1_p9c3yd.svg" alt="E-mail icon">
+</a>`)
+aboutMe.insertAdjacentHTML('afterend', `<a href="https://twitter.com/HeyeGross" title="Link to my twitter" aria-label="Link to my twitter" class="notion-link lp-twitter" target="_blank" rel="noopener noreferrer">
+  <img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669936109/Heye.earth/Projects/icons8-twitter_v4kazt.svg" alt="twitter icon">
+</a>`);
 
 const perf1= performance.now();
 console.log(`Performance between start and end of written script`);
