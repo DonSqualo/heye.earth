@@ -583,8 +583,19 @@ navLinks.forEach((item, i) => {
           document.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/Machine-Learning-Explainer" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>Machine-Learning-Explainer</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
         }
         else if(e.target.href.includes("/nxtone")){
-          document.querySelector(".notion-embed__loader").remove();
-          document.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/naext-one-plugin" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>naext-one-plugin</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
+          var embeds = document.querySelectorAll(".notion-embed__loader");
+          Array.from(embeds).forEach((embed, i) => {
+            if(i == 0){
+              var parent = embed.parentElement;
+              embed.remove();
+              parent.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<iframe src="https://www.youtube.com/embed/UM4pTGWXrjk" title="YouTube video player" frameborder="0" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-top-navigation-by-user-activation" allowfullscreen></iframe>`);
+            }
+            else if(i == 1){
+              var parent = embed.parentElement;
+              embed.remove();
+              parent.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/naext-one-plugin" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>naext-one-plugin</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
+            }
+          });
         }
         else if(e.target.href.includes("/deepwave")){
           document.querySelector(".notion-embed__loader").remove();
