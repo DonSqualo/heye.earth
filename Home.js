@@ -87,6 +87,7 @@ const landingPageItems = [
     },
     bgPictureClasses: "lp-bg bg-writings",
     bgPictureAlt: "Writings and Notes",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_crop,g_east,h_893,w_676/v1669001425/Heye.earth/Projects/Fonts/2_tuhqcg.svg`
@@ -109,8 +110,9 @@ const landingPageItems = [
     },
     bgPictureAlt: "Næxt.one",
     bgPictureClasses: "lp-bg bg-naext",
+    textLinkMimeType: "video/webm",
     textLinkGetter: function(width, height){
-      return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669276814/Heye.earth/Projects/Fonts/Naext-logo-combined_itagq1.svg";
+      return  "https://res.cloudinary.com/deepwave-org/video/upload/v1670500323/Heye.earth/Projects/Fonts/Naext.one_Main_Animation_wbbwtm.webm";
     },
     cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933106/Heye.earth/Projects/Arrows/Naext_arrow_oaoxwb.svg",
     textClasses: "lp-text lp-text-naext",
@@ -128,6 +130,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "Arcadia",
     bgPictureClasses: "lp-bg bg-arcadia",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/5_fsguhv.svg";
     },
@@ -147,6 +150,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "DEEPWAVE",
     bgPictureClasses: "lp-bg lp-bg-deepwave",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_west,h_893,w_663/v1669001425/Heye.earth/Projects/Fonts/11_hiq2id.svg";
     },
@@ -166,6 +170,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "Future Forum",
     bgPictureClasses: "lp-bg lp-bg-future-forum",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669844781/Heye.earth/Projects/Fonts/R2_Future-Forum-White-Logo-Animation_R1_qkldkz.gif";
     },
@@ -185,6 +190,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "“Make Machines Learn” Explainer",
     bgPictureClasses: "lp-bg lp-bg-ml-explainer",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/8_dux6mo.svg";
     },
@@ -204,6 +210,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "The Hike",
     bgPictureClasses: "lp-bg lp-bg-the-hike",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669011925/Heye.earth/Projects/Fonts/The_Hike_Font_octbmz.svg";
     },
@@ -223,6 +230,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "(AI-) Art",
     bgPictureClasses: "lp-bg lp-bg-ai-art",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       if(width <= 745){
         return "https://res.cloudinary.com/deepwave-org/image/upload/v1669144557/Heye.earth/Projects/Fonts/AI_Art_Font_ymvkbz.svg"
@@ -260,6 +268,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "Onno, Anna & Tjark",
     bgPictureClasses: "lp-bg lp-bg-onna-anna",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/14_mnl60i.svg";
     },
@@ -279,6 +288,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "Hi! I am Heye [High ye] 🖐️",
     bgPictureClasses: "lp-bg lp-bg-about-me",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/16_e6kpjc.svg";
     },
@@ -368,14 +378,21 @@ landingPageItems.forEach((landingPageItem,i) => {
     <div class="lp-navigation-link-left-border"></div>
   </span>`);
 
+  var textLinkType = "image";
+  var textMimeType = landingPageItem.textLinkMimeType;
+  if(landingPageItem.textLinkMimeType != null){
+    textLinkType = textMimeType.split("/")[0];
+  }
+  var textLinkHtmlString = `<img alt="image" src="${landingPageItem.textLinkGetter(width, height)}" decoding="async" data-nimg="responsive"></img>`;
+  if(textLinkType == "video"){
+    textLinkHtmlString = `<video src="${landingPageItem.textLinkGetter(width, height)}" autoplay="" muted="" type="${textMimeType}"></video>`
+  }
   bgTexts.insertAdjacentHTML('beforeend', `
     <div class="${landingPageItem.textClasses} align-start page-width ${i == 0 ? "active-bg-text" : ""}">
       <span>
         <span>
         </span>
-        ${i == 1 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670500323/Heye.earth/Projects/Fonts/Naext.one_Main_Animation_wbbwtm.webm" autoplay="" muted="" type="video/webm">' : ""}
-        <img alt="image" src="${landingPageItem.textLinkGetter(width, height)}" decoding="async" data-nimg="responsive" >
-        ${i == 1 ? "</video>" : ""}
+        ${textLinkHtmlString}
       </span>
     </div>`);
 
@@ -1073,7 +1090,7 @@ function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts
 
   //reset gif animations
   const backgroundTextsImg = backgroundTexts[modifiedIndex].querySelector("img");
-  if(backgroundTextsImg.src.includes(".gif")){
+  if(backgroundTextsImg && backgroundTextsImg.src.includes(".gif")){
     const link = backgroundTextsImg.src;
     backgroundTextsImg.src = "";
     backgroundTextsImg.src = link;
