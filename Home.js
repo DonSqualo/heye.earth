@@ -79,6 +79,8 @@ const landingPageItems = [
     navigationText: "Writings",
     navigationPath: "/writings-and-notes",
     navigationParameterQuery: "/[...page]?page=writing-db&page=writings-and-notes",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_west,h_${height},w_${width}/v1669009342/Heye.earth/Projects/High%20Res%20Backgrounds/Writings_and_Notes_Background_sssvel.png`
@@ -102,6 +104,8 @@ const landingPageItems = [
     navigationText: "Næxt.one",
     navigationPath: "/nxtone",
     navigationParameterQuery: "/[...page]?page=nxtone",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669009320/Heye.earth/Projects/High%20Res%20Backgrounds/Naext_one_background__horizontal_fjrnww.jpg`
@@ -122,6 +126,8 @@ const landingPageItems = [
     navigationText: "Arcadia",
     navigationPath: "/arcadia",
     navigationParameterQuery: "/[...page]?page=arcadia",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,h_${height},w_${width}/v1669013734/Heye.earth/Projects/High%20Res%20Backgrounds/Arcadia_Background_k0earl.jpg`
@@ -142,6 +148,8 @@ const landingPageItems = [
     navigationText: "DEEPWAVE",
     navigationPath: "/deepwave",
     navigationParameterQuery: "/[...page]?page=deepwave",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
             if(width <= 745){
       return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_scale,h_${height}/c_crop,h_${height},w_${width}/v1669013918/Heye.earth/Projects//High%20Res%20Backgrounds/DEEPWAVE_Background_Desktop_fsgrr0_32322d_2.png`
@@ -162,6 +170,8 @@ const landingPageItems = [
     navigationText: "Future Forum",
     navigationPath: "/future-forum",
     navigationParameterQuery: "/[...page]?page=future-forum",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669845133/Heye.earth/Projects/High%20Res%20Backgrounds/52e8cfed-4ac2-4d97-91d4-d755527507de_6192x4128_zik8b3.jpg`
@@ -182,6 +192,8 @@ const landingPageItems = [
     navigationText: "ML Explainer",
     navigationPath: "/make-machines-learn-explainer",
     navigationParameterQuery: "/[...page]?page=make-machines-learn-explainer",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
       return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669010010/Heye.earth/Projects/High%20Res%20Backgrounds/ML_Explainer_Background_am8pvf.png`
@@ -202,11 +214,10 @@ const landingPageItems = [
     navigationText: "The Hike",
     navigationPath: "/the-hike",
     navigationParameterQuery: "/[...page]?page=the-hike",
+    bgPictureMimeType: "video/mp4",
+    bgPictureInnerClassAddon: "heye-object-position",
     bgPictureLinkGetter: function(width, height){
-      if(width <= 745){
-      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669009989/Heye.earth/Projects/High%20Res%20Backgrounds/The_Hike_Backgroun_p1xfb2.webp`
-    }
-      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,g_north,h_${height},w_${width},y_0,y_200/v1669009989/Heye.earth/Projects/High%20Res%20Backgrounds/The_Hike_Backgroun_p1xfb2.webp`
+      return `https://res.cloudinary.com/deepwave-org/video/upload/v1670496048/Heye.earth/Projects/High%20Res%20Backgrounds/Hike-back-animated_sewivx.mp4`
     },
     bgPictureAlt: "The Hike",
     bgPictureClasses: "lp-bg lp-bg-the-hike",
@@ -222,6 +233,8 @@ const landingPageItems = [
     navigationText: "Art",
     navigationPath: "/ai-art",
     navigationParameterQuery: "/[...page]?page=ai-art",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669013716/Heye.earth/Projects/High%20Res%20Backgrounds/AI_Art_Background_ae3c2d.png`
@@ -260,11 +273,10 @@ const landingPageItems = [
     navigationText: "Onno, Anna & Tjark",
     navigationPath: "/onno-anna",
     navigationParameterQuery: "/[...page]?page=onna-anna",
+    bgPictureMimeType: "video/mp4",
+    bgPictureInnerClassAddon: "heye-object-position",
     bgPictureLinkGetter: function(width, height){
-      if(width <= 745){
-      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669013682/Heye.earth/Projects/High%20Res%20Backgrounds/Onno_Background_ypldvs.png`
-    }
-      return `https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_north_east,h_${height},w_${width},x_0,y_200/v1669013682/Heye.earth/Projects/High%20Res%20Backgrounds/Onno_Background_ypldvs.png`
+      return `https://res.cloudinary.com/deepwave-org/video/upload/v1670499021/Heye.earth/Projects/High%20Res%20Backgrounds/ONNO_Background_Animated_k7wve5.mp4`
     },
     bgPictureAlt: "Onno, Anna & Tjark",
     bgPictureClasses: "lp-bg lp-bg-onna-anna",
@@ -280,6 +292,8 @@ const landingPageItems = [
     navigationText: "About Me",
     navigationPath: "/hi-i-am-heye-high-ye",
     navigationParameterQuery: "/[...page]?page=hi-i-am-heye-high-ye",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
             if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_east,h_${height},w_${width}/v1669009360/Heye.earth/Projects/High%20Res%20Backgrounds/About_me_Background_mpnje8.png`
@@ -367,11 +381,18 @@ mobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class="lp
 </div>`);
 
 landingPageItems.forEach((landingPageItem,i) => {
-  bgPics.insertAdjacentHTML('beforeend', `<span class="default-bg-pic-container-style lp-bg-pic ${i == 0 ? "active-bg" : ""} ${landingPageItem.bgPictureClasses}">
-    ${i == 6 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670496048/Heye.earth/Projects/High%20Res%20Backgrounds/Hike-back-animated_sewivx.mp4" autoplay="" muted="" loop="" type="video/mp4" class="default-bg-pic-style" style="object-position: center 20%;">' : ""}
-    ${i == 8 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670499021/Heye.earth/Projects/High%20Res%20Backgrounds/ONNO_Background_Animated_k7wve5.mp4" autoplay="" muted="" type="video/mp4" class="default-bg-pic-style" style="object-position: center 20%;">' : ""}
-    <img class="default-bg-pic-style" alt="${landingPageItem.bgPictureAlt}" src="${landingPageItem.bgPictureLinkGetter(width, height)}" decoding="async" data-nimg="fill" >
-  ${i == 6 || i == 8 ? "</video>" : ""}</span>`);
+  var bgLinkType = "image";
+  var bgMimeType = landingPageItem.bgPictureMimeType;
+  if(landingPageItem.bgPictureMimeType != null){
+    bgLinkType = bgMimeType.split("/")[0];
+  }
+
+  var bgHtmlString = `<img class="default-bg-pic-style" alt="${landingPageItem.bgPictureAlt}" src="${landingPageItem.bgPictureLinkGetter(width, height)}" decoding="async" data-nimg="fill" ></img>`;
+  if(bgLinkType == "video"){
+    bgHtmlString = `<video src="${landingPageItem.bgPictureLinkGetter(width, height)}" autoplay="" muted="" loop="" type="${bgMimeType}" class="default-bg-pic-style ${landingPageItem.bgPictureInnerClassAddon}"></video>`;
+  }
+
+  bgPics.insertAdjacentHTML('beforeend', `<span class="default-bg-pic-container-style lp-bg-pic ${i == 0 ? "active-bg" : ""} ${landingPageItem.bgPictureClasses}">${bgHtmlString}</span>`);
 
   navitationAnchorsContainer.insertAdjacentHTML('beforeend', `<span class="lp-desktop-navlink ${i == 0 ? "lp-active" : ""}">
     <a class="notion-link link" href="${landingPageItem.navigationPath}" data-parameter-query="${landingPageItem.navigationParameterQuery}">${landingPageItem.navigationText}</a>

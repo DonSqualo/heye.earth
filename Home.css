@@ -654,6 +654,10 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
     }
   }
 
+  .heye-object-position{
+    object-position: center 20%;
+  }
+
   @media only screen and (min-width: 745px){
     .lp-mobile-notion-navbar{
       display: none !important;
