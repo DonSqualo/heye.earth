@@ -79,6 +79,8 @@ const landingPageItems = [
     navigationText: "Writings",
     navigationPath: "/writings-and-notes",
     navigationParameterQuery: "/[...page]?page=writing-db&page=writings-and-notes",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_west,h_${height},w_${width}/v1669009342/Heye.earth/Projects/High%20Res%20Backgrounds/Writings_and_Notes_Background_sssvel.png`
@@ -87,6 +89,7 @@ const landingPageItems = [
     },
     bgPictureClasses: "lp-bg bg-writings",
     bgPictureAlt: "Writings and Notes",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_crop,g_east,h_893,w_676/v1669001425/Heye.earth/Projects/Fonts/2_tuhqcg.svg`
@@ -101,6 +104,8 @@ const landingPageItems = [
     navigationText: "Næxt.one",
     navigationPath: "/nxtone",
     navigationParameterQuery: "/[...page]?page=nxtone",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669009320/Heye.earth/Projects/High%20Res%20Backgrounds/Naext_one_background__horizontal_fjrnww.jpg`
@@ -109,8 +114,9 @@ const landingPageItems = [
     },
     bgPictureAlt: "Næxt.one",
     bgPictureClasses: "lp-bg bg-naext",
+    textLinkMimeType: "video/webm",
     textLinkGetter: function(width, height){
-      return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669276814/Heye.earth/Projects/Fonts/Naext-logo-combined_itagq1.svg";
+      return  "https://res.cloudinary.com/deepwave-org/video/upload/v1670500323/Heye.earth/Projects/Fonts/Naext.one_Main_Animation_wbbwtm.webm";
     },
     cursorLink: "https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933106/Heye.earth/Projects/Arrows/Naext_arrow_oaoxwb.svg",
     textClasses: "lp-text lp-text-naext",
@@ -120,6 +126,8 @@ const landingPageItems = [
     navigationText: "Arcadia",
     navigationPath: "/arcadia",
     navigationParameterQuery: "/[...page]?page=arcadia",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,h_${height},w_${width}/v1669013734/Heye.earth/Projects/High%20Res%20Backgrounds/Arcadia_Background_k0earl.jpg`
@@ -128,6 +136,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "Arcadia",
     bgPictureClasses: "lp-bg bg-arcadia",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/5_fsguhv.svg";
     },
@@ -139,6 +148,8 @@ const landingPageItems = [
     navigationText: "DEEPWAVE",
     navigationPath: "/deepwave",
     navigationParameterQuery: "/[...page]?page=deepwave",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
             if(width <= 745){
       return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_scale,h_${height}/c_crop,h_${height},w_${width}/v1669013918/Heye.earth/Projects//High%20Res%20Backgrounds/DEEPWAVE_Background_Desktop_fsgrr0_32322d_2.png`
@@ -147,6 +158,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "DEEPWAVE",
     bgPictureClasses: "lp-bg lp-bg-deepwave",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_west,h_893,w_663/v1669001425/Heye.earth/Projects/Fonts/11_hiq2id.svg";
     },
@@ -158,6 +170,8 @@ const landingPageItems = [
     navigationText: "Future Forum",
     navigationPath: "/future-forum",
     navigationParameterQuery: "/[...page]?page=future-forum",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669845133/Heye.earth/Projects/High%20Res%20Backgrounds/52e8cfed-4ac2-4d97-91d4-d755527507de_6192x4128_zik8b3.jpg`
@@ -166,6 +180,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "Future Forum",
     bgPictureClasses: "lp-bg lp-bg-future-forum",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669844781/Heye.earth/Projects/Fonts/R2_Future-Forum-White-Logo-Animation_R1_qkldkz.gif";
     },
@@ -177,6 +192,8 @@ const landingPageItems = [
     navigationText: "ML Explainer",
     navigationPath: "/make-machines-learn-explainer",
     navigationParameterQuery: "/[...page]?page=make-machines-learn-explainer",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
       return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669010010/Heye.earth/Projects/High%20Res%20Backgrounds/ML_Explainer_Background_am8pvf.png`
@@ -185,6 +202,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "“Make Machines Learn” Explainer",
     bgPictureClasses: "lp-bg lp-bg-ml-explainer",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/8_dux6mo.svg";
     },
@@ -196,14 +214,14 @@ const landingPageItems = [
     navigationText: "The Hike",
     navigationPath: "/the-hike",
     navigationParameterQuery: "/[...page]?page=the-hike",
+    bgPictureMimeType: "video/mp4",
+    bgPictureInnerClassAddon: "heye-object-position",
     bgPictureLinkGetter: function(width, height){
-      if(width <= 745){
-      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669009989/Heye.earth/Projects/High%20Res%20Backgrounds/The_Hike_Backgroun_p1xfb2.webp`
-    }
-      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,g_north,h_${height},w_${width},y_0,y_200/v1669009989/Heye.earth/Projects/High%20Res%20Backgrounds/The_Hike_Backgroun_p1xfb2.webp`
+      return `https://res.cloudinary.com/deepwave-org/video/upload/v1670496048/Heye.earth/Projects/High%20Res%20Backgrounds/Hike-back-animated_sewivx.mp4`
     },
     bgPictureAlt: "The Hike",
     bgPictureClasses: "lp-bg lp-bg-the-hike",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669011925/Heye.earth/Projects/Fonts/The_Hike_Font_octbmz.svg";
     },
@@ -215,6 +233,8 @@ const landingPageItems = [
     navigationText: "Art",
     navigationPath: "/ai-art",
     navigationParameterQuery: "/[...page]?page=ai-art",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
       if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669013716/Heye.earth/Projects/High%20Res%20Backgrounds/AI_Art_Background_ae3c2d.png`
@@ -223,6 +243,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "(AI-) Art",
     bgPictureClasses: "lp-bg lp-bg-ai-art",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       if(width <= 745){
         return "https://res.cloudinary.com/deepwave-org/image/upload/v1669144557/Heye.earth/Projects/Fonts/AI_Art_Font_ymvkbz.svg"
@@ -252,14 +273,14 @@ const landingPageItems = [
     navigationText: "Onno, Anna & Tjark",
     navigationPath: "/onno-anna",
     navigationParameterQuery: "/[...page]?page=onna-anna",
+    bgPictureMimeType: "video/mp4",
+    bgPictureInnerClassAddon: "heye-object-position",
     bgPictureLinkGetter: function(width, height){
-      if(width <= 745){
-      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669013682/Heye.earth/Projects/High%20Res%20Backgrounds/Onno_Background_ypldvs.png`
-    }
-      return `https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_north_east,h_${height},w_${width},x_0,y_200/v1669013682/Heye.earth/Projects/High%20Res%20Backgrounds/Onno_Background_ypldvs.png`
+      return `https://res.cloudinary.com/deepwave-org/video/upload/v1670499021/Heye.earth/Projects/High%20Res%20Backgrounds/ONNO_Background_Animated_k7wve5.mp4`
     },
     bgPictureAlt: "Onno, Anna & Tjark",
     bgPictureClasses: "lp-bg lp-bg-onna-anna",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/14_mnl60i.svg";
     },
@@ -271,6 +292,8 @@ const landingPageItems = [
     navigationText: "About Me",
     navigationPath: "/hi-i-am-heye-high-ye",
     navigationParameterQuery: "/[...page]?page=hi-i-am-heye-high-ye",
+    bgPictureMimeType: null,
+    bgPictureInnerClassAddon: "",
     bgPictureLinkGetter: function(width, height){
             if(width <= 745){
         return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_east,h_${height},w_${width}/v1669009360/Heye.earth/Projects/High%20Res%20Backgrounds/About_me_Background_mpnje8.png`
@@ -279,6 +302,7 @@ const landingPageItems = [
     },
     bgPictureAlt: "Hi! I am Heye [High ye] 🖐️",
     bgPictureClasses: "lp-bg lp-bg-about-me",
+    textLinkMimeType: null,
     textLinkGetter: function(width, height){
       return  "https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/16_e6kpjc.svg";
     },
@@ -312,11 +336,13 @@ const readMoreButtonContainer = document.createElement("div");
 readMoreButtonContainer.classList.add("lp-read-more-button-container");
 readMoreButtonUpperContainer = document.createElement("div");
 readMoreButtonUpperContainer.classList.add("lp-read-more-button-upper-container");
-readMoreButtonContainer.insertAdjacentHTML('beforeend', `<button class="lp-read-more-button lp-show" data-current-bg="${landingPageItems[0].currentBgForButton}">
+readMoreButtonContainer.insertAdjacentHTML('beforeend', `<button class="lp-read-more-button lp-show" data-current-bg="${landingPageItems[0].currentBgForButton}" title="Expand post" aria-label="Expand post">
   <span>
     <i class="gg-chevron-down"></i>
   </span>
 </button>`);
+
+readMoreButtonContainer.insertAdjacentHTML('beforeend', `<span class="swipe-up"><img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAACzklEQVRYhe2YW4hNURjHf8eZcRi5nIRyF0mORmaaOC+KiBc1pXinkFxCkbxMlAflieRWGqXIJQ+E3AYPKMWDoijlNiFErpOZo2/679pO5+x9zt5nnTkP/rVbe6/WWt9vf3utb31rE6KdwDNgXljDvpDB5XR9rTXIXQLr1mX334H5NcDWq07gMrAP+ANsBj4CB2uArVfjgRSwQ96bBowGhlUbpK5I/UuVKZUNwNMqMf2jfn1htBz9B4wrF4Bp4ADwSGXa5Qt4wbqpxPYJ4JT6vFV5UvWRVGkPDgFagQ5gispW1dcEYFJjfgB+qEzqiiQXczDnA0r69vOaASyk7qgdXQPaPl4P3ADWRVks1fCgQU5W4rGn3M6uAesEOAO4BmzR6i5ZYYD1KuO8iC2UN4qPCYWeo8DYUjqHGX4CPAfexQD0IL35Zyt6JXAFGBoX8DjQCLzKq58IrAE25GXZQYvAs7UMWAVMBzYCg8Mgy9U4AXvxLafsezgwCOgCzmrM8wox5sHVapuV537q+T2wPeytylGz5k8bMFvHgEVAu8br8Y31BfgmkITPZkrQj3W82A2srZQHG2XwsK/ukOrW6+zieXCUPqVpk9rMBUbofi8wAHgNvKgUoHniuj5di+pGAp+UwfzyAfq1AHgATADGCNA7hHUoHFVMzRrwrm+atPnmZXvAy5kmqd0RPd8GflcS0LRfRhbr2RbJTeAeMDOkb38tjKxLQPNClwaPKyeApmO+iR9HzgAzCiuXahXQdFpebCmhbTE5BWwS4JkYY9zRzuJMF/SpMxENPKxAQhKoOfLiiQh9G7T73HcJiBKGHm2F5SiTt6s4U1aGzpVpYKv6LXUNiNIrM7awxPZpZdudLvLCQpqqX8WWNMwKaWsHqat6oRXFGkX+ZxKg5fofY7JkolCWMlDhyRINO+ltc8ARKDsG3FJsswCcf30GLgJLAkcB/gLDn6fFC+P8QgAAAABJRU5ErkJggg==" alt="swipe up interaction indicator"></span>`);
 
 readMoreButtonUpperContainer.append(readMoreButtonContainer);
 upperNotionColumn.append(readMoreButtonUpperContainer);
@@ -355,25 +381,39 @@ mobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class="lp
 </div>`);
 
 landingPageItems.forEach((landingPageItem,i) => {
-  bgPics.insertAdjacentHTML('beforeend', `<span class="default-bg-pic-container-style lp-bg-pic ${i == 0 ? "active-bg" : ""} ${landingPageItem.bgPictureClasses}">
-    ${i == 6 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670496048/Heye.earth/Projects/High%20Res%20Backgrounds/Hike-back-animated_sewivx.mp4" autoplay="" muted="" loop="" type="video/mp4" class="default-bg-pic-style" style="object-position: center 20%;">' : ""}
-    ${i == 8 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670499021/Heye.earth/Projects/High%20Res%20Backgrounds/ONNO_Background_Animated_k7wve5.mp4" autoplay="" muted="" type="video/mp4" class="default-bg-pic-style" style="object-position: center 20%;">' : ""}
-    <img class="default-bg-pic-style" alt="${landingPageItem.bgPictureAlt}" src="${landingPageItem.bgPictureLinkGetter(width, height)}" decoding="async" data-nimg="fill" >
-  ${i == 6 || i == 8 ? "</video>" : ""}</span>`);
+  var bgLinkType = "image";
+  var bgMimeType = landingPageItem.bgPictureMimeType;
+  if(landingPageItem.bgPictureMimeType != null){
+    bgLinkType = bgMimeType.split("/")[0];
+  }
+
+  var bgHtmlString = `<img class="default-bg-pic-style" alt="${landingPageItem.bgPictureAlt}" src="${landingPageItem.bgPictureLinkGetter(width, height)}" decoding="async" data-nimg="fill" ></img>`;
+  if(bgLinkType == "video"){
+    bgHtmlString = `<video src="${landingPageItem.bgPictureLinkGetter(width, height)}" autoplay="" muted="" loop="" type="${bgMimeType}" class="default-bg-pic-style ${landingPageItem.bgPictureInnerClassAddon}"></video>`;
+  }
+
+  bgPics.insertAdjacentHTML('beforeend', `<span class="default-bg-pic-container-style lp-bg-pic ${i == 0 ? "active-bg" : ""} ${landingPageItem.bgPictureClasses}">${bgHtmlString}</span>`);
 
   navitationAnchorsContainer.insertAdjacentHTML('beforeend', `<span class="lp-desktop-navlink ${i == 0 ? "lp-active" : ""}">
     <a class="notion-link link" href="${landingPageItem.navigationPath}" data-parameter-query="${landingPageItem.navigationParameterQuery}">${landingPageItem.navigationText}</a>
     <div class="lp-navigation-link-left-border"></div>
   </span>`);
 
+  var textLinkType = "image";
+  var textMimeType = landingPageItem.textLinkMimeType;
+  if(landingPageItem.textLinkMimeType != null){
+    textLinkType = textMimeType.split("/")[0];
+  }
+  var textLinkHtmlString = `<img alt="image" src="${landingPageItem.textLinkGetter(width, height)}" decoding="async" data-nimg="responsive"></img>`;
+  if(textLinkType == "video"){
+    textLinkHtmlString = `<video src="${landingPageItem.textLinkGetter(width, height)}" autoplay="" muted="" type="${textMimeType}"></video>`
+  }
   bgTexts.insertAdjacentHTML('beforeend', `
     <div class="${landingPageItem.textClasses} align-start page-width ${i == 0 ? "active-bg-text" : ""}">
       <span>
         <span>
         </span>
-        ${i == 1 ? '<video src="https://res.cloudinary.com/deepwave-org/video/upload/v1670500323/Heye.earth/Projects/Fonts/Naext.one_Main_Animation_wbbwtm.webm" autoplay="" muted="" type="video/webm">' : ""}
-        <img alt="image" src="${landingPageItem.textLinkGetter(width, height)}" decoding="async" data-nimg="responsive" >
-        ${i == 1 ? "</video>" : ""}
+        ${textLinkHtmlString}
       </span>
     </div>`);
 
@@ -543,8 +583,19 @@ navLinks.forEach((item, i) => {
           document.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/Machine-Learning-Explainer" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>Machine-Learning-Explainer</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
         }
         else if(e.target.href.includes("/nxtone")){
-          document.querySelector(".notion-embed__loader").remove();
-          document.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/naext-one-plugin" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>naext-one-plugin</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
+          var embeds = document.querySelectorAll(".notion-embed__loader");
+          Array.from(embeds).forEach((embed, i) => {
+            if(i == 0){
+              var parent = embed.parentElement;
+              embed.remove();
+              parent.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<iframe src="https://www.youtube.com/embed/UM4pTGWXrjk" title="YouTube video player" frameborder="0" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-top-navigation-by-user-activation" allowfullscreen></iframe>`);
+            }
+            else if(i == 1){
+              var parent = embed.parentElement;
+              embed.remove();
+              parent.querySelector(".LazyLoad").insertAdjacentHTML('beforeend', `<div class="notion-external-object"><a href="https://github.com/DonSqualo/naext-one-plugin" target="_blank" rel="noopener noreferrer" class="notion-external-object__attributes-wrapper"><div class="notion-external-object__attributes"><picture><img class="notion-external-object__avatar" loading="lazy" width="100%"></picture><div class="notion-external-object__details"><p>naext-one-plugin</p><p class="notion-external-object__last-modified">Last modified 8 days ago</p></div></div></a></div>`);
+            }
+          });
         }
         else if(e.target.href.includes("/deepwave")){
           document.querySelector(".notion-embed__loader").remove();
@@ -1071,7 +1122,7 @@ function switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts
 
   //reset gif animations
   const backgroundTextsImg = backgroundTexts[modifiedIndex].querySelector("img");
-  if(backgroundTextsImg.src.includes(".gif")){
+  if(backgroundTextsImg && backgroundTextsImg.src.includes(".gif")){
     const link = backgroundTextsImg.src;
     backgroundTextsImg.src = "";
     backgroundTextsImg.src = link;
@@ -1176,10 +1227,17 @@ function utilGetPosition(e){
 
 //add Twitter
 const aboutMe = document.querySelector(".lp-desktop-navlink:last-child a")
-aboutMe.insertAdjacentHTML('afterend', `<a href="mailto:me@heye.earth" class="notion-link lp-mail" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669925228/Heye.earth/Projects/mail-142_1_p9c3yd.svg"></a>`)
-aboutMe.insertAdjacentHTML('afterend', `<a href="https://twitter.com/HeyeGross" class="notion-link lp-twitter" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669936109/Heye.earth/Projects/icons8-twitter_v4kazt.svg"></a>`);
+aboutMe.insertAdjacentHTML('afterend', `<a href="mailto:me@heye.earth" title="E-mail me" aria-label="E-mail me" class="notion-link lp-mail" target="_blank" rel="noopener noreferrer">
+  <img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669925228/Heye.earth/Projects/mail-142_1_p9c3yd.svg" alt="E-mail icon">
+</a>`)
+aboutMe.insertAdjacentHTML('afterend', `<a href="https://twitter.com/HeyeGross" title="Link to my twitter" aria-label="Link to my twitter" class="notion-link lp-twitter" target="_blank" rel="noopener noreferrer">
+  <img src="https://res.cloudinary.com/deepwave-org/image/upload/v1669936109/Heye.earth/Projects/icons8-twitter_v4kazt.svg" alt="twitter icon">
+</a>`);
 
 const perf1= performance.now();
 console.log(`Performance between start and end of written script`);
 console.log(`Start: ${perf0}`);
 console.log(`End: ${perf1}`);
+
+
+document.querySelector("body").classList.add("loaded");

@@ -626,6 +626,63 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
     transform: translateX(32px);
   }
 
+
+  .swipe-up{
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    animation: swipe-up 1s ease-out infinite;
+  }
+  .swipe-up > img{
+    height: 100%;
+    width: 100%;
+    filter: invert(1);
+  }
+
+  @keyframes swipe-up{
+    0% {
+      bottom: 11px;
+    } 
+    100% {
+      bottom: 25px;
+    } 
+    0%{
+      bottom: 11px
+    }
+  }
+
+  .heye-object-position{
+    object-position: center 20%;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  body:not(.loaded){
+    transition: none;
+    background: linear-gradient(-45deg, #1a1a1a, #181818, #0e0e0e, #070707);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  body:not(.loaded)>div{
+    opacity: 0;
+    pointer-events: none;
+  }
+
   @media only screen and (min-width: 745px){
     .lp-mobile-notion-navbar{
       display: none !important;
@@ -699,6 +756,10 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       right: 11%;
       animation: MoveUpDown 1.5s linear infinite;
     }
+
+    .swipe-up{
+      display: none;
+    }
   }
 
   @media only screen and (max-width: 745px){
@@ -743,18 +804,15 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       height: calc(var(--vh, 1vh) * 100 - 60px);
     }
   
-    .lp-read-more-button-upper-container{
-      display: none;
-    }
     .lp-read-more-button-container{
-      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.8) 15%, transparent 100%); 
+      background: none;
       height: calc(100% - 60px);
     }
     .lp-read-more-button{
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      height: 10%;
+      height: 100%;
       top: unset;
       width: 100%;
       bottom: 0px;
@@ -818,7 +876,7 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       position: absolute;
       bottom: 25px;
       color: white;
-      height: 200px;
+      height: 56px;
       display: flex;
       align-items: flex-end;
       width: 100%;
@@ -833,6 +891,7 @@ img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669
       position: relative;
       align-items: flex-end;
       transition: all 600ms ease 0s;
+      height: 100%;
     }
   
     .lp-mobile-navlink{
