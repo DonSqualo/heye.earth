@@ -1238,3 +1238,6 @@ const perf1= performance.now();
 console.log(`Performance between start and end of written script`);
 console.log(`Start: ${perf0}`);
 console.log(`End: ${perf1}`);
+
+
+document.querySelector("body").classList.add("loaded");
