@@ -1,0 +1,154 @@
+# Landing page slides. This replaces the `landingPageItems` array of the old Home.js.
+#
+# Image placement: the old site asked Cloudinary for a viewport-sized crop; the same
+# framing is now done with object-fit:cover + object-position (bg_pos / bg_pos_mobile).
+# Cloudinary's x_/y_ offsets are relative to the gravity anchor, e.g. g_north + y_200
+# -> "center -200px", g_east + y_200 -> "right calc(50% - 200px)".
+# The template renders exactly the DOM the old Home.js used to build at runtime.
+items:
+  - text: Writings
+    path: /writings-and-notes
+    query: "/[...page]?page=writing-db&page=writings-and-notes"
+    bg: /assets/landing/Writings_and_Notes_Background_sssvel.png
+    bg_pos: left center
+    bg_pos_mobile: left center
+    bg_classes: lp-bg bg-writings
+    bg_alt: Writings and Notes
+    title_img: /assets/landing/2_tuhqcg.svg
+    title_video: /assets/landing/Writings_v2_yssfqw.webm
+    cursor: /assets/landing/Writing_Arrow_hzu1rv.svg
+    text_classes: lp-text lp-text-writings
+    button: lp-read-more-button-writings
+
+  - text: Aging
+    path: /projects/why-im-solving-aging
+    query: "/[...page]?page=projects&page=why-im-solving-aging"
+    bg: /assets/landing/Swan_Aging_xbloce.jpg
+    bg_pos: center center
+    bg_pos_mobile: center center
+    bg_classes: lp-bg bg-aging
+    bg_alt: Aging
+    title_img: /assets/landing/aging_font_fjq8rg.svg
+    cursor: /assets/landing/aging_arrow_2_eorxgd.svg
+    text_classes: lp-text lp-text-aging
+    button: lp-read-more-button-aging
+
+  - text: Meaning
+    path: /nxtone
+    query: "/[...page]?page=nxtone"
+    bg: /assets/landing/Naext_one_background__horizontal_fjrnww.jpg
+    bg_mobile: /assets/landing/Naext_one_background__mobile_rotated.jpg
+    bg_pos: center center
+    bg_pos_mobile: center center
+    bg_classes: lp-bg bg-naext
+    bg_alt: Næxt.one
+    title_img: /assets/landing/Naext-logo-combined_itagq1.svg
+    title_video: /assets/landing/Naext.one_Main_Animation_wbbwtm.webm
+    cursor: /assets/landing/Naext_arrow_oaoxwb.svg
+    text_classes: lp-text lp-text-naext
+    button: lp-read-more-button-naext
+
+  - text: Arcadia
+    path: /arcadia
+    query: "/[...page]?page=arcadia"
+    bg: /assets/landing/Arcadia_Background_k0earl.jpg
+    bg_pos: center center
+    bg_pos_mobile: center center
+    bg_classes: lp-bg bg-arcadia
+    bg_alt: Arcadia
+    title_img: /assets/landing/5_fsguhv.svg
+    title_video: /assets/landing/Arcadia_v2_ybai3v.webm
+    cursor: /assets/landing/Arcadia_Arrow_qthklm.svg
+    text_classes: lp-text lp-text-arcadia
+    button: lp-read-more-button-arcadia
+
+  - text: DEEPWAVE
+    path: /deepwave
+    query: "/[...page]?page=deepwave"
+    bg: /assets/landing/DEEPWAVE_Background_Desktop_fsgrr0_32322d_2.png
+    bg_mobile: /assets/landing/DEEPWAVE_Background_Mobile_vio35j.png
+    bg_pos: left center
+    bg_pos_mobile: center center
+    bg_classes: lp-bg lp-bg-deepwave
+    bg_alt: DEEPWAVE
+    title_img: /assets/landing/deepwave-text-crop.svg
+    cursor: /assets/landing/Deepwave_arrow_azum1t.svg
+    text_classes: lp-text lp-text-deepwave
+    button: lp-read-more-button-deepwave
+
+  - text: Future Forum
+    path: /future-forum
+    query: "/[...page]?page=future-forum"
+    bg: /assets/landing/52e8cfed-4ac2-4d97-91d4-d755527507de_6192x4128_zik8b3.jpg
+    bg_pos: center center
+    bg_pos_mobile: center center
+    bg_classes: lp-bg lp-bg-future-forum
+    bg_alt: Future Forum
+    title_img: /assets/landing/R2_Future-Forum-White-Logo-Animation_R1_qkldkz.gif
+    cursor: ""
+    text_classes: lp-text lp-text-future-forum
+    button: lp-read-more-button-future-forum
+
+  - text: The Hike
+    path: /the-hike
+    query: "/[...page]?page=the-hike"
+    bg: /assets/landing/The_Hike_Backgroun_p1xfb2.webp
+    bg_pos: center -200px
+    bg_pos_mobile: center top
+    bg_video: /assets/landing/Hike-back-animated_sewivx.mp4
+    bg_video_loop: true
+    bg_video_pos: center 20%
+    bg_classes: lp-bg lp-bg-the-hike
+    bg_alt: The Hike
+    title_img: /assets/landing/The_Hike_Font_octbmz.svg
+    cursor: /assets/landing/The_hike_arrow_abe3ea.svg
+    text_classes: lp-text lp-text-the-hike
+    button: lp-read-more-button-the-hike
+
+  - text: Art
+    path: /ai-art
+    query: "/[...page]?page=ai-art"
+    bg: /assets/landing/AI_Art_Background_ae3c2d.png
+    bg_pos: center -120px
+    bg_pos_mobile: center top
+    bg_classes: lp-bg lp-bg-ai-art
+    bg_alt: (AI-) Art
+    title_img: /assets/landing/AI_Art_Font_ymvkbz.svg
+    title_video: /assets/landing/AI_art_v2_jvb6sw.webm
+    cursor: /assets/landing/AI_art_arrow_oucham.svg
+    text_classes: lp-text lp-text-ai-art
+    button: lp-read-more-button-ai-art
+
+  - text: Onno, Anna & Tjark
+    path: /onno-anna
+    query: "/[...page]?page=onna-anna"
+    bg: /assets/landing/Onno_Background_ypldvs.png
+    bg_pos: right -200px
+    bg_pos_mobile: center top
+    bg_video: /assets/landing/ONNO_Background_Animated_k7wve5.mp4
+    bg_video_loop: false
+    bg_video_pos: center 20%
+    bg_classes: lp-bg lp-bg-onna-anna
+    bg_alt: Onno, Anna & Tjark
+    title_img: /assets/landing/14_mnl60i.svg
+    cursor: /assets/landing/Onno_Anna_Tjark_arrow_igizy2.svg
+    text_classes: lp-text lp-text-onna-anna
+    button: lp-read-more-button-onna-anna
+
+  - text: About Me
+    path: /hi-i-am-heye-high-ye
+    query: "/[...page]?page=hi-i-am-heye-high-ye"
+    bg: /assets/landing/About_me_Background_mpnje8.png
+    bg_pos: right calc(50% - 200px)   # Cloudinary: g_east with y_200 = vertically centred, shifted 200px down
+    bg_pos_mobile: right center
+    bg_classes: lp-bg lp-bg-about-me
+    bg_alt: "Hi! I am Heye [High ye] 🖐️"
+    title_img: /assets/landing/16_e6kpjc.svg
+    title_video: /assets/landing/Hey_v2_iypqar.webm
+    cursor: /assets/landing/About_Me_arrow_ugfnsj.svg
+    text_classes: lp-text lp-text-about-me
+    button: lp-read-more-button-about-me
+
+social:
+  twitter_icon: /assets/landing/icons8-twitter_v4kazt.svg
+  mail_icon: /assets/landing/mail-142_1_p9c3yd.svg

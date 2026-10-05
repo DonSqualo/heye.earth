@@ -1,0 +1,145 @@
+
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot"); /* IE9 Compat Modes */
+        
+          src: local(""),
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot?#iefix")
+            format("embedded-opentype"),
+            /* IE6-IE8 */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2")
+            format("woff2"),
+            /* Super Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff")
+            format("woff"),
+            /* Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf")
+            format("truetype"),
+            /* Safari, Android, iOS */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-regular.svg#Manrope")
+            format("svg"); /* Legacy iOS */
+        
+      }
+    
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 500;
+        src: url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-500.eot"); /* IE9 Compat Modes */
+        
+          src: local(""),
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-500.eot?#iefix")
+            format("embedded-opentype"),
+            /* IE6-IE8 */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-500.woff2")
+            format("woff2"),
+            /* Super Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-500.woff")
+            format("woff"),
+            /* Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-500.ttf")
+            format("truetype"),
+            /* Safari, Android, iOS */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-500.svg#Manrope")
+            format("svg"); /* Legacy iOS */
+        
+      }
+    
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 600;
+        src: url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-600.eot"); /* IE9 Compat Modes */
+        
+          src: local(""),
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-600.eot?#iefix")
+            format("embedded-opentype"),
+            /* IE6-IE8 */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-600.woff2")
+            format("woff2"),
+            /* Super Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-600.woff")
+            format("woff"),
+            /* Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-600.ttf")
+            format("truetype"),
+            /* Safari, Android, iOS */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-600.svg#Manrope")
+            format("svg"); /* Legacy iOS */
+        
+      }
+    
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 700;
+        src: url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-700.eot"); /* IE9 Compat Modes */
+        
+          src: local(""),
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-700.eot?#iefix")
+            format("embedded-opentype"),
+            /* IE6-IE8 */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-700.woff2")
+            format("woff2"),
+            /* Super Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-700.woff")
+            format("woff"),
+            /* Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-700.ttf")
+            format("truetype"),
+            /* Safari, Android, iOS */
+            url("https://assets-v2.super.so/global/fonts/Manrope/manrope-v13-latin-ext_latin_cyrillic-ext_cyrillic-700.svg#Manrope")
+            format("svg"); /* Legacy iOS */
+        
+      }
+    
+      @font-face {
+        font-family: "Merriweather";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot"); /* IE9 Compat Modes */
+        
+          src: local(""),
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot?#iefix")
+            format("embedded-opentype"),
+            /* IE6-IE8 */
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2")
+            format("woff2"),
+            /* Super Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff")
+            format("woff"),
+            /* Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf")
+            format("truetype"),
+            /* Safari, Android, iOS */
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-regular.svg#Merriweather")
+            format("svg"); /* Legacy iOS */
+        
+      }
+    
+      @font-face {
+        font-family: "Merriweather";
+        font-style: normal;
+        font-weight: 700;
+        src: url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-700.eot"); /* IE9 Compat Modes */
+        
+          src: local(""),
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-700.eot?#iefix")
+            format("embedded-opentype"),
+            /* IE6-IE8 */
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-700.woff2")
+            format("woff2"),
+            /* Super Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-700.woff")
+            format("woff"),
+            /* Modern Browsers */
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-700.ttf")
+            format("truetype"),
+            /* Safari, Android, iOS */
+            url("https://assets-v2.super.so/global/fonts/Merriweather/merriweather-v30-latin-ext_latin_cyrillic-ext_cyrillic-700.svg#Merriweather")
+            format("svg"); /* Legacy iOS */
+        
+      }
+    

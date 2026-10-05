@@ -1,0 +1,131 @@
+{{- /*
+Landing page. Renders statically the DOM that the old Home.js assembled at runtime on
+top of super.so's output (background slides, title artwork, desktop nav, mobile nav,
+read-more button, mobile top bar, lazy-load container). js/home.js only adds behaviour.
+*/ -}}
+{{ define "head" }}
+{{- $items := hugo.Data.landing.items }}
+<style>
+{{- range $i, $it := $items }}
+  .lp-bg-pics > span:nth-child({{ add $i 2 }}) .default-bg-pic-style { object-position: {{ $it.bg_pos | default "center 50%" }}; }
+{{- end }}
+  @media only screen and (max-width: 745px) {
+{{- range $i, $it := $items }}
+    .lp-bg-pics > span:nth-child({{ add $i 2 }}) .default-bg-pic-style { object-position: {{ $it.bg_pos_mobile | default $it.bg_pos | default "center 50%" }}; }
+{{- end }}
+  }
+</style>
+{{ end }}
+{{ define "main" }}
+{{- $items := partial "landing-items.html" . }}
+{{- $social := dict "twitter_icon" (partial "asset.html" hugo.Data.landing.social.twitter_icon) "mail_icon" (partial "asset.html" hugo.Data.landing.social.mail_icon) }}
+{{- $siteIcon := partial "asset.html" .Site.Params.siteIcon }}
+{{- $n := len $items }}
+{{- $last := sub $n 1 }}
+<div class="notion-header page">
+  <div class="notion-header__cover no-cover has-icon-image"></div>
+  <div class="notion-header__content no-cover has-icon-image">
+    <div class="notion-header__title-wrapper">
+      <div class="notion-header__icon-wrapper no-cover has-icon-image"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:78px;height:78px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img alt="{{ .Site.Title }}" class="notion-header__icon" src="{{ $siteIcon }}" style="position:absolute;inset:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span></div>
+      <h1 class="notion-header__title">{{ .Site.Title }}</h1>
+    </div>
+  </div>
+</div>
+<div class="super-content has-footer lp-super-content">
+  <article id="block-2015554ad5ae4339b9488ff1a73817bd" class="notion-root full-width">
+    <div class="notion-column-list lp-selector-upper-notion">
+      <div class="lp-effect-line-upper-container">
+        <div class="lp-effect-line-container">
+          <div class="lp-effect-line"></div>
+        </div>
+      </div>
+      <div class="lp-read-more-button-upper-container">
+        <div class="lp-read-more-button-container">
+          <button class="lp-read-more-button lp-show" data-current-bg="{{ (index $items 0).button }}" aria-label="Open">
+            <span><i class="gg-chevron-down"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="lp-bg-pics">
+        <div class="lp-dark-bg"></div>
+        {{- range $i, $it := $items }}
+        <span class="default-bg-pic-container-style lp-bg-pic{{ if eq $i 0 }} active-bg{{ end }} {{ $it.bg_classes }}">
+          {{- if $it.bg_video }}
+          <video src="{{ $it.bg_video }}" autoplay="" muted="" playsinline=""{{ if $it.bg_video_loop }} loop=""{{ end }} type="video/mp4" class="default-bg-pic-style" style="object-position: {{ $it.bg_video_pos | default "center 20%" }};">
+          {{- end }}
+          {{- if $it.bg_mobile }}
+          <picture>
+            <source media="(max-width: 745px)" srcset="{{ $it.bg_mobile }}">
+            <img class="default-bg-pic-style" alt="{{ $it.bg_alt }}" src="{{ $it.bg }}" decoding="async">
+          </picture>
+          {{- else }}
+          <img class="default-bg-pic-style" alt="{{ $it.bg_alt }}" src="{{ $it.bg }}" decoding="async">
+          {{- end }}
+          {{- if $it.bg_video }}
+          </video>
+          {{- end }}
+        </span>
+        {{- end }}
+      </div>
+      <div class="lp-bg-texts">
+        {{- range $i, $it := $items }}
+        <div class="{{ $it.text_classes }} align-start page-width{{ if eq $i 0 }} active-bg-text{{ end }}">
+          <span>
+            <span></span>
+            {{- if $it.title_video }}
+            <video src="{{ $it.title_video }}" autoplay="" muted="" playsinline="" type="video/webm">
+            {{- end }}
+            <img alt="{{ $it.text }}" src="{{ $it.title_img }}" decoding="async">
+            {{- if $it.title_video }}
+            </video>
+            {{- end }}
+          </span>
+        </div>
+        {{- end }}
+      </div>
+      <div class="lp-nav-container">
+        {{- range $i, $it := $items }}
+        <span class="lp-desktop-navlink{{ if eq $i 0 }} lp-active{{ end }}">
+          <a class="notion-link link" href="{{ $it.path }}" data-parameter-query="{{ $it.query }}">{{ $it.text }}</a>
+          {{- if eq $i $last }}
+          <a href="{{ $.Site.Params.twitter }}" class="notion-link lp-twitter" target="_blank" rel="noopener noreferrer"><img src="{{ $social.twitter_icon }}" alt="Twitter"></a>
+          <a href="mailto:{{ $.Site.Params.mail }}" class="notion-link lp-mail" target="_blank" rel="noopener noreferrer"><img src="{{ $social.mail_icon }}" alt="Mail"></a>
+          {{- end }}
+          <div class="lp-navigation-link-left-border"></div>
+        </span>
+        {{- end }}
+      </div>
+      <div class="lp-mobile-nav-upper-container">
+        <div class="lp-mobile-nav-container">
+          {{- /* two clones before and after make the mobile strip wrap around seamlessly */}}
+          {{- range $k := slice (sub $last 1) $last }}
+          {{- $it := index $items $k }}
+          <div class="lp-mobile-navlink infinite-workaround" data-index="{{ $k }}"><a href="{{ $it.path }}">{{ $it.text }}</a></div>
+          {{- end }}
+          {{- range $i, $it := $items }}
+          <div class="lp-mobile-navlink{{ if eq $i 0 }} lp-mobile-active{{ end }}" data-index="{{ $i }}"><a href="{{ $it.path }}">{{ $it.text }}</a></div>
+          {{- end }}
+          {{- range $k := slice 0 1 }}
+          {{- $it := index $items $k }}
+          <div class="lp-mobile-navlink infinite-workaround" data-index="{{ $k }}"><a href="{{ $it.path }}">{{ $it.text }}</a></div>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+    <div class="notion-navbar lp-notion-navbar lp-mobile-notion-navbar">
+      <div class="notion-breadcrumb">
+        <a class="notion-link notion-breadcrumb__item single has-icon" href="/">
+          <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:16px;height:16px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img alt="{{ .Site.Title }}" src="{{ $siteIcon }}" decoding="async" class="notion-breadcrumb__icon" style="position:absolute;inset:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+          <div class="notion-navbar__title notion-breadcrumb__title">{{ .Site.Title }}</div>
+        </a>
+      </div>
+      <div id="mobile-theme-switcher" class="lp-theme-switcher topbar-icons"><a></a></div>
+      <div id="mobile-search" class="notion-navbar__search topbar-icons">{{ partial "icons/search.html" . }}</div>
+      <div class="lp-custom-navbar-progress"></div>
+      <div id="nav-toggle-mobile" class="js-menu menu topbar-icons"><span class="bar"></span></div>
+    </div>
+    <div class="lp-ll-content"></div>
+    <div class="notion-text"></div>
+  </article>
+</div>
+{{ end }}

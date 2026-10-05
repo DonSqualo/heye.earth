@@ -1,0 +1,40 @@
+baseURL = "https://heye.earth/"
+title = "Heye.Earth"
+locale = "en"
+theme = "heye"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "rss"]
+timeout = "120s"
+
+# content files are raw HTML exported from the old super.so/Notion site; nothing is markdown-processed
+[security]
+  allowContent = ['.*']
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "JSON"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[params]
+  description = "Heye Groß - writings, projects and notes"
+  siteIcon = "/assets/super/011e9ac1-ed62-4925-b007-e96768dd37db-Asset_6.svg"
+  favicon = "/assets/super/favicon-6bd40a18-f307-4fd7-8be2-a5492b6ad0c6.png"
+  author = "Heye"
+  footerLogo = "Heye's Evergreen Notes"
+  footnote = "© Heye Groß 2022 | Build quickly with Notion, Super.so and Cluster. Waiting for AnyType for a relaunch."
+  twitter = "https://twitter.com/HeyeGross"
+  github = "https://github.com/DonSqualo"
+  mail = "me@heye.earth"
+
+# Serve images/videos from Cloudinary instead of static/assets (see tools/cloudinary_sync.py, data/cdn.json)
+[params.cdn]
+  enabled = true
+  cloud = "deepwave-org"
+  folder = "heye-earth"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"

@@ -1,0 +1,20 @@
+# Netlify: either deploy the prebuilt `public/` folder with
+#   hugo --minify && npx netlify-cli deploy --dir public --prod
+# or connect the repo and let Netlify build it with the settings below.
+[build]
+  publish = "public"
+  command = "hugo --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.165.0"
+
+# old super.so URLs had no trailing slash; Netlify's pretty URLs serve both forms
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

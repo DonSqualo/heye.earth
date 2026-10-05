@@ -1,0 +1,787 @@
+
+    html.theme-dark {
+      /* Gray */
+      --gray-h: 0;
+      --gray-s: 0%;
+      --gray-l: 61%;
+      --color-gray: hsl(var(--gray-h), var(--gray-s), var(--gray-l));
+      --color-text-gray: var(--color-gray);
+      --color-bg-gray: hsl(
+        var(--gray-h),
+        var(--gray-s),
+        14.5%
+      );
+      --color-bg-gray-light: hsl(
+        var(--gray-h),
+        var(--gray-s),
+        14.5%
+      );
+      --color-pill-gray: hsl(
+        var(--gray-h),
+        var(--gray-s),
+        35%
+      );
+      --color-pill-text-gray: hsl(
+        var(--gray-h),
+        var(--gray-s),
+        calc(var(--gray-l) + 26%)
+      );
+      --color-bg-form-btn-gray: #A7A39A;
+
+      /* Brown */
+      --brown-h: 18;
+      --brown-s: 35%;
+      --brown-l: 58%;
+      --color-brown: hsl(var(--brown-h), var(--brown-s), var(--brown-l));
+      --color-text-brown: var(--color-brown);
+      --color-bg-brown: hsl(
+        var(--brown-h),
+        calc(var(--brown-s) - 7%),
+        22%
+      );
+      --color-bg-brown-light: hsl(
+        calc(var(--brown-h) - 2),
+        calc(var(--brown-s) - 22%),
+        16%
+      );
+      --color-pill-brown: hsl(
+        var(--brown-h),
+        calc(var(--brown-s) + 2%),
+        27%
+      );
+      --color-pill-text-brown: hsl(
+        var(--brown-h),
+        calc(var(--brown-s) - 21%),
+        calc(var(--brown-l) + 33%)
+      );
+      --color-bg-form-btn-brown: #9A6851;
+
+      /* Orange */
+      --orange-h: 25;
+      --orange-s: 54%;
+      --orange-l: 53%;
+      --color-orange: hsl(
+        var(--orange-h),
+        var(--orange-s),
+        var(--orange-l)
+      );
+      --color-text-orange: var(--color-orange);
+      --color-bg-orange: hsl(
+        var(--orange-h),
+        calc(var(--orange-s) - 10%),
+        25%
+      );
+      --color-bg-orange-light: hsl(
+        var(--orange-h),
+        calc(var(--orange-s) - 30%),
+        17%
+      );
+      --color-pill-orange: hsl(
+        var(--orange-h),
+        calc(var(--orange-s) + 9%),
+        32%
+      );
+      --color-pill-text-orange: hsl(
+        var(--orange-h),
+        calc(var(--orange-s) - 23%),
+        calc(var(--orange-l) + 33%)
+      );
+      --color-bg-form-btn-orange: #D9730D;
+
+      /* Yellow */
+      --yellow-h: 38;
+      --yellow-s: 54%;
+      --yellow-l: 54%;
+      --color-yellow: hsl(
+        var(--yellow-h),
+        var(--yellow-s),
+        var(--yellow-l)
+      );
+      --color-text-yellow: var(--color-yellow);
+      --color-bg-yellow: hsl(
+        var(--yellow-h),
+        calc(var(--yellow-s) - 18%),
+        25%
+      );
+      --color-bg-yellow-light: hsl(
+        var(--yellow-h),
+        calc(var(--yellow-s) - 24%),
+        17%
+      );
+      --color-pill-yellow: hsl(
+        calc(var(--yellow-h) - 1),
+        calc(var(--yellow-s) + 2%),
+        35%
+      );
+      --color-pill-text-yellow: hsl(
+        var(--yellow-h),
+        calc(var(--yellow-s) - 28%),
+        calc(var(--yellow-l) + 33%)
+      );
+      --color-bg-form-btn-yellow: #CA922F;
+
+      /* Green */
+      --green-h: 146;
+      --green-s: 32%;
+      --green-l: 47%;
+      --color-green: hsl(var(--green-h), var(--green-s), var(--green-l));
+      --color-text-green: var(--color-green);
+      --color-bg-green: hsl(
+        calc(var(--green-h) + 3),
+        calc(var(--green-s) - 6%),
+        19%
+      );
+      --color-bg-green-light: hsl(
+        var(--green-h),
+        calc(var(--green-s) - 20%),
+        15%
+      );
+      --color-pill-green: hsl(
+        calc(var(--green-h) + 1),
+        calc(var(--green-s) + 3%),
+        26%
+      );
+      --color-pill-text-green: hsl(
+        var(--green-h),
+        calc(var(--green-s) - 20%),
+        calc(var(--green-l) + 38%)
+      );
+      --color-bg-form-btn-green: #448361;
+
+      /* Blue */
+      --blue-h: 173;
+      --blue-s: 25%;
+      --blue-l: 33%;
+      --color-blue: hsl(var(--blue-h), var(--blue-s), var(--blue-l));
+      --color-text-blue: var(--color-blue);
+      --color-bg-blue: hsl(
+        calc(var(--blue-h) - 16),
+        calc(var(--blue-s) + 9%),
+        -6%
+      );
+      --color-bg-blue-light: hsl(
+        calc(var(--blue-h) + 16),
+        calc(var(--blue-s) - 27%),
+        -10%
+      );
+      --color-pill-blue: hsl(
+        calc(var(--blue-h) - 3),
+        calc(var(--blue-s) - 6%),
+        4%
+      );
+      --color-pill-text-blue: hsl(
+        calc(var(--blue-h) - 5),
+        calc(var(--blue-s) - 32%),
+        calc(var(--blue-l) + 28%)
+      );
+      --color-bg-form-btn-blue: #327DA9;
+
+      /* Purple */
+      --purple-h: 270;
+      --purple-s: 55%;
+      --purple-l: 62%;
+      --color-purple: hsl(
+        var(--purple-h),
+        var(--purple-s),
+        var(--purple-l)
+      );
+      --color-text-purple: var(--color-purple);
+      --color-bg-purple: hsl(
+        calc(var(--purple-h) + 2),
+        calc(var(--purple-s) - 31%),
+        23%
+      );
+      --color-bg-purple-light: hsl(
+        calc(var(--purple-h) + 5),
+        calc(var(--purple-s) - 40%),
+        17%
+      );
+      --color-pill-purple: hsl(
+        var(--purple-h),
+        calc(var(--purple-s) - 19%),
+        29%
+      );
+      --color-pill-text-purple: hsl(
+        calc(var(--purple-h) - 3),
+        calc(var(--purple-s) - 40%),
+        calc(var(--purple-l) + 24%)
+      );
+      --color-bg-form-btn-purple: #8F64AF;
+
+      /* Pink */
+      --pink-h: 329;
+      --pink-s: 57%;
+      --pink-l: 58%;
+      --color-pink: hsl(var(--pink-h), var(--pink-s), var(--pink-l));
+      --color-text-pink: var(--color-pink);
+      --color-bg-pink: hsl(
+        calc(var(--pink-h) + 3),
+        calc(var(--pink-s) - 29%),
+        24%
+      );
+      --color-bg-pink-light: hsl(
+        calc(var(--pink-h) + 5),
+        calc(var(--pink-s) - 40%),
+        16%
+      );
+      --color-pill-pink: hsl(
+        calc(var(--pink-h) - 2),
+        calc(var(--pink-s) - 21%),
+        30%
+      );
+      --color-pill-text-pink: hsl(
+        calc(var(--pink-h) + 4),
+        calc(var(--pink-s) - 41%),
+        calc(var(--pink-l) + 28%)
+      );
+      --color-bg-form-btn-pink: #C24C8B;
+
+      /* Red */
+      --red-h: 1;
+      --red-s: 69%;
+      --red-l: 60%;
+      --color-red: hsl(var(--red-h), var(--red-s), var(--red-l));
+      --color-text-red: var(--color-red);
+      --color-bg-red: hsl(
+        calc(var(--red-h) + 5),
+        calc(var(--red-s) - 37%),
+        24%
+      );
+      --color-bg-red-light: hsl(
+        calc(var(--red-h) + 5),
+        calc(var(--red-s) - 56%),
+        17%
+      );
+      --color-pill-red: hsl(
+        calc(var(--red-h) + 5),
+        calc(var(--red-s) - 30%),
+        31%
+      );
+      --color-pill-text-red: hsl(
+        calc(var(--red-h) + 7),
+        calc(var(--red-s) - 50%),
+        calc(var(--red-l) + 24%)
+      );
+      --color-bg-form-btn-red: #D44E49;
+
+      /*Default*/
+      --default-h: 45;
+      --default-s: 8%;
+      --default-l: 20%;
+      --color-default: hsl(
+        var(--default-h),
+        var(--default-s),
+        var(--default-l)
+      );
+      --color-pill-default: hsl(
+        var(--default-h),
+        var(--default-s),
+        -19%
+      );
+      --color-pill-text-default: hsl(
+        var(--default-h),
+        var(--default-s),
+        calc(var(--default-l) + 23%)
+      );
+      --color-bg-form-btn-default: #55534E;
+
+      /*Other*/
+      --color-text-default: #e1e1e1;
+      --color-text-default-light: #9b9b9b;
+      --color-bg-default: #191919;
+      --color-border-default: #373737;
+      --color-border-dark: var(--color-border-default);
+      --color-ui-hover-bg: #262626;
+      --color-card-bg: #2f2f2f;
+      --color-card-bg-hover: #2f2f2f;
+      --color-calendar-weekend-bg: #202020;
+      --color-checkbox-bg: #3f6964;
+      --color-code-bg: rgba(135,131,120,.15);
+
+      /*Scrollbar*/
+      --scrollbar-background-color: #FAFAFA;
+      --scrollbar-thumb-color: #C1C1C1;
+      --scrollbar-border-color: #E8E8E8;
+
+      /*Navbar*/
+      --navbar-text-color: #e1e1e1;
+      --navbar-list-item-hover: rgba(255,255,255,.2);
+      --navbar-background-color: #191919;
+      --navbar-background-color-hover: #282828;
+      --navbar-button-text-color: #191919;
+      --navbar-button-background-color: #e1e1e1;
+      --navbar-menu-background-color: var(--navbar-background-color);
+      --navbar-text-color-dark: #d2d2d2;
+
+      /*Footer*/
+      --footer-text-color: #e1e1e1;
+      --footer-background-color: #191919;
+
+      /*Sidebar*/
+      --sidebar-text-color: #e1e1e1;
+      --sidebar-cta-text-color: #e1e1e1;
+      --sidebar-background-color: #191919;
+      --sidebar-cta-background-color: #191919;
+      --sidebar-border-color: #373737;
+      --sidebar-background-color-hover: #292929;
+      --sidebar-text-color-dark: #d2d2d2;
+      --sidebar-cta-background-color-hover: #292929;
+    }
+
+    /* Calendar for dark mode */
+    html.theme-dark .notion-collection-calendar__row {
+      box-shadow: var(--color-border-default) -1px 0px 0px;
+    }
+
+    html.theme-dark .notion-collection-calendar__week-days {
+      box-shadow: var(--color-border-default) 0px 1px 0px;
+    }
+
+    html.theme-dark .notion-collection-calendar__date {
+      border-right: 1px solid var(--color-border-default);
+      border-bottom: 1px solid var(--color-border-default);
+    }
+
+    
+  /**
+   * One Dark theme for prism.js
+   * Based on Atom's One Dark theme: https://github.com/atom/atom/tree/master/packages/one-dark-syntax
+   */
+
+  /**
+   * One Dark colours (accurate as of commit 8ae45ca on 6 Sep 2018)
+   * From colors.less
+   * --mono-1: hsl(220, 14%, 71%);
+   * --mono-2: hsl(220, 9%, 55%);
+   * --mono-3: hsl(220, 10%, 40%);
+   * --hue-1: hsl(187, 47%, 55%);
+   * --hue-2: hsl(207, 82%, 66%);
+   * --hue-3: hsl(286, 60%, 67%);
+   * --hue-4: hsl(95, 38%, 62%);
+   * --hue-5: hsl(355, 65%, 65%);
+   * --hue-5-2: hsl(5, 48%, 51%);
+   * --hue-6: hsl(29, 54%, 61%);
+   * --hue-6-2: hsl(39, 67%, 69%);
+   * --syntax-fg: hsl(220, 14%, 71%);
+   * --syntax-bg: hsl(220, 13%, 18%);
+   * --syntax-gutter: hsl(220, 14%, 45%);
+   * --syntax-guide: hsla(220, 14%, 71%, 0.15);
+   * --syntax-accent: hsl(220, 100%, 66%);
+   * From syntax-variables.less
+   * --syntax-selection-color: hsl(220, 13%, 28%);
+   * --syntax-gutter-background-color-selected: hsl(220, 13%, 26%);
+   * --syntax-cursor-line: hsla(220, 100%, 80%, 0.04);
+   */
+
+  html.theme-dark code[class*="language-"],
+  html.theme-dark pre[class*="language-"] {
+    background: hsl(220, 13%, 18%);
+    color: hsl(220, 14%, 71%);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  /* Selection */
+  html.theme-dark code[class*="language-"]::-moz-selection,
+  html.theme-dark code[class*="language-"] *::-moz-selection,
+  html.theme-dark pre[class*="language-"] *::-moz-selection {
+    background: hsl(220, 13%, 28%);
+    color: inherit;
+    text-shadow: none;
+  }
+
+  html.theme-dark code[class*="language-"]::selection,
+  html.theme-dark code[class*="language-"] *::selection,
+  html.theme-dark pre[class*="language-"] *::selection {
+    background: hsl(220, 13%, 28%);
+    color: inherit;
+    text-shadow: none;
+  }
+
+  /* Code blocks */
+  html.theme-dark pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+  }
+
+  /* Inline code */
+  html.theme-dark :not(pre) > code[class*="language-"] {
+    padding: 0.2em 0.3em;
+    border-radius: 0.3em;
+    white-space: normal;
+  }
+
+  /* Print */
+  @media print {
+    html.theme-dark code[class*="language-"],
+    html.theme-dark pre[class*="language-"] {
+      text-shadow: none;
+    }
+  }
+
+  html.theme-dark .token.comment,
+  html.theme-dark .token.prolog,
+  html.theme-dark .token.cdata {
+    color: hsl(220, 10%, 40%);
+  }
+
+  html.theme-dark .token.doctype,
+  html.theme-dark .token.punctuation,
+  html.theme-dark .token.entity {
+    color: hsl(220, 14%, 71%);
+  }
+
+  html.theme-dark .token.attr-name,
+  html.theme-dark .token.class-name,
+  html.theme-dark .token.boolean,
+  html.theme-dark .token.constant,
+  html.theme-dark .token.number,
+  html.theme-dark .token.atrule {
+    color: hsl(29, 54%, 61%);
+  }
+
+  html.theme-dark .token.keyword {
+    color: hsl(286, 60%, 67%);
+  }
+
+  html.theme-dark .token.property,
+  html.theme-dark .token.tag,
+  html.theme-dark .token.symbol,
+  html.theme-dark .token.deleted,
+  html.theme-dark .token.important {
+    color: hsl(355, 65%, 65%);
+  }
+
+  html.theme-dark .token.selector,
+  html.theme-dark .token.string,
+  html.theme-dark .token.char,
+  html.theme-dark .token.builtin,
+  html.theme-dark .token.inserted,
+  html.theme-dark .token.regex,
+  html.theme-dark .token.attr-value,
+  html.theme-dark .token.attr-value > .token.punctuation {
+    color: hsl(95, 38%, 62%);
+  }
+
+  html.theme-dark .token.variable,
+  html.theme-dark .token.operator,
+  html.theme-dark .token.function {
+    color: hsl(207, 82%, 66%);
+  }
+
+  html.theme-dark .token.url {
+    color: hsl(187, 47%, 55%);
+  }
+
+  /* HTML overrides */
+  html.theme-dark .token.attr-value > .token.punctuation.attr-equals,
+  html.theme-dark .token.special-attr > .token.attr-value > .token.value.css {
+    color: hsl(220, 14%, 71%);
+  }
+
+  /* CSS overrides */
+  html.theme-dark .language-css .token.selector {
+    color: hsl(355, 65%, 65%);
+  }
+
+  html.theme-dark .language-css .token.property {
+    color: hsl(220, 14%, 71%);
+  }
+
+  html.theme-dark .language-css .token.function,
+  html.theme-dark .language-css .token.url > .token.function {
+    color: hsl(187, 47%, 55%);
+  }
+
+  html.theme-dark .language-css .token.url > .token.string.url {
+    color: hsl(95, 38%, 62%);
+  }
+
+  html.theme-dark .language-css .token.important,
+  html.theme-dark .language-css .token.atrule .token.rule {
+    color: hsl(286, 60%, 67%);
+  }
+
+  /* JS overrides */
+  html.theme-dark .language-javascript .token.operator {
+    color: hsl(286, 60%, 67%);
+  }
+
+  html.theme-dark .language-javascript .token.template-string > .token.interpolation > .token.interpolation-punctuation.punctuation {
+    color: hsl(5, 48%, 51%);
+  }
+
+  /* JSON overrides */
+  html.theme-dark .language-json .token.operator {
+    color: hsl(220, 14%, 71%);
+  }
+
+  html.theme-dark .language-json .token.null.keyword {
+    color: hsl(29, 54%, 61%);
+  }
+
+  /* MD overrides */
+  html.theme-dark .language-markdown .token.url,
+  html.theme-dark .language-markdown .token.url > .token.operator,
+  html.theme-dark .language-markdown .token.url-reference.url > .token.string {
+    color: hsl(220, 14%, 71%);
+  }
+
+  html.theme-dark .language-markdown .token.url > .token.content {
+    color: hsl(207, 82%, 66%);
+  }
+
+  html.theme-dark .language-markdown .token.url > .token.url,
+  html.theme-dark .language-markdown .token.url-reference.url {
+    color: hsl(187, 47%, 55%);
+  }
+
+  html.theme-dark .language-markdown .token.blockquote.punctuation,
+  html.theme-dark .language-markdown .token.hr.punctuation {
+    color: hsl(220, 10%, 40%);
+    font-style: italic;
+  }
+
+  html.theme-dark .language-markdown .token.code-snippet {
+    color: hsl(95, 38%, 62%);
+  }
+
+  html.theme-dark .language-markdown .token.bold .token.content {
+    color: hsl(29, 54%, 61%);
+  }
+
+  html.theme-dark .language-markdown .token.italic .token.content {
+    color: hsl(286, 60%, 67%);
+  }
+
+  html.theme-dark .language-markdown .token.strike .token.content,
+  html.theme-dark .language-markdown .token.strike .token.punctuation,
+  html.theme-dark .language-markdown .token.list.punctuation,
+  html.theme-dark .language-markdown .token.title.important > .token.punctuation {
+    color: hsl(355, 65%, 65%);
+  }
+
+  /* General */
+  html.theme-dark .token.bold {
+    font-weight: bold;
+  }
+
+  html.theme-dark .token.comment,
+  html.theme-dark .token.italic {
+    font-style: italic;
+  }
+
+  html.theme-dark .token.entity {
+    cursor: help;
+  }
+
+  html.theme-dark .token.namespace {
+    opacity: 0.8;
+  }
+
+  /* Plugin overrides */
+  /* Selectors should have higher specificity than those in the plugins' default stylesheets */
+
+  /* Show Invisibles plugin overrides */
+  html.theme-dark .token.token.tab:not(:empty):before,
+  html.theme-dark .token.token.cr:before,
+  html.theme-dark .token.token.lf:before,
+  html.theme-dark .token.token.space:before {
+    color: hsla(220, 14%, 71%, 0.15);
+    text-shadow: none;
+  }
+
+  /* Toolbar plugin overrides */
+  /* Space out all buttons and move them away from the right edge of the code block */
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item {
+    margin-right: 0.4em;
+  }
+
+  /* Styling the buttons */
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > button,
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > a,
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > span {
+    background: hsl(220, 13%, 26%);
+    color: hsl(220, 9%, 55%);
+    padding: 0.1em 0.4em;
+    border-radius: 0.3em;
+  }
+
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > button:hover,
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > button:focus,
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > a:hover,
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > a:focus,
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > span:hover,
+  html.theme-dark div.code-toolbar > .toolbar.toolbar > .toolbar-item > span:focus {
+    background: hsl(220, 13%, 28%);
+    color: hsl(220, 14%, 71%);
+  }
+
+  /* Line Highlight plugin overrides */
+  /* The highlighted line itself */
+  html.theme-dark .line-highlight.line-highlight {
+    background: hsla(220, 100%, 80%, 0.04);
+  }
+
+  /* Default line numbers in Line Highlight plugin */
+  html.theme-dark .line-highlight.line-highlight:before,
+  html.theme-dark .line-highlight.line-highlight[data-end]:after {
+    background: hsl(220, 13%, 26%);
+    color: hsl(220, 14%, 71%);
+    padding: 0.1em 0.6em;
+    border-radius: 0.3em;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2); /* same as Toolbar plugin default */
+  }
+
+  /* Hovering over a linkable line number (in the gutter area) */
+  /* Requires Line Numbers plugin as well */
+  html.theme-dark pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows > span:hover:before {
+    background-color: hsla(220, 100%, 80%, 0.04);
+  }
+
+  /* Line Numbers and Command Line plugins overrides */
+  /* Line separating gutter from coding area */
+  html.theme-dark .line-numbers.line-numbers .line-numbers-rows,
+  html.theme-dark .command-line .command-line-prompt {
+    border-right-color: hsla(220, 14%, 71%, 0.15);
+  }
+
+  /* Stuff in the gutter */
+  html.theme-dark .line-numbers .line-numbers-rows > span:before,
+  html.theme-dark .command-line .command-line-prompt > span:before {
+    color: hsl(220, 14%, 45%);
+  }
+
+  /* Match Braces plugin overrides */
+  /* Note: Outline colour is inherited from the braces */
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-1,
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-5,
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-9 {
+    color: hsl(355, 65%, 65%);
+  }
+
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-2,
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-6,
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-10 {
+    color: hsl(95, 38%, 62%);
+  }
+
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-3,
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-7,
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-11 {
+    color: hsl(207, 82%, 66%);
+  }
+
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-4,
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-8,
+  html.theme-dark .rainbow-braces .token.token.punctuation.brace-level-12 {
+    color: hsl(286, 60%, 67%);
+  }
+
+  /* Diff Highlight plugin overrides */
+  /* Taken from https://github.com/atom/github/blob/master/styles/variables.less */
+  html.theme-dark pre.diff-highlight > code .token.token.deleted:not(.prefix),
+  html.theme-dark pre > code.diff-highlight .token.token.deleted:not(.prefix) {
+    background-color: hsla(353, 100%, 66%, 0.15);
+  }
+
+  html.theme-dark pre.diff-highlight > code .token.token.deleted:not(.prefix)::-moz-selection,
+  html.theme-dark pre.diff-highlight > code .token.token.deleted:not(.prefix) *::-moz-selection,
+  html.theme-dark pre > code.diff-highlight .token.token.deleted:not(.prefix)::-moz-selection,
+  html.theme-dark pre > code.diff-highlight .token.token.deleted:not(.prefix) *::-moz-selection {
+    background-color: hsla(353, 95%, 66%, 0.25);
+  }
+
+  html.theme-dark pre.diff-highlight > code .token.token.deleted:not(.prefix)::selection,
+  html.theme-dark pre.diff-highlight > code .token.token.deleted:not(.prefix) *::selection,
+  html.theme-dark pre > code.diff-highlight .token.token.deleted:not(.prefix)::selection,
+  html.theme-dark pre > code.diff-highlight .token.token.deleted:not(.prefix) *::selection {
+    background-color: hsla(353, 95%, 66%, 0.25);
+  }
+
+  html.theme-dark pre.diff-highlight > code .token.token.inserted:not(.prefix),
+  html.theme-dark pre > code.diff-highlight .token.token.inserted:not(.prefix) {
+    background-color: hsla(137, 100%, 55%, 0.15);
+  }
+
+  html.theme-dark pre.diff-highlight > code .token.token.inserted:not(.prefix)::-moz-selection,
+  html.theme-dark pre.diff-highlight > code .token.token.inserted:not(.prefix) *::-moz-selection,
+  html.theme-dark pre > code.diff-highlight .token.token.inserted:not(.prefix)::-moz-selection,
+  html.theme-dark pre > code.diff-highlight .token.token.inserted:not(.prefix) *::-moz-selection {
+    background-color: hsla(135, 73%, 55%, 0.25);
+  }
+
+  html.theme-dark pre.diff-highlight > code .token.token.inserted:not(.prefix)::selection,
+  html.theme-dark pre.diff-highlight > code .token.token.inserted:not(.prefix) *::selection,
+  html.theme-dark pre > code.diff-highlight .token.token.inserted:not(.prefix)::selection,
+  html.theme-dark pre > code.diff-highlight .token.token.inserted:not(.prefix) *::selection {
+    background-color: hsla(135, 73%, 55%, 0.25);
+  }
+
+  /* Previewers plugin overrides */
+  /* Based on https://github.com/atom-community/atom-ide-datatip/blob/master/styles/atom-ide-datatips.less and https://github.com/atom/atom/blob/master/packages/one-dark-ui */
+  /* Border around popup */
+  html.theme-dark .prism-previewer.prism-previewer:before,
+  html.theme-dark .prism-previewer-gradient.prism-previewer-gradient div {
+    border-color: hsl(224, 13%, 17%);
+  }
+
+  /* Angle and time should remain as circles and are hence not included */
+  html.theme-dark .prism-previewer-color.prism-previewer-color:before,
+  html.theme-dark .prism-previewer-gradient.prism-previewer-gradient div,
+  html.theme-dark .prism-previewer-easing.prism-previewer-easing:before {
+    border-radius: 0.3em;
+  }
+
+  /* Triangles pointing to the code */
+  html.theme-dark .prism-previewer.prism-previewer:after {
+    border-top-color: hsl(224, 13%, 17%);
+  }
+
+  html.theme-dark .prism-previewer-flipped.prism-previewer-flipped.after {
+    border-bottom-color: hsl(224, 13%, 17%);
+  }
+
+  /* Background colour within the popup */
+  html.theme-dark .prism-previewer-angle.prism-previewer-angle:before,
+  html.theme-dark .prism-previewer-time.prism-previewer-time:before,
+  html.theme-dark .prism-previewer-easing.prism-previewer-easing {
+    background: hsl(219, 13%, 22%);
+  }
+
+  /* For angle, this is the positive area (eg. 90deg will display one quadrant in this colour) */
+  /* For time, this is the alternate colour */
+  html.theme-dark .prism-previewer-angle.prism-previewer-angle circle,
+  html.theme-dark .prism-previewer-time.prism-previewer-time circle {
+    stroke: hsl(220, 14%, 71%);
+    stroke-opacity: 1;
+  }
+
+  /* Stroke colours of the handle, direction point, and vector itself */
+  html.theme-dark .prism-previewer-easing.prism-previewer-easing circle,
+  html.theme-dark .prism-previewer-easing.prism-previewer-easing path,
+  html.theme-dark .prism-previewer-easing.prism-previewer-easing line {
+    stroke: hsl(220, 14%, 71%);
+  }
+
+  /* Fill colour of the handle */
+  html.theme-dark .prism-previewer-easing.prism-previewer-easing circle {
+    fill: transparent;
+  }
+  
+  

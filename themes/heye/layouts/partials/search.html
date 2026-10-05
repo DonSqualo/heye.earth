@@ -1,0 +1,14 @@
+{{- /* Site search modal, same class names super.so used so the vendored CSS styles it. Filled by js/search.js. */ -}}
+<div class="notion-search close" id="site-search" aria-hidden="true">
+  <div class="notion-search__wrapper">
+    <div class="notion-search__box" role="dialog" aria-label="Search">
+      <div class="notion-search__input">
+        <div class="notion-search__icon">{{ partial "icons/search.html" . }}</div>
+        <input type="text" placeholder="Search {{ .Site.Title }}…" autocomplete="off" spellcheck="false" aria-label="Search">
+        <div class="notion-search__clear" title="Clear"><svg viewBox="0 0 24 24" width="16" height="16" fill="var(--color-text-default-light)"><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg></div>
+      </div>
+      <div class="notion-search__result-list" hidden></div>
+      <div class="notion-search__result-footer"><strong>↑↓</strong> to navigate <span class="notion-search__result-footer-shortcut"><strong>↵</strong> to open</span> <span class="notion-search__result-footer-shortcut"><strong>esc</strong> to close</span></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+@media only screen and (max-width: 745px){
+  iframe{
+    width: 100% !important;
+  }
+}

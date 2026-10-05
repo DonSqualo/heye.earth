@@ -1,0 +1,24 @@
+{{- /* Desktop navbar, 2023 super.so structure. The theme switcher sits between breadcrumb and actions exactly where Global.js used to inject it. */ -}}
+<div class="notion-navbar{{ if .IsHome }} lp-notion-navbar lp-desktop-notion-navbar{{ end }}">
+  <div class="notion-breadcrumb">
+    <a class="notion-link notion-breadcrumb__item{{ if .IsHome }} single{{ end }} has-icon" href="/">
+      <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:16px;height:16px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative">
+        <img alt="{{ .Site.Title }}" class="notion-breadcrumb__icon" src="{{ partial "asset.html" .Site.Params.siteIcon }}" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
+      </span>
+      <div class="notion-navbar__title notion-breadcrumb__title">{{ .Site.Title }}</div>
+    </a>
+    {{- range .Params.breadcrumbs }}
+    <span class="notion-breadcrumb__divider">/</span>
+    <a class="notion-link notion-breadcrumb__item" href="{{ .url }}"><div class="notion-navbar__title notion-breadcrumb__title">{{ .title }}</div></a>
+    {{- end }}
+  </div>
+  <div class="lp-theme-switcher"><a id="desktop-theme-switcher"></a></div>
+  <div class="notion-navbar__actions">
+    <div class="notion-navbar__button notion-navbar__search" id="desktop-search" role="button" aria-label="Search">
+      {{ partial "icons/search.html" . }}
+    </div>
+  </div>
+  {{- if .IsHome }}
+  <div class="lp-custom-navbar-progress"></div>
+  {{- end }}
+</div>

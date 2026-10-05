@@ -1,0 +1,10 @@
+{{- /* landing-items.html: data/landing.yaml items with every asset path resolved through asset.html (CDN or local). */ -}}
+{{- $out := slice -}}
+{{- range hugo.Data.landing.items -}}
+  {{- $it := . -}}
+  {{- range $k := slice "bg" "bg_mobile" "bg_video" "title_img" "title_video" "cursor" -}}
+    {{- with index $it $k }}{{ $it = merge $it (dict $k (partial "asset.html" .)) }}{{ end -}}
+  {{- end -}}
+  {{- $out = $out | append $it -}}
+{{- end -}}
+{{- return $out -}}

@@ -1,0 +1,6 @@
+{{- /* asset.html: local /assets/... path -> CDN URL when params.cdn.enabled and data/cdn.json knows it, else the local path. */ -}}
+{{- $p := . | default "" -}}
+{{- if and $p site.Params.cdn.enabled hugo.Data.cdn -}}
+  {{- with index hugo.Data.cdn.urls $p }}{{ $p = . }}{{ end -}}
+{{- end -}}
+{{- $p -}}

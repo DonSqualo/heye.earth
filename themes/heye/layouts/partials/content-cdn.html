@@ -1,0 +1,6 @@
+{{- /* content-cdn.html: rewrite /assets/... references inside exported page HTML to CDN URLs (params.cdn.enabled). Only whole quoted attribute values are replaced, so keys cannot clash. */ -}}
+{{- $c := . -}}
+{{- if and site.Params.cdn.enabled hugo.Data.cdn -}}
+  {{- range $k, $v := hugo.Data.cdn.urls }}{{ if strings.Contains $c $k }}{{ $c = replace $c (printf "\"%s\"" $k) (printf "\"%s\"" $v) }}{{ end }}{{ end -}}
+{{- end -}}
+{{- $c | safeHTML -}}

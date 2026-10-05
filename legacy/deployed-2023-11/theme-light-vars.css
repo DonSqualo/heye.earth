@@ -1,0 +1,724 @@
+
+    html.theme-light {
+      /* Gray */
+      --gray-h: 36;
+      --gray-s: 2%;
+      --gray-l: 46%;
+      --color-gray: hsl(var(--gray-h), var(--gray-s), var(--gray-l));
+      --color-text-gray: var(--color-gray);
+      --color-bg-gray: hsl(
+        var(--gray-h),
+        var(--gray-s),
+        90%
+      );
+      --color-bg-gray-light: var(--color-bg-gray);
+      --color-pill-gray: hsl(
+        calc(var(--gray-h) + 14),
+        var(--gray-s),
+        88%
+      );
+      --color-pill-text-gray: hsl(
+        var(--gray-h),
+        var(--gray-s),
+        calc(var(--gray-l) - 28%)
+      );
+      --color-bg-form-btn-gray: #A7A39A;
+
+      /* Brown */
+      --brown-h: 19;
+      --brown-s: 31%;
+      --brown-l: 47%;
+      --color-brown: hsl(var(--brown-h), var(--brown-s), var(--brown-l));
+      --color-text-brown: var(--color-brown);
+      --color-bg-brown: hsl(
+        var(--brown-h),
+        var(--brown-s),
+        90%
+      );
+      --color-bg-brown-light: var(--color-bg-brown);
+      --color-pill-brown: hsl(
+        var(--brown-h),
+        calc(var(--brown-s) + 10%),
+        89%
+      );
+      --color-pill-text-brown: hsl(
+        var(--brown-h),
+        calc(var(--brown-s) + 10%),
+        calc(var(--brown-l) - 28%)
+      );
+      --color-bg-form-btn-brown: #9A6851;
+
+      /* Orange */
+      --orange-h: 30;
+      --orange-s: 87%;
+      --orange-l: 45%;
+      --color-orange: hsl(
+        var(--orange-h),
+        var(--orange-s),
+        var(--orange-l)
+      );
+      --color-text-orange: var(--color-orange);
+      --color-bg-orange: hsl(
+        var(--orange-h),
+        var(--orange-s),
+        90%
+      );
+      --color-bg-orange-light: var(--color-bg-orange);
+      --color-pill-orange: hsl(
+        var(--orange-h),
+        calc(var(--orange-s) - 6%),
+        87%
+      );
+      --color-pill-text-orange: hsl(
+        calc(var(--orange-h) - 5),
+        calc(var(--orange-s) - 18%),
+        calc(var(--orange-l) - 28%)
+      );
+      --color-bg-form-btn-orange: #D9730D;
+
+      /* Yellow */
+      --yellow-h: 38;
+      --yellow-s: 62%;
+      --yellow-l: 49%;
+      --color-yellow: hsl(
+        var(--yellow-h),
+        var(--yellow-s),
+        var(--yellow-l)
+      );
+      --color-text-yellow: var(--color-yellow);
+      --color-bg-yellow: hsl(
+        var(--yellow-h),
+        calc(var(--yellow-s) + 90%),
+        90%
+      );
+      --color-bg-yellow-light: var(--color-bg-yellow);
+      --color-pill-yellow: hsl(
+        calc(var(--yellow-h) + 3),
+        calc(var(--yellow-s) + 24%),
+        90%
+      );
+      --color-pill-text-yellow: hsl(
+        calc(var(--yellow-h) - 11),
+        calc(var(--yellow-s) - 22%),
+        calc(var(--yellow-l) - 28%)
+      );
+      --color-bg-form-btn-yellow: #CA922F;
+
+      /* Green */
+      --green-h: 149;
+      --green-s: 31%;
+      --green-l: 39%;
+      --color-green: hsl(var(--green-h), var(--green-s), var(--green-l));
+      --color-text-green: var(--color-green);
+      --color-bg-green: hsl(
+        var(--green-h),
+        var(--green-s),
+        90%
+      );
+      --color-bg-green-light: var(--color-bg-green);
+      --color-pill-green: hsl(
+        calc(var(--green-h) - 28),
+        calc(var(--green-s) + 3%),
+        89%
+      );
+      --color-pill-text-green: hsl(
+        calc(var(--green-h) - 2),
+        var(--green-s),
+        calc(var(--green-l) - 22%)
+      );
+      --color-bg-form-btn-green: #448361;
+
+      /* Blue */
+      --blue-h: 173;
+      --blue-s: 25%;
+      --blue-l: 33%;
+      --color-blue: hsl(var(--blue-h), var(--blue-s), var(--blue-l));
+      --color-text-blue: var(--color-blue);
+      --color-bg-blue: hsl(
+        var(--blue-h),
+        var(--blue-s),
+        83%
+      );
+      --color-bg-blue-light: var(--color-bg-blue);
+      --color-pill-blue: hsl(
+        var(--blue-h),
+        calc(var(--blue-s) - 5%),
+        75%
+      );
+      --color-pill-text-blue: hsl(
+        calc(var(--blue-h) + 7),
+        calc(var(--blue-s) - 6%),
+        calc(var(--blue-l) - 22%)
+      );
+      --color-bg-form-btn-blue: #327DA9;
+
+      /* Purple */
+      --purple-h: 274;
+      --purple-s: 32%;
+      --purple-l: 54%;
+      --color-purple: hsl(
+        var(--purple-h),
+        var(--purple-s),
+        var(--purple-l)
+      );
+      --color-text-purple: var(--color-purple);
+      --color-bg-purple: hsl(
+        var(--purple-h),
+        var(--purple-s),
+        90%
+      );
+      --color-bg-purple-light: var(--color-bg-purple);
+      --color-pill-purple: hsl(
+        var(--purple-h),
+        calc(var(--purple-s) + 5%),
+        90%
+      );
+      --color-pill-text-purple: hsl(
+        calc(var(--purple-h) + 1),
+        calc(var(--purple-s) + 10%),
+        calc(var(--purple-l) - 31%)
+      );
+      --color-bg-form-btn-purple: #8F64AF;
+
+      /* Pink */
+      --pink-h: 328;
+      --pink-s: 48%;
+      --pink-l: 53%;
+      --color-pink: hsl(var(--pink-h), var(--pink-s), var(--pink-l));
+      --color-text-pink: var(--color-pink);
+      --color-bg-pink: hsl(
+        var(--pink-h),
+        var(--pink-s),
+        90%
+      );
+      --color-bg-pink-light: var(--color-bg-pink);
+      --color-pill-pink: hsl(
+        var(--pink-h),
+        var(--pink-s),
+        90%
+      );
+      --color-pill-text-pink: hsl(
+        calc(var(--pink-h) + 3),
+        calc(var(--pink-s) - 14%),
+        calc(var(--pink-l) - 31%)
+      );
+      --color-bg-form-btn-pink: #C24C8B;
+
+      /* Red */
+      --red-h: 2;
+      --red-s: 62%;
+      --red-l: 55%;
+      --color-red: hsl(var(--red-h), var(--red-s), var(--red-l));
+      --color-text-red: var(--color-red);
+      --color-bg-red: hsl(
+        var(--red-h),
+        var(--red-s),
+        90%
+      );
+      --color-bg-red-light: var(--color-bg-red);
+      --color-pill-red: hsl(
+        calc(var(--red-h) + 6),
+        calc(var(--red-s) + 42%),
+        90%
+      );
+      --color-pill-text-red: hsl(
+        calc(var(--red-h) + 0),
+        var(--red-s),
+        calc(var(--red-l) - 32%)
+      );
+      --color-bg-form-btn-red: #D44E49;
+
+      /*Default*/
+      --default-h: 45;
+      --default-s: 8%;
+      --default-l: 20%;
+      --color-default: hsl(
+        var(--default-h),
+        var(--default-s),
+        var(--default-l)
+      );
+      --color-pill-default: hsl(
+        var(--gray-h),
+        var(--gray-s),
+        90%
+      );
+      --color-pill-text-default: hsl(
+        var(--gray-h),
+        var(--gray-s),
+        calc(var(--gray-l) - 28%)
+      );
+      --color-bg-form-btn-default: #55534E;
+
+      /*Other*/
+      --color-text-default: #37352F;
+      --color-text-default-light: #7d7c78;
+      --color-bg-default: #ffffff;
+      --color-border-default: #E9E9E7;
+      --color-border-dark: var(--color-border-default);
+      --color-ui-hover-bg: #efefef;
+      --color-card-bg: #ffffff;
+      --color-card-bg-hover: #f9f9f8;
+      --color-calendar-weekend-bg: #f7f6f3;
+      --color-checkbox-bg: #3f6964;
+      --color-code-bg: rgba(135,131,120,.15);
+
+      /*Scrollbar*/
+      --scrollbar-background-color: #FAFAFA;
+      --scrollbar-thumb-color: #C1C1C1;
+      --scrollbar-border-color: #E8E8E8;
+
+      /*Navbar*/
+      --navbar-text-color: #37352F;
+      --navbar-list-item-hover: rgba(130, 130, 130, 0.09);
+      --navbar-background-color-hover: #f0f0f0;
+      --navbar-background-color: #ffffff;
+      --navbar-button-text-color: #ffffff;
+      --navbar-button-background-color: #37352F;
+      --navbar-menu-background-color: var(--navbar-background-color);
+      --navbar-text-color-dark: #282620;
+
+      /*Footer*/
+      --footer-text-color: #37352F;
+      --footer-background-color: #ffffff;
+
+      /*Sidebar*/
+      --sidebar-text-color: #37352F;
+      --sidebar-cta-text-color: #37352F;
+      --sidebar-background-color: #ffffff;
+      --sidebar-cta-background-color: #ffffff;
+      --sidebar-border-color: #E9E9E7;
+      --sidebar-background-color-hover: #efefef;
+      --sidebar-text-color-dark: #282620;
+      --sidebar-cta-background-color-hover: #efefef;
+    }
+
+    
+  /**
+   * One Light theme for prism.js
+   * Based on Atom's One Light theme: https://github.com/atom/atom/tree/master/packages/one-light-syntax
+   */
+  
+  /**
+   * One Light colours (accurate as of commit eb064bf on 19 Feb 2021)
+   * From colors.less
+   * --mono-1: hsl(230, 8%, 24%);
+   * --mono-2: hsl(230, 6%, 44%);
+   * --mono-3: hsl(230, 4%, 64%)
+   * --hue-1: hsl(198, 99%, 37%);
+   * --hue-2: hsl(221, 87%, 60%);
+   * --hue-3: hsl(301, 63%, 40%);
+   * --hue-4: hsl(119, 34%, 47%);
+   * --hue-5: hsl(5, 74%, 59%);
+   * --hue-5-2: hsl(344, 84%, 43%);
+   * --hue-6: hsl(35, 99%, 36%);
+   * --hue-6-2: hsl(35, 99%, 40%);
+   * --syntax-fg: hsl(230, 8%, 24%);
+   * --syntax-bg: hsl(230, 1%, 98%);
+   * --syntax-gutter: hsl(230, 1%, 62%);
+   * --syntax-guide: hsla(230, 8%, 24%, 0.2);
+   * --syntax-accent: hsl(230, 100%, 66%);
+   * From syntax-variables.less
+   * --syntax-selection-color: hsl(230, 1%, 90%);
+   * --syntax-gutter-background-color-selected: hsl(230, 1%, 90%);
+   * --syntax-cursor-line: hsla(230, 8%, 24%, 0.05);
+   */
+  
+  html.theme-light code[class*="language-"],
+  html.theme-light pre[class*="language-"] {
+    color: hsl(230, 8%, 24%);
+    font-family: "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  /* Selection */
+  html.theme-light code[class*="language-"]::-moz-selection,
+  html.theme-light code[class*="language-"] *::-moz-selection,
+  html.theme-light pre[class*="language-"] *::-moz-selection {
+    background: hsl(230, 1%, 90%);
+    color: inherit;
+  }
+  
+  html.theme-light code[class*="language-"]::selection,
+  html.theme-light code[class*="language-"] *::selection,
+  html.theme-light pre[class*="language-"] *::selection {
+    background: hsl(230, 1%, 90%);
+    color: inherit;
+  }
+  
+  /* Code blocks */
+  html.theme-light pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+  }
+  
+  /* Inline code */
+  html.theme-light :not(pre) > code[class*="language-"] {
+    padding: 0.2em 0.3em;
+    border-radius: 0.3em;
+    white-space: normal;
+  }
+  
+  html.theme-light .token.comment,
+  html.theme-light .token.prolog,
+  html.theme-light .token.cdata {
+    color: hsl(230, 4%, 64%);
+  }
+  
+  html.theme-light .token.doctype,
+  html.theme-light .token.punctuation,
+  html.theme-light .token.entity {
+    color: hsl(230, 8%, 24%);
+  }
+  
+  html.theme-light .token.attr-name,
+  html.theme-light .token.class-name,
+  html.theme-light .token.boolean,
+  html.theme-light .token.constant,
+  html.theme-light .token.number,
+  html.theme-light .token.atrule {
+    color: hsl(35, 99%, 36%);
+  }
+  
+  html.theme-light .token.keyword {
+    color: hsl(301, 63%, 40%);
+  }
+  
+  html.theme-light .token.property,
+  html.theme-light .token.tag,
+  html.theme-light .token.symbol,
+  html.theme-light .token.deleted,
+  html.theme-light .token.important {
+    color: hsl(5, 74%, 59%);
+  }
+  
+  html.theme-light .token.selector,
+  html.theme-light .token.string,
+  html.theme-light .token.char,
+  html.theme-light .token.builtin,
+  html.theme-light .token.inserted,
+  html.theme-light .token.regex,
+  html.theme-light .token.attr-value,
+  html.theme-light .token.attr-value > .token.punctuation {
+    color: hsl(119, 34%, 47%);
+  }
+  
+  html.theme-light .token.variable,
+  html.theme-light .token.operator,
+  html.theme-light .token.function {
+    color: hsl(221, 87%, 60%);
+  }
+  
+  html.theme-light .token.url {
+    color: hsl(198, 99%, 37%);
+  }
+  
+  /* HTML overrides */
+  html.theme-light .token.attr-value > .token.punctuation.attr-equals,
+  html.theme-light .token.special-attr > .token.attr-value > .token.value.css {
+    color: hsl(230, 8%, 24%);
+  }
+  
+  /* CSS overrides */
+  html.theme-light .language-css .token.selector {
+    color: hsl(5, 74%, 59%);
+  }
+  
+  html.theme-light .language-css .token.property {
+    color: hsl(230, 8%, 24%);
+  }
+  
+  html.theme-light .language-css .token.function,
+  html.theme-light .language-css .token.url > .token.function {
+    color: hsl(198, 99%, 37%);
+  }
+  
+  html.theme-light .language-css .token.url > .token.string.url {
+    color: hsl(119, 34%, 47%);
+  }
+  
+  html.theme-light .language-css .token.important,
+  html.theme-light .language-css .token.atrule .token.rule {
+    color: hsl(301, 63%, 40%);
+  }
+  
+  /* JS overrides */
+  html.theme-light .language-javascript .token.operator {
+    color: hsl(301, 63%, 40%);
+  }
+  
+  html.theme-light .language-javascript .token.template-string > .token.interpolation > .token.interpolation-punctuation.punctuation {
+    color: hsl(344, 84%, 43%);
+  }
+  
+  /* JSON overrides */
+  html.theme-light .language-json .token.operator {
+    color: hsl(230, 8%, 24%);
+  }
+  
+  html.theme-light .language-json .token.null.keyword {
+    color: hsl(35, 99%, 36%);
+  }
+  
+  /* MD overrides */
+  html.theme-light .language-markdown .token.url,
+  html.theme-light .language-markdown .token.url > .token.operator,
+  html.theme-light .language-markdown .token.url-reference.url > .token.string {
+    color: hsl(230, 8%, 24%);
+  }
+  
+  html.theme-light .language-markdown .token.url > .token.content {
+    color: hsl(221, 87%, 60%);
+  }
+  
+  html.theme-light .language-markdown .token.url > .token.url,
+  html.theme-light .language-markdown .token.url-reference.url {
+    color: hsl(198, 99%, 37%);
+  }
+  
+  html.theme-light .language-markdown .token.blockquote.punctuation,
+  html.theme-light .language-markdown .token.hr.punctuation {
+    color: hsl(230, 4%, 64%);
+    font-style: italic;
+  }
+  
+  html.theme-light .language-markdown .token.code-snippet {
+    color: hsl(119, 34%, 47%);
+  }
+  
+  html.theme-light .language-markdown .token.bold .token.content {
+    color: hsl(35, 99%, 36%);
+  }
+  
+  html.theme-light .language-markdown .token.italic .token.content {
+    color: hsl(301, 63%, 40%);
+  }
+  
+  html.theme-light .language-markdown .token.strike .token.content,
+  html.theme-light .language-markdown .token.strike .token.punctuation,
+  html.theme-light .language-markdown .token.list.punctuation,
+  html.theme-light .language-markdown .token.title.important > .token.punctuation {
+    color: hsl(5, 74%, 59%);
+  }
+  
+  /* General */
+  html.theme-light .token.bold {
+    font-weight: bold;
+  }
+  
+  html.theme-light .token.comment,
+  html.theme-light .token.italic {
+    font-style: italic;
+  }
+  
+  html.theme-light .token.entity {
+    cursor: help;
+  }
+  
+  html.theme-light .token.namespace {
+    opacity: 0.8;
+  }
+  
+  /* Plugin overrides */
+  /* Selectors should have higher specificity than those in the plugins' default stylesheets */
+  
+  /* Show Invisibles plugin overrides */
+  html.theme-light .token.token.tab:not(:empty):before,
+  html.theme-light .token.token.cr:before,
+  html.theme-light .token.token.lf:before,
+  html.theme-light .token.token.space:before {
+    color: hsla(230, 8%, 24%, 0.2);
+  }
+  
+  /* Toolbar plugin overrides */
+  /* Space out all buttons and move them away from the right edge of the code block */
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item {
+    margin-right: 0.4em;
+  }
+  
+  /* Styling the buttons */
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > button,
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > a,
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > span {
+    background: hsl(230, 1%, 90%);
+    color: hsl(230, 6%, 44%);
+    padding: 0.1em 0.4em;
+    border-radius: 0.3em;
+  }
+  
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > button:hover,
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > button:focus,
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > a:hover,
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > a:focus,
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > span:hover,
+  html.theme-light div.code-toolbar > .toolbar.toolbar > .toolbar-item > span:focus {
+    background: hsl(230, 1%, 78%); /* custom: darken(--syntax-bg, 20%) */
+    color: hsl(230, 8%, 24%);
+  }
+  
+  /* Line Highlight plugin overrides */
+  /* The highlighted line itself */
+  html.theme-light .line-highlight.line-highlight {
+    background: hsla(230, 8%, 24%, 0.05);
+  }
+  
+  /* Default line numbers in Line Highlight plugin */
+  html.theme-light .line-highlight.line-highlight:before,
+  html.theme-light .line-highlight.line-highlight[data-end]:after {
+    background: hsl(230, 1%, 90%);
+    color: hsl(230, 8%, 24%);
+    padding: 0.1em 0.6em;
+    border-radius: 0.3em;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2); /* same as Toolbar plugin default */
+  }
+  
+  /* Hovering over a linkable line number (in the gutter area) */
+  /* Requires Line Numbers plugin as well */
+  html.theme-light pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows > span:hover:before {
+    background-color: hsla(230, 8%, 24%, 0.05);
+  }
+  
+  /* Line Numbers and Command Line plugins overrides */
+  /* Line separating gutter from coding area */
+  html.theme-light .line-numbers.line-numbers .line-numbers-rows,
+  html.theme-light .command-line .command-line-prompt {
+    border-right-color: hsla(230, 8%, 24%, 0.2);
+  }
+  
+  /* Stuff in the gutter */
+  html.theme-light .line-numbers .line-numbers-rows > span:before,
+  html.theme-light .command-line .command-line-prompt > span:before {
+    color: hsl(230, 1%, 62%);
+  }
+  
+  /* Match Braces plugin overrides */
+  /* Note: Outline colour is inherited from the braces */
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-1,
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-5,
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-9 {
+    color: hsl(5, 74%, 59%);
+  }
+  
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-2,
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-6,
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-10 {
+    color: hsl(119, 34%, 47%);
+  }
+  
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-3,
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-7,
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-11 {
+    color: hsl(221, 87%, 60%);
+  }
+  
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-4,
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-8,
+  html.theme-light .rainbow-braces .token.token.punctuation.brace-level-12 {
+    color: hsl(301, 63%, 40%);
+  }
+  
+  /* Diff Highlight plugin overrides */
+  /* Taken from https://github.com/atom/github/blob/master/styles/variables.less */
+  html.theme-light pre.diff-highlight > code .token.token.deleted:not(.prefix),
+  html.theme-light pre > code.diff-highlight .token.token.deleted:not(.prefix) {
+    background-color: hsla(353, 100%, 66%, 0.15);
+  }
+  
+  html.theme-light pre.diff-highlight > code .token.token.deleted:not(.prefix)::-moz-selection,
+  html.theme-light pre.diff-highlight > code .token.token.deleted:not(.prefix) *::-moz-selection,
+  html.theme-light pre > code.diff-highlight .token.token.deleted:not(.prefix)::-moz-selection,
+  html.theme-light pre > code.diff-highlight .token.token.deleted:not(.prefix) *::-moz-selection {
+    background-color: hsla(353, 95%, 66%, 0.25);
+  }
+  
+  html.theme-light pre.diff-highlight > code .token.token.deleted:not(.prefix)::selection,
+  html.theme-light pre.diff-highlight > code .token.token.deleted:not(.prefix) *::selection,
+  html.theme-light pre > code.diff-highlight .token.token.deleted:not(.prefix)::selection,
+  html.theme-light pre > code.diff-highlight .token.token.deleted:not(.prefix) *::selection {
+    background-color: hsla(353, 95%, 66%, 0.25);
+  }
+  
+  html.theme-light pre.diff-highlight > code .token.token.inserted:not(.prefix),
+  html.theme-light pre > code.diff-highlight .token.token.inserted:not(.prefix) {
+    background-color: hsla(137, 100%, 55%, 0.15);
+  }
+  
+  html.theme-light pre.diff-highlight > code .token.token.inserted:not(.prefix)::-moz-selection,
+  html.theme-light pre.diff-highlight > code .token.token.inserted:not(.prefix) *::-moz-selection,
+  html.theme-light pre > code.diff-highlight .token.token.inserted:not(.prefix)::-moz-selection,
+  html.theme-light pre > code.diff-highlight .token.token.inserted:not(.prefix) *::-moz-selection {
+    background-color: hsla(135, 73%, 55%, 0.25);
+  }
+  
+  html.theme-light pre.diff-highlight > code .token.token.inserted:not(.prefix)::selection,
+  html.theme-light pre.diff-highlight > code .token.token.inserted:not(.prefix) *::selection,
+  html.theme-light pre > code.diff-highlight .token.token.inserted:not(.prefix)::selection,
+  html.theme-light pre > code.diff-highlight .token.token.inserted:not(.prefix) *::selection {
+    background-color: hsla(135, 73%, 55%, 0.25);
+  }
+  
+  /* Previewers plugin overrides */
+  /* Based on https://github.com/atom-community/atom-ide-datatip/blob/master/styles/atom-ide-datatips.less and https://github.com/atom/atom/blob/master/packages/one-light-ui */
+  /* Border around popup */
+  html.theme-light .prism-previewer.prism-previewer:before,
+  html.theme-light .prism-previewer-gradient.prism-previewer-gradient div {
+    border-color: hsl(0, 0, 95%);
+  }
+  
+  /* Angle and time should remain as circles and are hence not included */
+  html.theme-light .prism-previewer-color.prism-previewer-color:before,
+  html.theme-light .prism-previewer-gradient.prism-previewer-gradient div,
+  html.theme-light .prism-previewer-easing.prism-previewer-easing:before {
+    border-radius: 0.3em;
+  }
+  
+  /* Triangles pointing to the code */
+  html.theme-light .prism-previewer.prism-previewer:after {
+    border-top-color: hsl(0, 0, 95%);
+  }
+  
+  html.theme-light .prism-previewer-flipped.prism-previewer-flipped.after {
+    border-bottom-color: hsl(0, 0, 95%);
+  }
+  
+  /* Background colour within the popup */
+  html.theme-light .prism-previewer-angle.prism-previewer-angle:before,
+  html.theme-light .prism-previewer-time.prism-previewer-time:before,
+  html.theme-light .prism-previewer-easing.prism-previewer-easing {
+    background: hsl(0, 0%, 100%);
+  }
+  
+  /* For angle, this is the positive area (eg. 90deg will display one quadrant in this colour) */
+  /* For time, this is the alternate colour */
+  html.theme-light .prism-previewer-angle.prism-previewer-angle circle,
+  html.theme-light .prism-previewer-time.prism-previewer-time circle {
+    stroke: hsl(230, 8%, 24%);
+    stroke-opacity: 1;
+  }
+  
+  /* Stroke colours of the handle, direction point, and vector itself */
+  html.theme-light .prism-previewer-easing.prism-previewer-easing circle,
+  html.theme-light .prism-previewer-easing.prism-previewer-easing path,
+  html.theme-light .prism-previewer-easing.prism-previewer-easing line {
+    stroke: hsl(230, 8%, 24%);
+  }
+  
+  /* Fill colour of the handle */
+  html.theme-light .prism-previewer-easing.prism-previewer-easing circle {
+    fill: transparent;
+  }
+  
+  

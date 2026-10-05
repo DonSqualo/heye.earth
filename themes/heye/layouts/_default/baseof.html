@@ -1,0 +1,76 @@
+{{- /* Page chrome mirrors the DOM super.so rendered in 2023 so the vendored CSS and the custom code keep working unchanged. */ -}}
+{{- $slug := "index" -}}
+{{- $parent := "" -}}
+{{- if not .IsHome -}}
+  {{- $segs := split (strings.Trim .RelPermalink "/") "/" -}}
+  {{- $slug = index $segs (sub (len $segs) 1) -}}
+  {{- if gt (len $segs) 1 }}{{ $parent = index $segs (sub (len $segs) 2) }}{{ else }}{{ $parent = "index" }}{{ end -}}
+{{- end -}}
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" class="theme-dark global-dark-theme">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}</title>
+<meta name="robots" content="index,follow">
+{{- $desc := .Params.description | default .Site.Params.description }}
+<meta name="description" content="{{ $desc }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+{{- with .Params.og_image }}
+<meta property="og:image" content="{{ partial "asset.html" . | absURL }}">
+{{- end }}
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<link rel="icon" href="{{ partial "asset.html" .Site.Params.favicon }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/prism.css">
+<link rel="stylesheet" href="/css/cluster.css">
+<link rel="stylesheet" href="/css/super-notion.css">
+<link rel="stylesheet" href="/css/super-theme.css">
+<link rel="stylesheet" href="/css/custom-global.css">
+{{- if .IsHome }}
+<link rel="stylesheet" href="/css/custom-home.css">
+{{- end }}
+<link rel="stylesheet" href="/css/site.css">
+<script>
+  // apply the stored light/dark preference before first paint (default: dark, as on the old site)
+  (function () {
+    try {
+      var v = localStorage.getItem("heyeEarthUserThemPreference");
+      if (v === "false") document.documentElement.classList.remove("global-dark-theme");
+    } catch (e) {}
+  })();
+</script>
+{{- block "head" . }}{{ end }}
+</head>
+<body>
+<div id="__next">
+  <div id="page-{{ $slug }}" class="super-root page__{{ $slug }}{{ if not .IsHome }} parent-page__{{ $parent }}{{ end }}">
+    {{ partial "navbar.html" . }}
+    <div class="super-content-wrapper">
+      {{ block "main" . }}{{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+  </div>
+  {{- if .IsHome }}
+  <div class="lp-mouse-trailer"><i class="gg-chevron-down"></i></div>
+  {{- end }}
+</div>
+{{ partial "search.html" . }}
+<script src="/js/theme.js"></script>
+<script src="/js/page.js"></script>
+<script src="/js/search.js"></script>
+{{- if .IsHome }}
+<script>window.landingPageItems = {{ partial "landing-items.html" . | jsonify | safeJS }};</script>
+<script src="/js/home.js"></script>
+{{- end }}
+{{- if .Params.needs_orbit }}
+<script type="module" src="https://js.withorbit.com/orbit-web-component.js"></script>
+{{- end }}
+</body>
+</html>

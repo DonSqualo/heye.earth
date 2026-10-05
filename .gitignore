@@ -1,0 +1,8 @@
+public/
+.hugo_build.lock
+resources/_gen/
+.venv/
+assets-src/
+
+# Local Netlify folder
+.netlify

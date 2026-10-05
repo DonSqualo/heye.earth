@@ -1,0 +1,7 @@
+{{- /* A regular Notion page: header + article. Content files hold the exported Notion HTML verbatim. */ -}}
+{{ partial "header.html" . }}
+<div class="super-content has-footer{{ if not .Params.full_width }} max-width{{ end }}">
+  <article id="block-{{ .Params.notion_id | default "page" }}" class="notion-root{{ if .Params.full_width }} full-width{{ end }}{{ if .Params.small_text }} small-text{{ end }}">
+{{ partial "content-cdn.html" .Content }}
+  </article>
+</div>

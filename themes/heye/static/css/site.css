@@ -1,0 +1,23 @@
+/* Small additions needed because the page is no longer rendered by super.so's React app. */
+
+/* The search modal used to be rendered client-side by super.so; these cover the pieces its stylesheet left to React. */
+.notion-search.close { display: none; }
+.notion-search.open { display: block; }
+.notion-search__box { font-family: var(--primary-font); }
+.notion-search__result-item { text-decoration: none; color: inherit; }
+.notion-search__result-item-icon { width: 20px; height: 20px; object-fit: cover; border-radius: 3px; }
+.notion-search__result-item-title { font-size: 1rem; }
+.notion-search__result-item-page-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 460px; }
+
+/* Theme switcher anchor rendered statically (the old site created it from JS). */
+.lp-theme-switcher > a:empty { min-width: 24px; min-height: 24px; }
+
+/* Twitter embeds (the old site let super.so load them) */
+.notion-tweet { margin: 8px 0; }
+.notion-tweet .twitter-tweet { margin: 0 auto !important; }
+
+/* Code block copy button feedback */
+.notion-code__copy-button.copied { opacity: 1; }
+
+/* <picture> wrappers around landing backgrounds must not affect layout */
+.lp-bg-pic > picture, .lp-bg-pic > video > picture { display: contents; }

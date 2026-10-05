@@ -1,0 +1,8 @@
+{{- /* Search index consumed by js/search.js */ -}}
+{{- $items := slice -}}
+{{- range .Site.Pages -}}
+  {{- if and (not .IsHome) (in (slice "page" "section") .Kind) -}}
+    {{- $items = $items | append (dict "title" .Title "url" .RelPermalink "icon" (.Params.icon | default "") "icon_image" (cond (ne .Params.icon_image nil) (partial "asset.html" .Params.icon_image) "") "text" (substr (.Plain | htmlUnescape) 0 1200)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $items | jsonify -}}

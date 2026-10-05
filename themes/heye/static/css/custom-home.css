@@ -1,0 +1,987 @@
+/* Home.css - custom super.so code for the landing page, last deployed version */
+.gg-chevron-down{
+    box-sizing:border-box;
+    position:relative;
+    display: block;
+    transform: scale(var(--ggs,2));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius:100px;
+    color: white;
+  }
+  .gg-chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid; 
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px;
+  }
+  .lp-mouse-trailer .gg-chevron-down {
+    transform: none;
+  }
+  .lp-read-more-button.lp-show span {
+    display: none;
+  }
+  .lp-twitter img {
+    margin-bottom: -3px;
+    margin-left: 10px;
+    width: 23px;
+  }
+  .lp-mail img {
+    margin-bottom: -4px;
+    margin-left: 10px;
+    color: white;
+    width: 24px;
+  }
+  .lp-super-root{
+  }
+  .lp-super-content{
+    height: 100%;
+  }
+  .lp-super-content>article.notion-root{
+    display: block;
+    height: 100%;
+  }
+  .lp-super-content>article.notion-root>*:last-child{
+    display: none;
+  }
+  .lp-super-content>.notion-root>.notion-column-list{
+    height: calc(100vh - 70px);;
+  }
+  .lp-super-footer{
+    display: none !important;
+  }
+  
+  .lp-selector-upper-notion > .notion-column{
+    display: none !important;
+  }
+  
+  .lp-nav-container{
+    display: flex;
+  }
+  div.notion-navbar__title notion-breadcrumb__title {
+    margin-inline-start: 12px;
+  }
+  .notion-breadcrumb__item span {
+    width: 26px !important;
+    height: 32px !important;
+  }
+  
+  .default-bg-pic-container-style{
+    box-sizing: border-box; 
+    display: block; 
+    overflow: hidden; 
+    width: initial; 
+    height: initial; 
+    background: none; 
+    opacity: 1; 
+    border: 0px none; 
+    margin: 0px; 
+    padding: 0px; 
+    position: absolute; 
+    inset: 0px;
+  }
+  .default-bg-pic-style{
+    position: absolute; 
+    inset: 0px; 
+    box-sizing: border-box; 
+    padding: 0px; 
+    border: medium none; 
+    margin: auto; 
+    display: block; 
+    width: 0px; 
+    height: 0px; 
+    min-width: 100%; 
+    max-width: 100%; 
+    min-height: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+    object-position: center 50%;
+  
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+  
+  /*.lp-notion-navbar{
+    border: none !important;
+    color: white;
+    background: rgba(15, 15, 15, 0);
+    transition: all 2s cubic-bezier(0.25, 1, 0.5, 1);
+  }*/
+  .lp-notion-navbar{
+    border: none !important;
+    color: white;
+    transition: background-color 2s cubic-bezier(0.25, 1, 0.5, 1);
+    background: rgba(25,25,25,1);
+  }
+
+  .lp-notion-navbar:not(.lp-scrolled){
+    background: transparent !important;
+    color: white;
+  }
+  .lp-notion-navbar:not(.lp-scrolled) .notion-breadcrumb__icon{
+    filter: brightness(100%) !important;
+  }
+  .lp-notion-navbar:not(.lp-scrolled) .notion-icon__search-path{
+    fill: white !important;
+  }
+
+  html.global-dark-theme .lp-notion-navbar.lp-scrolled{
+    background: rgba(25,25,25,1);
+    transition: none;
+  }
+  html.global-dark-theme .notion-navbar {
+    background:rgba(25, 25, 25, 0);
+  }
+  .lp-notion-icon__search-path{
+    fill: white;
+  }
+  
+  .lp-custom-navbar-progress{
+      position: absolute;
+      height: 1px;
+      top: 69px;
+      left: 0;
+      width: 5%;
+      background-color: black;
+      opacity: 0.6;
+      transition: all 0.6s ease-in-out;
+  }
+
+  html.global-dark-theme .lp-custom-navbar-progress{
+    background-color: white;
+  }
+
+  .lp-bg-pics{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .lp-bg-pics > span {
+    top: -70px !important;
+  }
+  .lp-bg-pic{
+    height: calc(100% + 70px);
+    width: auto;
+  }
+  .lp-bg-pic.active-bg  .default-bg-pic-style{
+    transform: scale(1.05) !important;
+    opacity: 1;
+  }
+  .lp-dark-bg{
+    width: 100%;
+    height: 100vh;
+    top: -70px;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(78deg, rgb(0, 0, 0) 15%, rgba(0,0,0,0.8) 30%, transparent 100%);
+    background-size: 200%;
+    background-position: 50% 50%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .lp-effect-line-upper-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    height: calc(100%);
+    overflow: hidden;
+  }
+  .lp-effect-line-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .lp-effect-line{
+      position: absolute;
+      bottom: -44%;
+      left: 340px;
+      width: 1px;
+      height: 100%;
+      z-index: 3;
+      background-color: white;
+      transform: rotate(-12deg);
+      opacity: 0.6;
+      transition: all 1s ease-out;
+  }
+  .lp-notion-navbar.lp-scrolled ~ .super-content-wrapper .lp-effect-line{
+    bottom: 0;
+    left: calc(265px - 1px);
+    width: 1px;
+    color: var(--color-border-default);
+    transform: rotate(0deg) ;
+    transition: all 2.4s ease-in-out;
+  }
+  
+  .lp-nav-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 0 0 3rem 3rem;
+    line-height: 3.4rem;
+  }
+  .lp-desktop-navlink{
+    color: white !important;
+    font-size: 1.5rem !important;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    filter: brightness(70%);
+    line-height: 2.3rem;
+    font-family: var(--primary-font);
+    position: relative;
+  }
+  
+  .lp-desktop-navlink.lp-active{
+    filter:brightness(100%);
+  }
+  
+  .lp-desktop-navlink>.notion-link.link{
+    display: inline-block;
+  }
+  
+  .lp-navigation-link-left-border{
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: -10px;
+    height: 0;
+    width: 1px;
+    background: white;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .lp-desktop-navlink.lp-active .lp-navigation-link-left-border{
+    bottom: auto;
+    top: 0;
+    height: 100%;
+  }
+
+  .lp-nav-container:hover .lp-desktop-navlink>a{
+    filter:brightness(70%);
+  }
+  .lp-mobile-nav-upper-container{
+    display: none;
+  }
+  .lp-selector-upper-notion.selecting-from-menu .lp-dark-bg{
+    background-position: 20% 20%;
+  }
+  
+  .lp-desktop-navlink.lp-active > a{
+    color: white !important;
+    filter: brightness(100%) !important;
+  }
+  
+  .lp-selector-upper-notion{
+    position: sticky;
+    top: 0;
+  }
+
+  .lp-ll-content {
+    background-color: white;
+    color: black;
+
+    z-index: 49;
+    position: relative;
+  }
+  html.global-dark-theme .lp-ll-content{
+    background-color: var(--color-bg-default);
+    color: white;
+  }
+  
+  .lp-ll-content .notion-semantic-string{
+    color: inherit;
+  }
+  
+  .lp-bg-texts{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    overflow: hidden;
+  }
+  
+  .lp-text{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-out;
+  }
+  .lp-text > span{
+    box-sizing:border-box;
+    display:block;
+    overflow:hidden;
+    width:initial;
+    height:initial;
+    background:none;
+    opacity:1;
+    border:0;
+    margin:0;
+    padding:0;
+    position:relative;
+    width: 100%;
+    height: 100%;
+  }
+  .lp-text > span > span{
+    box-sizing:border-box;
+    display:block;
+    width:initial;
+    height:initial;
+    background:none;
+    opacity:1;
+    border:0;
+    margin:0;
+    padding:0;
+    padding-top:72.24919093851133%;
+  }
+  .lp-text > span > img, .lp-text > span > video {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    box-sizing:border-box;
+    padding:0;
+    border:none;
+    margin:auto;
+    display:block;
+    width:0;
+    height:0;
+    min-width:100%;
+    max-width:100%;
+    min-height:100%;
+    max-height:100%;
+    object-fit:contain;
+    object-position:center;
+    transform: translateY(-50px);
+    transition: all 0.1s ease-out;
+  }
+  
+  .lp-text > image{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .lp-text-naext img, .lp-text-writings img {
+      display: none!important;
+    }
+  .lp-text.active-bg-text{
+    opacity: 1;
+  }
+  .lp-text.active-bg-text > span > img {
+    transform: translateY(0px);
+    transition: all 0.4s ease-out;
+  }
+  
+  .lp-text-future-forum{
+    top: calc(50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 406px;
+  }
+
+  .lp-text-naext video{
+    transform: translate(5%, 0)!important;
+  }
+  .lp-text-arcadia img {
+    object-position: bottom right!important;
+  }
+  .lp-text-ml-explainer img{
+    object-position: bottom right!important;
+  }
+  .lp-text-deepwave img {
+    object-position: top left!important;
+  }
+  .lp-text-the-hike img{
+   object-position: top left!important;
+   margin-top: 70px!important;
+  }
+  .lp-text-fake-news{
+    top: calc(50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 406px;
+  }
+  .lp-text-ai-art img {
+    object-position: top left!important;
+  }
+  .lp-text-onna-anna img{
+    object-position: bottom right!important;
+  }
+  .lp-text-about-me img{
+  
+  }
+  
+  .lp-read-more-button-upper-container{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+  }
+  .lp-read-more-button-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .lp-read-more-button{
+    width: calc(100% - 320px);
+    height: calc(100% - 70px);
+    right: 10px;
+    top: 70px;
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    opacity: 0;
+    /*transition: all 0.2s ease-in-out;*/
+  }
+  .lp-read-more-button:hover > span > i{
+    transform: scale(2.5);
+    
+  }
+  .lp-read-more-button > span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    right: 11%;
+    animation: MoveUpDown 1.5s linear infinite;
+  }
+  @keyframes MoveUpDown {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      bottom: 55px;
+      opacity: 0;
+    }
+    95% {
+      bottom: 45px;
+      opacity: 1;
+    }
+    100% {
+      bottom: 45px;
+      opacity: 0;
+    }
+  }
+  @keyframes MoveUpDownMobile {
+    0% {
+      opacity: 0;
+      bottom: -25px;
+    }
+    20% {
+      bottom: 0px;
+      opacity: 0;
+    }
+    95% {
+      bottom: -25px;
+      opacity: 1;
+    }
+    100% {
+      bottom: -25px;
+      opacity: 0;
+    }
+  }
+  
+  .lp-read-more-button:hover {
+    opacity: 1;
+  }
+  [data-current-bg="lp-read-more-button-writings"]{
+  }
+  .bg-writings img {
+  
+  }
+  [data-current-bg="lp-read-more-button-naext"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-arcadia"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-ml-explainer"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-deepwave"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-future-forum"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-the-hike"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-fake-news"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-onna-anna"]{
+  
+  }
+  [data-current-bg="lp-read-more-button-about-me"]{
+  
+  }
+img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/Arcadia_Arrow_qthklm.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Deepwave_arrow_azum1t.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/The_hike_arrow_abe3ea.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/AI_art_arrow_oucham.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/ML_Arrow_twf9fo.svg"], img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Onno_Anna_Tjark_arrow_igizy2.svg"] {
+    transform: scale(1.1, 0.7);
+  }
+  img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933106/Heye.earth/Projects/Arrows/Naext_arrow_oaoxwb.svg"] {
+    transform: scale(1, 1.2);
+  }
+  img[src="https://res.cloudinary.com/deepwave-org/image/upload/v1670455121/Heye.earth/Projects/Arrows/Writing_Arrow_hzu1rv.svg"] {
+    transform: scale(1, 0.7);
+  }
+  img[src="https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/About_Me_arrow_ugfnsj.svg"]  {
+    transform: scale(2, 0.7);
+  }
+  .notion-bookmark__content{
+    color:white;
+  }
+  
+  .notion-bookmark:hover{
+    background-color: rgb(30,30,30);
+  }
+  
+  .notion-external-object__details{
+    color:white;
+  }
+
+  @keyframes skeleton-loading-light{
+    0% {
+      background-color: rgb(230,230,230);
+    }
+    100%{
+      background-color: rgb(180,180,180);
+    }
+  }
+  @keyframes skeleton-loading-dark{
+    0% {
+      background-color: rgb(15,15,15);
+    }
+    100%{
+      background-color: rgb(50,50,50);
+    }
+  }
+
+  .lp-ll-content{
+    padding-top: 20px;
+  }
+  .lp-ll-content:empty{
+    padding-top: 0px !important;;
+  }
+
+  .skeleton{
+    width: clamp(30%, 500px, calc(100% - 2rem));
+    height: 20px;
+    border-radius: 5rem;
+    animation: skeleton-loading-light 1s linear infinite alternate;
+    margin: 1rem 0 0 1rem;
+    margin-left: 10% !important;
+  }
+  .skeleton.skeleton-title{
+    width: clamp(30%, 400px, 80%);
+    height: 50px;
+    margin-top: 0;
+  }
+
+  html.global-dark-theme .skeleton{
+    animation: skeleton-loading-dark 1s linear infinite alternate;
+  }
+
+  .hide-sidebars{
+    transition: opacity 0.6s linear;
+    opacity: 0;
+  }
+
+  .lp-notion-navbar.lp-mobile-notion-navbar{
+    position: sticky !important;
+    top: 0 !important;
+    overflow-x: hidden;
+  }
+
+  .lp-notion-navbar.lp-mobile-notion-navbar:not(.lp-scrolled){
+    background-color: rgba(0, 0, 0, 1) !important;
+  }
+
+  .topbar-icons{
+    transform: translateX(32px);
+  }
+
+  @media only screen and (min-width: 745px){
+    .lp-mobile-notion-navbar{
+      display: none !important;
+    }
+
+.lp-text-writings > span >  video{
+    padding-right: 200px;
+    object-position: top right;
+    transform: scale(0.6);
+    transform-origin: top right;
+    margin-top: -50px;
+  }
+  .lp-text-arcadia > span >  video{
+    object-position: bottom right;
+    transform: scale(0.8) translate(15%, 30%);
+    transform-origin: bottom right;
+  }
+  .lp-text-ai-art > span >  video{
+    padding-right: 200px;
+    object-position: top left;
+    transform: scale(0.6);
+    transform-origin: top left;
+    margin-top: -50px;
+  }
+   .lp-text-about-me > span >  video{
+    padding-left: 300px;
+    object-position: top center;
+    transform: scale(0.5);
+    transform-origin: top center;
+    margin-top: -100px;
+  }
+  
+  
+    .lp-mouse-trailer{
+      width: 20px;
+      height: 20px;
+      background-color: black;
+      border-radius: 20px;
+      position: fixed;
+      left: 0;
+      top:0;
+      z-index: 10;
+      opacity: 0;
+      transition: opacity 500ms ease;
+      fill: white;
+      pointer-events: none;
+    }
+    html.global-dark-theme .lp-mouse-trailer{
+      background-color: white;
+    }
+
+    body:hover .lp-mouse-trailer{
+      opacity: 1;
+    }
+    .lp-mouse-trailer.show-arrow{
+      background-color: transparent !important;
+    }
+
+    .lp-mouse-trailer:not(.show-arrow) > *{
+      display: none;
+    }
+    .lp-mouse-trailer.show-arrow > .cursor-picture{
+      width: 22px;
+      height: 22px;
+    }
+    .lp-mouse-trailer.show-arrow > *:nth-child(2){
+      display: none;
+    }
+
+    .lp-notion-navbar.lp-scrolled .lp-custom-navbar-progress{
+      width: 100%;
+    }
+
+    .lp-read-more-button{
+      width: calc(100% - 320px);
+      height: calc(100% - 70px);
+      right: 10px;
+      top: 70px;
+      position: absolute;
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 1.5rem;
+      color: white;
+      border: none;
+      opacity: 1;
+      /*transition: all 0.2s ease-in-out;*/
+    }
+    .lp-read-more-button:hover > span > i{
+      transform: scale(2.5);
+      
+    }
+    .lp-read-more-button > span{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      bottom: 50px;
+      right: 11%;
+      animation: MoveUpDown 1.5s linear infinite;
+    }
+  }
+
+  @media only screen and (max-width: 745px){
+    .lp-desktop-notion-navbar{
+      display: none !important;
+    }
+
+  .lp-bg-pics > span.lp-bg-deepwave {
+    top: 0!important;
+  }
+    .lp-mouse-trailer{
+      display: none;
+    }
+  
+    .lp-super-root{
+      flex-direction: column-reverse;
+    }
+    .lp-notion-navbar{
+      position: absolute;
+      top: calc(100% - 60px);
+    }
+    .lp-notion-navbar:not(.lp-scrolled){
+      position: absolute;
+    }
+    .lp-notion-navbar.lp-scrolled{
+    }
+    .lp-nav-container{
+      display: none;
+    }
+    .lp-dark-bg{
+      background: none; 
+    }
+    .lp-custom-navbar-progress{
+      top: 59px;
+      right: 0;
+      left: unset;
+    }
+    .lp-bg-texts{
+      top:0px;
+      height: unset;
+      bottom: 90px;
+    }
+    .lp-super-content > .notion-root > .notion-column-list{
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100 - 60px);
+    }
+  
+    .lp-read-more-button-upper-container{
+      display: none;
+    }
+    .lp-read-more-button-container{
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.8) 15%, transparent 100%); 
+      height: calc(100% - 60px);
+    }
+    .lp-read-more-button{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10%;
+      top: unset;
+      width: 100%;
+      bottom: 0px;
+      font-size: 1.5rem;
+      color: white;
+      border: 3px solid white;
+      padding: 0.5rem 2rem;
+      border-radius: 50px; 
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+      background: transparent;
+      border: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .lp-read-more-button > span{
+      position: relative;
+      animation: MoveUpDownMobile 1.5s linear infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      right:auto;
+      bottom:auto;
+      width: auto;
+    }
+    
+  
+    .lp-bg-texts .lp-text-naext video{
+      transform: translate(0, -60px) scale(1.2) !important;
+      object-position: bottom!important;
+    }
+    .
+    .lp-text-future-forum > span{
+      transform: scale(50%);
+    }
+    .lp-text-writings video{
+      transform: translate(22%, -25%) scale(0.6) !important;
+      object-position: top !important;
+    }
+      .lp-text-arcadia > span >  video{
+    bject-position: bottom;
+    transform: scale(1.5) translateY(40%);
+    transform-origin: bottom;
+  }
+  .lp-text-ai-art > span >  video{
+    object-position: bottom;
+    transform: scale(0.8);
+    transform-origin: bottom;
+  }
+  .lp-text-future-forum img {
+    transform: scale(0.7)!important;
+  }
+   .lp-text-about-me > span >  video{
+    object-position: top;
+    transform: scale(0.5);
+    transform-origin: center;
+    margin-top: -11%;
+  }
+    .lp-text-writings {
+      transform: scale(150%);
+      left: -35%;
+      top: 25%;
+    }
+    .lp-text-the-hike{
+      left: 0px;
+      width: 200%;
+      top: -40px;
+    }
+    .lp-text-aging > span > img {
+      object-position: bottom;
+    transform: scale(1.5) translateY(30px);
+    transform-origin: bottom;
+    }
+    .lp-text-ai-art{
+      transform: translateY(-21px);
+    }
+    .lp-text-onna-anna{
+      transform: translateY(-50px);
+    }
+    .lp-text-ml-explainer{
+      transform: translateY(-60px);
+      width: 120%;
+      left: -25%;
+    }
+    .lp-text-about-me {
+      transform: scale(150%);
+      left: -10%;
+    }
+    .lp-mobile-nav-upper-container{
+      position: absolute;
+      bottom: 25px;
+      color: white;
+      height: 200px;
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      overflow-x: hidden;
+      z-index: 5;
+    }
+    .lp-text-arcadia {
+      transform: translateY(-30px);
+    }
+    .lp-mobile-nav-container{
+      display: flex;
+      position: relative;
+      align-items: flex-end;
+      transition: all 600ms ease 0s;
+    }
+  
+    .lp-mobile-navlink{
+      display: inline-block;
+      font-size: 1.1rem;
+      width: 50%;
+      text-align: center;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      font-family: var(--primary-font);
+    }
+  
+    .lp-mobile-navlink.lp-mobile-active{
+      transform: translateY(-50%);
+    }
+  
+    .lp-mobile-navlink > a{
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .lp-super-root{
+      min-height: unset;
+    }
+  
+    .lp-selector-upper-notion{
+      background: linear-gradient(0deg, rgb(0, 0, 0) 00%, rgba(0,0,0,0.3) 15%, transparent 100%); 
+    }
+  
+    .lp-effect-line-upper-container{
+      height: 100vh;
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.66) 25%, transparent 100%);
+      z-index: 3;
+      bottom: 0;
+    }
+    .lp-effect-line-container{
+      display: none;
+    }
+  }
+  #block-f22d35e5b6df40edb75e08a662a3afec {
+  align-items: center;
+  justify-content: center;
+}42:T558e,.gg-chevron-down{
+    box-sizing:border-box;
+    position:relative;
+    display: block;
+    transform: scale(var(--ggs,2));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius:100px;
+    color: white;
+  }
+  .gg-chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid; 
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px;
+  }
+  .lp-mouse-trailer .gg-chevron-down {
+    transform: none;
+  }
+  .lp-read-more-button.lp-show span {
+    display: none;
+  }
+  .lp-twitter img {
+    margin-bottom: -3px;
+    margin-left: 10px;
+    width: 23px;
+  }
+  .lp-mail img {
+    margin-bottom: -4px;
+    margin-left: 10px;
+    color: white;
+    width: 24px;
+  }
+  .lp-super-root{
+  }
+  .lp-super-content{
+    height: 100%;
+  }
+  .lp-super-content>article.not

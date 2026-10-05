@@ -1,0 +1,1751 @@
+{
+ "props": {
+  "pageProps": {
+   "records": {
+    "block": {
+     "2015554ad5ae4339b9488ff1a73817bd": {
+      "id": "2015554ad5ae4339b9488ff1a73817bd",
+      "children": [
+       "f5fd3822c21743e5aaad9a99a831e304",
+       "b2078fb1fcf544d599de4b9789c0690a",
+       "b2ebb360682344619bb26ad28d04512b"
+      ],
+      "hasContent": true,
+      "parentId": "8ccfd39de9de4b7599e2a243c995e474",
+      "title": [
+       [
+        "Heye.Earth",
+        [
+         [
+          "a",
+          "http://Heye.Earth"
+         ]
+        ]
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "icon": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/e94f1419-40f3-49e0-a855-4892e82c1d76.svg?b=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAIAAACDyf9SAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVRIidWU0Q7FIAhD+/8/3T0sWwxYQC832/qmwKEYInCJTvhFFOonchvKdiIGqGnQgDv1eiK7HhF/MoguIsKbqqZbsmmQeo25tIwmOyWeWnCkCijykxHU/S0bNX0U0VzOoymrOC9M6hKOysGGO8b5Pjatj2YcZcLer+80as4q/u8Momm9OnqFfZz9+MuiwXmKegqofimruJULSp/iIRY+Y61ScAB2dXqwgroXGAAAAABJRU5ErkJggg==",
+      "coverPosition": 0.7887,
+      "cardCoverPosition": 0,
+      "createdTime": 1650467137105,
+      "lastEditedTime": 1670525414302,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/2015554ad5ae4339b9488ff1a73817bd",
+      "fullWidth": true,
+      "smallText": false,
+      "noCover": true,
+      "superProperties": {},
+      "propertyValues": {}
+     },
+     "writings-and-notes": {
+      "id": "writings-and-notes",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "Writings and Notes"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "icon": "\ud83d\udcd3",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1668752855610,
+      "lastEditedTime": 1670586720000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/writings-and-notes",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/50f0d326-1df2-4f2a-870f-49e33a77a3d1.png?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "nxtone": {
+      "id": "nxtone",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "Naext.one"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "icon": "\ud83d\udcd3",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1668754021499,
+      "lastEditedTime": 1680449041781,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/nxtone",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/0af8c332-178c-4451-ac2b-c63036c1ee97.jpg?b=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAgCAIAAABPUMW5AAAACXBIWXMAABuvAAAbrwFeGpEcAAADdklEQVQokRWOW0yTBxzF/4KoY9UBK8XeKG3phX4tLS1TekFaKS0t7UcVKuBU2tIqQguWZpAaiaOzFAFRoLIAHW6wSaJGWANLiJIluGjmpglGxCybTzN7WJZlN7M9/Zfv5Tyck985B5TH0qyaGznG6/nV0xzbXFlzWue9J3R+BppecHRvW09vVbV+Zzj1kDz3A9nzkoxsWzqe0M1J8MT+PD2AncPo/fBNTxJD43gq9lvThZ8Nvq8hksTwFYwkMXYTw5PYN4tdk1RsCz+F4BXsT+H5FE6sUdo7hf0L2L+IJy69hr5pHLmDiTs4vIS9Sby2gvPPcGwdWwd/hdFlnLpHQeNrOH4fP3mKt17hUBo9H/0OiWXKHU3j5SXKmnuGDxBv/Uhdg8QSDi1TndEUXl7F1CZOPMbbr7F97F/ou4HnP8XoHIan8Mz4X7YPNjTuifroI+pnaALbhv6ITFPj9sgTZeNs0YGQkkwSrkUIXcW2wb8DI/+4olta/6pQ38VR+whTVGa/DtEZPDP838n4L67olsgaFx70E5VBWYWPqLsG3aPoT7xxX3gldn3MUTTJDvWobIlS+2CF90twdvzkCL8ge17ya8c4B8LlDTdN7Q/s5zYtwe9B51nXvJ9WuVf59hmecdDg3agLbTvCz22hTSg/8ZX0yOcq96rEeZdjiJdapg3ejZqzj03t34DsyFJh7Tz78CxX0ydV+WRKX0ndF7bgc0voWyorIdOcmoX9RKdc0awg3CL9gDHwqLrjIUgc86zSwH5djKW/qjDGCOMlOZlStdzVetaAWTXM5BlYPC1berzoUJxnn1G3rGhb71Ncnn6EXqAoYEhY3Aq28izXsvBe07q6ZUVQPwc0bZzGNefkSekFilx21W5NlG9bzDFNZqn88LZhYJeiM3ufeDcU0BkEs6gK5N1Q4s8QOQAUXcB3Z+8VADAhXw9cJzDNwHeApAGg+BgIm4BlAXol5FcCrxkEDSBtBtlxAFE9CI4CwwZsR+a75RlsE4gbgPBAWQCAOAk8O+xT76Qp3mEb9vCtIHaDzAfqTgCRCwpNkK/M2iumcc2ZAhKK3SD3QGkbAN8MwloQ1e7gV2fx7SCoB3EjlAUy1H54S3Q4s9i0S+7cI2/MkbloYjKjpGXHwY5cXRAYhDW7SJdb5mLoPBJrN0fry9OFmJaLhdaL/wNvQ1X++WU1bQAAAABJRU5ErkJggg==",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "arcadia": {
+      "id": "arcadia",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "Arcadia"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0.5,
+      "createdTime": 1668753530161,
+      "lastEditedTime": 1670452680000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/arcadia",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/6309471d-bfbf-4652-a4f8-6f5daae9319a.jpg?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "deepwave": {
+      "id": "deepwave",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "DEEPWAVE"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1668753697479,
+      "lastEditedTime": 1670433060000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "f6a1f9a2-9d86-411a-8a47-023acae8e7a5"
+         }
+        ]
+       }
+      ],
+      "uri": "/deepwave",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/45b6dd67-f9c9-442d-8e51-64de449fe173.png?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "future-forum": {
+      "id": "future-forum",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "Future Forum"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1668753811594,
+      "lastEditedTime": 1670433060000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "f6a1f9a2-9d86-411a-8a47-023acae8e7a5"
+         }
+        ]
+       }
+      ],
+      "uri": "/future-forum",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/dcd9febb-af61-4f6d-be1b-0a8bd330e4dc.jpg?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "make-machines-learn-explainer": {
+      "id": "make-machines-learn-explainer",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "\u201cMake Machines Learn\u201d Explainer"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1668753764356,
+      "lastEditedTime": 1670451180000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/make-machines-learn-explainer",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/95ddb301-32cb-493d-a813-189b13d520ac.png?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "the-hike": {
+      "id": "the-hike",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "The Hike"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "icon": "\ud83d\udcd3",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0.5103,
+      "createdTime": 1668752632221,
+      "lastEditedTime": 1670451420000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/the-hike",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/e39ecfc1-a5ba-4d02-8f6f-2e6350ea1806.png?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "ai-art": {
+      "id": "ai-art",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "(AI-) Art"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "icon": "\ud83e\uddd8\ud83c\udffc\u200d\u2642\ufe0f",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1669142688661,
+      "lastEditedTime": 1670433120000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "f6a1f9a2-9d86-411a-8a47-023acae8e7a5"
+         }
+        ]
+       }
+      ],
+      "uri": "/ai-art",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/a76533bf-efa4-41c9-b23c-6040c89cbd55.png?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "how-to-deal-with-fake-news": {
+      "id": "how-to-deal-with-fake-news",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "How to deal with Fake News"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "icon": "\ud83d\uddde\ufe0f",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1668904465534,
+      "lastEditedTime": 1670423940000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/how-to-deal-with-fake-news",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/0f71a136-cc3a-4cfc-a580-37ef1f56f7ef.png?b=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAIAAAD4YuoOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEXUlEQVQ4jWNgENZi4NcAk+ogEsKAIAgXjiCCbCooUmjK4Brh4uiicAlxPYRN/GAkrs8kbcKhaMmrasvAqgRWCXYZxEpWJRBCthVColguoi2g4cggrs8iaypt4MEoZcShaMkgrscoZcQgrGUXkOESnhuV06jrEMbAIC9t4OERUxiQUgXRIqhhr2UfJmvirWUfiuoDkOvADmFVEtZ0DE6tiStotfZPlzH0kDH0yGucEpxeE5BSFVfQqmodyMCvLqRhJ6XjzCCkbu6dPHnxdu/4UmkDD3PvxLZZq8s75+k4RICsR/YE2B6wBeJ6MoYeph5x2g5hnjEFVj5J2vahvvHFTiHpfgnFMbkNlt4Jtv6pOvYhlt4J6tYB2vahubX9lt5Jhi5Rph7xLuG5DsGZZh5x7uHZMoYeIEejBBG/ukdE7uLVu6Izq2x94t3Ds4qapnTNWNXQPz+zrL22a1ZebV/XjBVHz91q7JnnF1tQ1DipbcqymMyalKKmosZJSYUtC1ftTCxsdAhIC0stdwhIQ7gbHgflrVO+//lf0z7dOTB5y95Tz95+W7vlUHpR84r1e2vap+47eunr7/8fv//PLW9zC0zauvdURdvUlKKmxat3tk2cP2nu6ofP3sVlVRvYBpg4hkjp2DNJGUBDHhK3SkZuVS1TLlx/ePXOi9nLNn37/f/5u5+zl23atPPozn2n1mw5cOr8rTOX7+w/dmnx6p2bdh7duPNY28T5E2etOHLq+qFT17bsPXX2yv3mntkXrz/JLG5mFtdiENdBimRxPTk95/LmiSfO3z535UHXpAXb9p5asX7vlr0nLlx/uGnn0WVrdi5ds6O1d/aK9XvnL9+yfP2e+cu3hCcVhyUV7Tx49uP3/2u3HJo6b23XpAWNPbNcA5MFlcxg2UuDgYFfg1HKSFTNJjKtcv2Oo8vX743PrQ9OLKpsntzcM/vOw3e//v+HmLhszc61W/Zv2nn06OlrAbF56mZeBg7BSkZuUWnlSXl1iobO8Vk1roHJFq4RRo6h/Kq2SJEsrscpZ+IXW9DUv7Cpf6F/bL65a3hUWrmTb0JxfW/bxPnxWTXpRY0TZy1fuHzLnkOnV23Y4x+VbeIYYueTYO0Zo20TYO0ZY+4abuMZY2gbaOeTYOISwSJrCrcAmkZZpQz1HEKjMmvSippaJy7qn7XKNyrXOTDZxDHEwDZAydDZ3Ck0Ias6q7gpMrnEyDZAxchNzdRdQc9ZVtdBUtNeTs9ZQtNOWNWGV8kcFAEo+QCS18T1mKUMOeVMdGwC7X0T3UMznAPTtWwC5PSclYzclI3cjGwDLF3DbD2jjeyCVIzcVI09IIaKqFqKqtkIKlvwK1mAEo+4HkqBgV5mietBE4C4DqO4LquUIbusMauUIb+ShZyes7qZl6FtoJaVn7KRm5yes6iaDb+SBa+SObecKaecKbOUIZYiD6MQBYcYLiSuxyJlBHUmHGEtTVF8gLXIJRaBiwTMEh7GBgAjF6AlADKVeQAAAABJRU5ErkJggg==",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "onno-anna": {
+      "id": "onno-anna",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "Onno, Anna & Tjark"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "icon": "\ud83d\udcd3",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1668819754979,
+      "lastEditedTime": 1670450940000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/onno-anna",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/3deb9084-934d-4070-98b8-8c8899b407c0.png?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "hi-i-am-heye-high-ye": {
+      "id": "hi-i-am-heye-high-ye",
+      "children": [],
+      "hasContent": true,
+      "parentId": "3dda80c5a2224c4088b5cc00cbafbb17",
+      "title": [
+       [
+        "Hi! I am Heye [High ye] \ud83d\udd90\ufe0f"
+       ]
+      ],
+      "type": "page",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "icon": "\ud83d\udcd3",
+      "coverPosition": 0.5,
+      "cardCoverPosition": 0,
+      "createdTime": 1668922023442,
+      "lastEditedTime": 1670522940000,
+      "createdBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "lastEditedBy": [
+       {
+        "0": "\u2023",
+        "1": [
+         {
+          "0": "u",
+          "1": "af0d76ec-f5ff-43b3-8c0b-8bd797256929"
+         }
+        ]
+       }
+      ],
+      "uri": "/hi-i-am-heye-high-ye",
+      "cover": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/21545422-c9cf-4103-bd4b-f93581531c51.png?b=data:image/png;base64,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",
+      "superProperties": {},
+      "propertyValues": {},
+      "values": []
+     },
+     "f5fd3822c21743e5aaad9a99a831e304": {
+      "id": "f5fd3822c21743e5aaad9a99a831e304",
+      "children": [
+       "3ed74c87a8954733898a320dbc508fe0"
+      ],
+      "hasContent": true,
+      "parentId": "2015554ad5ae4339b9488ff1a73817bd",
+      "title": null,
+      "type": "transclusion_container"
+     },
+     "3ed74c87a8954733898a320dbc508fe0": {
+      "id": "3ed74c87a8954733898a320dbc508fe0",
+      "children": [
+       "7b754ec23ae14de5a29adeb95e7667d0"
+      ],
+      "hasContent": true,
+      "parentId": "f5fd3822c21743e5aaad9a99a831e304",
+      "title": [],
+      "type": "quote"
+     },
+     "7b754ec23ae14de5a29adeb95e7667d0": {
+      "id": "7b754ec23ae14de5a29adeb95e7667d0",
+      "children": [
+       "6a9d7745c40543b7b99337f39340b086"
+      ],
+      "hasContent": true,
+      "parentId": "3ed74c87a8954733898a320dbc508fe0",
+      "title": [
+       [
+        "Menu     "
+       ]
+      ],
+      "type": "toggle",
+      "subType": null,
+      "depth": null,
+      "color": null
+     },
+     "6a9d7745c40543b7b99337f39340b086": {
+      "id": "6a9d7745c40543b7b99337f39340b086",
+      "children": [],
+      "hasContent": false,
+      "parentId": "7b754ec23ae14de5a29adeb95e7667d0",
+      "title": null,
+      "type": "transclusion_reference",
+      "container": "b8ab99d862c746388e6568ff5415639a"
+     },
+     "b8ab99d862c746388e6568ff5415639a": {
+      "id": "b8ab99d862c746388e6568ff5415639a",
+      "children": [
+       "c264beb4b08745859dbdaaa363556894",
+       "31d4aaefa03d445697262eb50fc0ad95",
+       "5ad174978048449aa252182a26c2b0ba",
+       "a1d54bc7328f47408c22cf036f297667",
+       "4de979f231834f23a94761c754cacd01",
+       "d0b8c625e636479b99a165b35e810a67"
+      ],
+      "hasContent": true,
+      "parentId": "aba3f3565c034caeacb5b6852c3abd80",
+      "title": null,
+      "type": "transclusion_container"
+     },
+     "b2078fb1fcf544d599de4b9789c0690a": {
+      "id": "b2078fb1fcf544d599de4b9789c0690a",
+      "children": [
+       "6634ad2b208742549f535d2e791b29fe",
+       "4c1566c51b2a4a78ace165b92663ae90"
+      ],
+      "hasContent": true,
+      "parentId": "2015554ad5ae4339b9488ff1a73817bd",
+      "title": null,
+      "type": "column_list",
+      "multiplyer": 1.0000000000000002
+     },
+     "6634ad2b208742549f535d2e791b29fe": {
+      "id": "6634ad2b208742549f535d2e791b29fe",
+      "children": [
+       "af36cb1aa7264168b0d4979f97b5137a",
+       "167bcd09bc194e78a298376389fb5ece",
+       "6eb7aa3236b6403faa97e41c6c82e877",
+       "7a11514c52344a4698dbfb9a489c04ab"
+      ],
+      "hasContent": true,
+      "parentId": "b2078fb1fcf544d599de4b9789c0690a",
+      "title": null,
+      "type": "column",
+      "ratio": 0.1875
+     },
+     "af36cb1aa7264168b0d4979f97b5137a": {
+      "id": "af36cb1aa7264168b0d4979f97b5137a",
+      "children": [],
+      "hasContent": false,
+      "parentId": "6634ad2b208742549f535d2e791b29fe",
+      "title": [
+       [
+        "Writings",
+        [
+         [
+          "a",
+          "/writings-and-notes"
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "69d1754e-cf63-4e68-acba-1af2627ef082",
+           "title": [
+            [
+             "Naext.one"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/nxtone",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "c2bb5cb5-2e84-4fdf-beb2-ad8d2984ae9d",
+           "title": [
+            [
+             "Arcadia"
+            ]
+           ],
+           "uri": "/arcadia",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "ML Explainer",
+        [
+         [
+          "a",
+          "/make-machines-learn-explainer"
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "62e6ef8a-0a37-48a1-9741-1f2b69dff281",
+           "title": [
+            [
+             "DEEPWAVE"
+            ]
+           ],
+           "uri": "/deepwave",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "6e3c29e2-1909-4673-922a-9c3b8019224f",
+           "title": [
+            [
+             "Future Forum"
+            ]
+           ],
+           "uri": "/future-forum",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "8af1183a-5162-4dae-aa4a-1f94ae9e214d",
+           "title": [
+            [
+             "The Hike"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/the-hike",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "Fake News",
+        [
+         [
+          "a",
+          "/how-to-deal-with-fake-news"
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "e0d12f68-e601-4d09-be49-95795db1332a",
+           "title": [
+            [
+             "(AI-) Art"
+            ]
+           ],
+           "icon": "\ud83e\uddd8\ud83c\udffc\u200d\u2642\ufe0f",
+           "uri": "/ai-art",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "aeb239fb-7aab-4f74-8da9-f847a2a00162",
+           "title": [
+            [
+             "Onno, Anna & Tjark"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/onno-anna",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "About Me",
+        [
+         [
+          "a",
+          "/hi-i-am-heye-high-ye"
+         ]
+        ]
+       ]
+      ],
+      "type": "text"
+     },
+     "167bcd09bc194e78a298376389fb5ece": {
+      "id": "167bcd09bc194e78a298376389fb5ece",
+      "children": [],
+      "hasContent": false,
+      "parentId": "6634ad2b208742549f535d2e791b29fe",
+      "title": [],
+      "type": "text"
+     },
+     "6eb7aa3236b6403faa97e41c6c82e877": {
+      "id": "6eb7aa3236b6403faa97e41c6c82e877",
+      "children": [
+       "2ef3b1f5d4804ec89fcdba2415cef44c",
+       "b8bb92cf64a040c78ad3e448ed6f8ebc",
+       "3b55a996dc4a4663bd6ce988439c941c"
+      ],
+      "hasContent": true,
+      "parentId": "6634ad2b208742549f535d2e791b29fe",
+      "title": [
+       [
+        "Control Panel \ud83c\udf9b",
+        [
+         [
+          "b",
+          null
+         ]
+        ]
+       ]
+      ],
+      "type": "toggle",
+      "subType": null,
+      "depth": null,
+      "color": "BgGray"
+     },
+     "2ef3b1f5d4804ec89fcdba2415cef44c": null,
+     "b8bb92cf64a040c78ad3e448ed6f8ebc": {
+      "id": "b8bb92cf64a040c78ad3e448ed6f8ebc",
+      "children": [],
+      "hasContent": false,
+      "parentId": "6eb7aa3236b6403faa97e41c6c82e877",
+      "title": null,
+      "type": "divider"
+     },
+     "3b55a996dc4a4663bd6ce988439c941c": {
+      "id": "3b55a996dc4a4663bd6ce988439c941c",
+      "children": [],
+      "hasContent": false,
+      "parentId": "6eb7aa3236b6403faa97e41c6c82e877",
+      "title": [],
+      "type": "text"
+     },
+     "7a11514c52344a4698dbfb9a489c04ab": {
+      "id": "7a11514c52344a4698dbfb9a489c04ab",
+      "children": [],
+      "hasContent": false,
+      "parentId": "6634ad2b208742549f535d2e791b29fe",
+      "title": [],
+      "type": "text"
+     },
+     "4c1566c51b2a4a78ace165b92663ae90": {
+      "id": "4c1566c51b2a4a78ace165b92663ae90",
+      "children": [
+       "projects",
+       "1c24c12da6094410a9ffcf1dfdc0919d"
+      ],
+      "hasContent": true,
+      "parentId": "b2078fb1fcf544d599de4b9789c0690a",
+      "title": null,
+      "type": "column",
+      "ratio": 0.8124999999999998
+     },
+     "projects": {
+      "id": "projects",
+      "children": [],
+      "hasContent": false,
+      "parentId": "4c1566c51b2a4a78ace165b92663ae90",
+      "title": [
+       [
+        "All Posts"
+       ]
+      ],
+      "type": "collection_inline",
+      "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673",
+      "collectionId": "3dda80c5-a222-4c40-88b5-cc00cbafbb17",
+      "icon": null,
+      "superProperties": {},
+      "views": [
+       {
+        "id": "09267f01-58c2-4a96-8aba-9134d61d172b",
+        "groups": [],
+        "type": "gallery",
+        "name": "Gallery view",
+        "format": {
+         "gallery_cover": {
+          "type": "page_cover"
+         },
+         "property_filters": [
+          {
+           "id": "48a5d528-0b32-45c0-a675-e58757d720e2",
+           "filter": {
+            "filter": {
+             "value": {
+              "type": "exact",
+              "value": "Project"
+             },
+             "operator": "enum_contains"
+            },
+            "property": "WW>d"
+           }
+          }
+         ],
+         "collection_pointer": {
+          "id": "3dda80c5-a222-4c40-88b5-cc00cbafbb17",
+          "table": "collection",
+          "spaceId": "1220613c-2633-4ef7-bf30-ca353be7d673"
+         }
+        },
+        "visibleColumns": [],
+        "items": [
+         "writings-and-notes",
+         "nxtone",
+         "arcadia",
+         "deepwave",
+         "future-forum",
+         "make-machines-learn-explainer",
+         "the-hike",
+         "ai-art",
+         "how-to-deal-with-fake-news",
+         "onno-anna",
+         "hi-i-am-heye-high-ye"
+        ],
+        "hideTitle": false,
+        "title": [
+         [
+          "All Posts"
+         ]
+        ],
+        "icon": null,
+        "superProperties": {}
+       }
+      ],
+      "viewIds": [
+       "09267f01-58c2-4a96-8aba-9134d61d172b"
+      ],
+      "coverPosition": 1,
+      "cover": null,
+      "description": []
+     },
+     "1c24c12da6094410a9ffcf1dfdc0919d": {
+      "id": "1c24c12da6094410a9ffcf1dfdc0919d",
+      "children": [],
+      "hasContent": false,
+      "parentId": "4c1566c51b2a4a78ace165b92663ae90",
+      "title": [],
+      "type": "text"
+     },
+     "b2ebb360682344619bb26ad28d04512b": {
+      "id": "b2ebb360682344619bb26ad28d04512b",
+      "children": [],
+      "hasContent": false,
+      "parentId": "2015554ad5ae4339b9488ff1a73817bd",
+      "title": [],
+      "type": "text"
+     },
+     "c264beb4b08745859dbdaaa363556894": {
+      "id": "c264beb4b08745859dbdaaa363556894",
+      "children": [],
+      "hasContent": false,
+      "parentId": "b8ab99d862c746388e6568ff5415639a",
+      "title": [
+       [
+        "How to solve problems\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "69d1754e-cf63-4e68-acba-1af2627ef082",
+           "title": [
+            [
+             "Naext.one"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/nxtone",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "a6b3119d-6603-48f3-85c5-dc54fcaa3c42",
+           "title": [
+            [
+             "Life\u2019s Impact Pipeline"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/lifes-impact-pipeline",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "8d103f84-5002-42f5-ac5a-3eed37a7ab12",
+           "title": [
+            [
+             "Life | "
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/life",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "a7f84834-0ec2-43ce-ae73-4f29ba7c1f43",
+           "title": [
+            [
+             "\u201cMake Machines Learn\u201d Explainer"
+            ]
+           ],
+           "uri": "/make-machines-learn-explainer",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "77f75982-7804-460a-b4c8-d73e355ea000",
+           "title": [
+            [
+             "The EA University"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/the-ea-university",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        "\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "20ff117b-9e08-461d-b030-c40d8302ca0c",
+           "title": [
+            [
+             "List of Legal Projects for EAs"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/list-of-legal-projects-for-ea",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "05a1a9ac-aaea-40fc-80de-46b7d9789286",
+           "title": [
+            [
+             "Turn your Flashcards into Art"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/turn-your-flashcards-into-art",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "63c74769-f614-47cb-992d-6ef0c09ec7d8",
+           "title": [
+            [
+             "Things I use"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/things-i-use",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " "
+       ]
+      ],
+      "type": "text"
+     },
+     "31d4aaefa03d445697262eb50fc0ad95": {
+      "id": "31d4aaefa03d445697262eb50fc0ad95",
+      "children": [],
+      "hasContent": false,
+      "parentId": "b8ab99d862c746388e6568ff5415639a",
+      "title": [
+       [
+        "Fiction\n",
+        [
+         [
+          "b",
+          null
+         ]
+        ]
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "8af1183a-5162-4dae-aa4a-1f94ae9e214d",
+           "title": [
+            [
+             "The Hike"
+            ]
+           ],
+           "icon": "\ud83d\udcd3",
+           "uri": "/the-hike",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " "
+       ]
+      ],
+      "type": "text"
+     },
+     "5ad174978048449aa252182a26c2b0ba": {
+      "id": "5ad174978048449aa252182a26c2b0ba",
+      "children": [],
+      "hasContent": false,
+      "parentId": "b8ab99d862c746388e6568ff5415639a",
+      "title": [
+       [
+        "Other Projects\n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "c2bb5cb5-2e84-4fdf-beb2-ad8d2984ae9d",
+           "title": [
+            [
+             "Arcadia"
+            ]
+           ],
+           "uri": "/arcadia",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " \n"
+       ],
+       [
+        "\u2023",
+        [
+         [
+          "p",
+          {
+           "id": "62e6ef8a-0a37-48a1-9741-1f2b69dff281",
+           "title": [
+            [
+             "DEEPWAVE"
+            ]
+           ],
+           "uri": "/deepwave",
+           "properties": {}
+          }
+         ]
+        ]
+       ],
+       [
+        " "
+       ]
+      ],
+      "type": "text"
+     },
+     "a1d54bc7328f47408c22cf036f297667": {
+      "id": "a1d54bc7328f47408c22cf036f297667",
+      "children": [],
+      "hasContent": false,
+      "parentId": "b8ab99d862c746388e6568ff5415639a",
+      "title": [
+       [
+        "You can "
+       ],
+       [
+        "comment",
+        [
+         [
+          "a",
+          "https://heye.notion.site/Heye-Earth-2015554ad5ae4339b9488ff1a73817bd?"
+         ]
+        ]
+       ],
+       [
+        " on everything. Or give me (harsh) personal "
+       ],
+       [
+        "feedback",
+        [
+         [
+          "a",
+          "https://www.admonymous.co/heye"
+         ]
+        ]
+       ],
+       [
+        "."
+       ]
+      ],
+      "type": "text"
+     },
+     "4de979f231834f23a94761c754cacd01": {
+      "id": "4de979f231834f23a94761c754cacd01",
+      "children": [],
+      "hasContent": false,
+      "parentId": "b8ab99d862c746388e6568ff5415639a",
+      "title": [
+       [
+        "Made with \ud83d\udc99 by me ("
+       ],
+       [
+        "how to",
+        [
+         [
+          "a",
+          "https://github.com/DonSqualo/heye.earth"
+         ]
+        ]
+       ],
+       [
+        ")."
+       ]
+      ],
+      "type": "text"
+     },
+     "d0b8c625e636479b99a165b35e810a67": {
+      "id": "d0b8c625e636479b99a165b35e810a67",
+      "children": [],
+      "hasContent": false,
+      "parentId": "b8ab99d862c746388e6568ff5415639a",
+      "title": [
+       [
+        "Dedicated to "
+       ],
+       [
+        "my family",
+        [
+         [
+          "a",
+          "/onno-anna"
+         ]
+        ]
+       ],
+       [
+        "."
+       ]
+      ],
+      "type": "text"
+     }
+    },
+    "team": {},
+    "entity": {
+     "af0d76ec-f5ff-43b3-8c0b-8bd797256929": {
+      "id": "af0d76ec-f5ff-43b3-8c0b-8bd797256929",
+      "name": "Heye"
+     },
+     "f6a1f9a2-9d86-411a-8a47-023acae8e7a5": {
+      "id": "f6a1f9a2-9d86-411a-8a47-023acae8e7a5",
+      "name": "Sukhbat"
+     }
+    },
+    "pageId": "2015554ad5ae4339b9488ff1a73817bd"
+   },
+   "settings": {
+    "siteId": "28e2446c-93e3-4c6c-a5c4-f0ab78537f90",
+    "domainName": "heye.earth",
+    "name": "Heye",
+    "free": false,
+    "fontFamily": "Inter",
+    "legacyTheme": null,
+    "language": "en",
+    "notionPage": "2015554ad5ae4339b9488ff1a73817bd",
+    "pageProperties": false,
+    "viewSwitcher": false,
+    "siteSearch": true,
+    "themeToggle": false,
+    "mondayFirst": true,
+    "hidePersonInfo": false,
+    "noIndex": false,
+    "cacheTTL": 0,
+    "manualSync": false,
+    "syncStatus": "unsynced",
+    "publishedAt": null,
+    "navbar": {
+     "type": "notion",
+     "style": {
+      "height": 56,
+      "textColor": "var(--color-text-default)",
+      "backgroundColor": "var(--color-bg-default)",
+      "ctaTextColor": "var(--color-text-default)",
+      "ctaBackgroundColor": "var(--color-bg-default)",
+      "isSticky": true,
+      "shadow": {
+       "type": "none",
+       "color": "rgba(0,0,0,1)",
+       "opacity": 12
+      }
+     },
+     "links": [],
+     "logo": {
+      "type": "text",
+      "width": 90,
+      "fontSize": 16,
+      "textContent": "Heye's Evergreen Notes"
+     },
+     "cta": {
+      "type": "page",
+      "label": "",
+      "link": "",
+      "pageId": ""
+     },
+     "isSticky": true
+    },
+    "footer": {
+     "type": "floating",
+     "style": {
+      "textColor": "rgba(255, 255, 255, 1)",
+      "backgroundColor": "rgba(34, 135, 179, 1)"
+     },
+     "links": [],
+     "logo": {
+      "type": "text",
+      "width": 90,
+      "fontSize": 16,
+      "textContent": "Heye's Evergreen Notes"
+     },
+     "socials": [
+      {
+       "type": "twitter",
+       "link": "https://twitter.com/HeyeGross"
+      },
+      {
+       "type": "github",
+       "link": "https://github.com/DonSqualo"
+      },
+      {
+       "type": "messenger",
+       "link": "https://github.com/DonSqualo"
+      }
+     ],
+     "footnote": "\u00a9 Heye Gro\u00df 2022 | Build quickly with Notion, Super.so and Cluster. Waiting for AnyType for a relaunch."
+    },
+    "theme": {
+     "colorMode": "dark",
+     "layout": {
+      "paddingLayout": 0.6,
+      "layoutMaxWidth": 900,
+      "columnSpacing": 46,
+      "borderThicknessLayout": 1,
+      "borderTypeLayout": "solid",
+      "borderRadiiLayout": 5,
+      "pageDisplay": "unset"
+     },
+     "header": {
+      "coverHeight": 30,
+      "titleAlign": "left",
+      "iconAlign": "-112px auto auto auto",
+      "display": "block"
+     },
+     "collectionCard": {
+      "gap": 10,
+      "shadow": "rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px",
+      "coverHeightLarge": 200,
+      "coverHeightMedium": 200,
+      "coverHeightSmall": 128,
+      "titleSize": 0.875,
+      "coverSizeSmall": 172,
+      "coverSizeMedium": 260,
+      "coverSizeLarge": 320,
+      "iconDisplay": "inline-flex"
+     },
+     "callout": {
+      "iconDisplay": "block",
+      "shadow": "none"
+     },
+     "typography": {
+      "primaryFont": "Manrope",
+      "secondaryFont": "Merriweather",
+      "baseSize": 16,
+      "titleSize": 3.04,
+      "headingSize": 2.2,
+      "quoteSize": 1.2,
+      "textWeight": 400,
+      "headingWeight": 600
+     },
+     "scrollbar": {
+      "width": 15
+     },
+     "navbar": {
+      "height": 56,
+      "shadow": "none"
+     },
+     "footer": {
+      "height": 0
+     },
+     "colors": {
+      "light": {
+       "text": "#37352F",
+       "textLight": "#7d7c78",
+       "background": "#ffffff",
+       "borderColor": "#E9E9E7",
+       "checkboxBackground": "#3f6964",
+       "hoverBackground": "#efefef",
+       "scrollbar": {
+        "background": "#FAFAFA",
+        "handle": "#C1C1C1",
+        "border": "#E8E8E8"
+       },
+       "navbar": {
+        "text": "#37352F",
+        "background": "#ffffff",
+        "buttonText": "#ffffff",
+        "buttonBackground": "#37352F"
+       },
+       "footer": {
+        "text": "#37352F",
+        "background": "#ffffff",
+        "buttonText": "#ffffff",
+        "buttonBackground": "#37352F"
+       },
+       "database": {
+        "cardBackground": "#ffffff",
+        "cardHoverBackground": "#f9f9f8",
+        "calendarWeekendBackground": "#f7f6f3"
+       },
+       "default": [
+        45,
+        8,
+        20
+       ],
+       "gray": [
+        36,
+        2,
+        46
+       ],
+       "brown": [
+        19,
+        31,
+        47
+       ],
+       "orange": [
+        30,
+        87,
+        45
+       ],
+       "yellow": [
+        38,
+        62,
+        49
+       ],
+       "green": [
+        149,
+        31,
+        39
+       ],
+       "blue": [
+        173,
+        25,
+        33
+       ],
+       "purple": [
+        274,
+        32,
+        54
+       ],
+       "pink": [
+        328,
+        48,
+        53
+       ],
+       "red": [
+        2,
+        62,
+        55
+       ]
+      },
+      "dark": {
+       "text": "#e1e1e1",
+       "textLight": "#9b9b9b",
+       "background": "#191919",
+       "borderColor": "#373737",
+       "checkboxBackground": "#3f6964",
+       "hoverBackground": "#262626",
+       "scrollbar": {
+        "background": "#FAFAFA",
+        "handle": "#C1C1C1",
+        "border": "#E8E8E8"
+       },
+       "navbar": {
+        "text": "#e1e1e1",
+        "background": "#191919",
+        "buttonText": "#191919",
+        "buttonBackground": "#e1e1e1"
+       },
+       "footer": {
+        "text": "#e1e1e1",
+        "background": "#191919",
+        "buttonText": "#191919",
+        "buttonBackground": "#e1e1e1"
+       },
+       "database": {
+        "cardBackground": "#2f2f2f",
+        "cardHoverBackground": "#2f2f2f",
+        "calendarWeekendBackground": "#202020"
+       },
+       "default": [
+        45,
+        8,
+        20
+       ],
+       "gray": [
+        0,
+        0,
+        61
+       ],
+       "brown": [
+        18,
+        35,
+        58
+       ],
+       "orange": [
+        25,
+        54,
+        53
+       ],
+       "yellow": [
+        38,
+        54,
+        54
+       ],
+       "green": [
+        146,
+        32,
+        47
+       ],
+       "blue": [
+        173,
+        25,
+        33
+       ],
+       "purple": [
+        270,
+        55,
+        62
+       ],
+       "pink": [
+        329,
+        57,
+        58
+       ],
+       "red": [
+        1,
+        69,
+        60
+       ]
+      }
+     }
+    },
+    "code": {
+     "global": [
+      {
+       "id": "28e2446c-93e3-4c6c-a5c4-f0ab78537f90:::8edfa51d-8dbe-4175-9a49-558876477f0e",
+       "content": "<!-- Custom font for code blocks -->\r\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n<link href=\"https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap\" rel=\"stylesheet\">\r\n<!-- Prism syntax stylesheet -->\r\n<link href=\"https://joshmillgate.github.io/cluster/prism.css\" rel=\"stylesheet\" />\r\n<!-- Cluster stylesheet -->\r\n<link href=\"https://joshmillgate.github.io/cluster/style.css\" rel=\"stylesheet\" />\r\n<script type=\"module\" src=\"https://js.withorbit.com/orbit-web-component.js\"></script>\r\n"
+      }
+     ],
+     "head": [],
+     "body": [
+      {
+       "id": "28e2446c-93e3-4c6c-a5c4-f0ab78537f90:::456c1ad1-563f-476b-9ea7-893b05d62d3e",
+       "content": "<script>\n  function clearBlock(el) {\n  const node = el.parentElement.parentElement;\n  node.innerHTML = '';\n  return node;\n}\n\nconst SELECTOR = 'code:not([super-embed-seen])';\n\nfunction setupEmbeds() {\n  document.querySelectorAll(SELECTOR).forEach((node) => {\n    node.setAttribute('super-embed-seen', 1);\n    if (node.innerText.startsWith('super-embed:')) {\n      const code = node.innerText.replace('super-embed:', '');\n      const parentNode = clearBlock(node);\n      parentNode.innerHTML = code;\n      parentNode.querySelectorAll('script').forEach((script) => {\n        if (!script.src && script.innerText) {\n          eval(script.innerText);\n        } else {\n          const scr = document.createElement('script');\n          Array.from(script.attributes).forEach(attr => {\n            scr.setAttribute(attr.name, attr.value);\n          });\n          document.body.appendChild(scr);\n        }\n      })\n    }\n  });\n}\n\nsetupEmbeds();\n\nvar observer = new MutationObserver(function(mutations) {\n  if (document.querySelector(SELECTOR)) {\n    setupEmbeds();\n  }\n});\n\nobserver.observe(document, {\n  attributes: false,\n  childList: true,\n  characterData: false,\n  subtree: true\n});\n</script>\n<script>\n  const themeSwitcherContainer = document.createElement(\"div\");\nthemeSwitcherContainer.classList.add(\"lp-theme-switcher\");\nconst themeSwitcherButton = document.createElement(\"a\");\nthemeSwitcherButton.id=\"desktop-theme-switcher\";\nthemeSwitcherContainer.appendChild(themeSwitcherButton);\n\nconst themeSwitcherButtons = [themeSwitcherButton];\n\nconst sunIconString = `<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-sun\">\n  <circle cx=\"12\" cy=\"12\" r=\"5\">\n  </circle>\n  <line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"3\">\n  </line>\n  <line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"23\">\n  </line>\n  <line x1=\"4.22\" y1=\"4.22\" x2=\"5.64\" y2=\"5.64\">\n  </line>\n  <line x1=\"18.36\" y1=\"18.36\" x2=\"19.78\" y2=\"19.78\">\n  </line>\n  <line x1=\"1\" y1=\"12\" x2=\"3\" y2=\"12\">\n  </line>\n  <line x1=\"21\" y1=\"12\" x2=\"23\" y2=\"12\">\n  </line>\n  <line x1=\"4.22\" y1=\"19.78\" x2=\"5.64\" y2=\"18.36\">\n  </line>\n  <line x1=\"18.36\" y1=\"5.64\" x2=\"19.78\" y2=\"4.22\">\n  </line>\n</svg>`;\n\nconst moonIconString = `<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-moon\">\n  <path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"></path>\n</svg>`;\n\nconst IS_USER_THEME_PREFERENCE_DARK_LOCAL_STORAGE_KEY = \"heyeEarthUserThemPreference\";\n\nlet runUntilHtmlLoaded = setInterval(() => {\n  if(document.querySelector(\".notion-navbar\")){\n    const navbarFirstChild = document.querySelector(\".notion-navbar\").querySelector(\"div\");\n    navbarFirstChild.parentNode.insertBefore(themeSwitcherContainer, navbarFirstChild.nextSibling);\n\n    themeSwitcherButton.addEventListener(\"click\", e => {\n      var isDark = document.querySelector(\"html\").classList.contains(\"global-dark-theme\");\n      updateTheme(!isDark);\n\n      if(themeSwitcherButtons.length <= 1){\n        const mobileThemeSwitcher = document.querySelector(\"#mobile-theme-switcher\");\n        if(mobileThemeSwitcher){\n          themeSwitcherButtons.push(mobileThemeSwitcher);\n        }\n      }\n      themeSwitcherButtons.forEach(button => {\n        updateButtonSVG(button, !isDark);\n      });\n    });\n    clearInterval(runUntilHtmlLoaded);\n  }\n}, 100);\n\nconst valueFromStorage = localStorage.getItem(IS_USER_THEME_PREFERENCE_DARK_LOCAL_STORAGE_KEY);\nconsole.log(\"valueFromStorage\",valueFromStorage);\n//default dark theme if user has not intentionally set it to light mode\nconst initializedAsDark = updateTheme(valueFromStorage != null ? valueFromStorage : /*(window.matchMedia('(prefers-color-scheme: dark)').matches)*/ true);\nsetTimeout(() => {\n  if(themeSwitcherButtons.length <= 1){\n    const mobileThemeSwitcher = document.querySelector(\"#mobile-theme-switcher\");\n    if(mobileThemeSwitcher){\n      themeSwitcherButtons.push(mobileThemeSwitcher);\n    }\n  }\n  themeSwitcherButtons.forEach(button => {\n    updateButtonSVG(button, initializedAsDark);\n  });\n}, 1);\n\nfunction updateTheme(isDark){\n  console.log(isDark);\n  if(typeof isDark ==\"string\"){\n    isDark = isDark == \"true\";\n  }\n\n  if(isDark == true){\n    document.querySelector(\"html\").classList.add(\"global-dark-theme\");\n  }\n  else if(isDark == false){\n    document.querySelector(\"html\").classList.remove(\"global-dark-theme\");\n  }\n\n  localStorage.setItem(IS_USER_THEME_PREFERENCE_DARK_LOCAL_STORAGE_KEY, isDark);\n\n  return isDark;\n}\nfunction updateButtonSVG(button, themeToSwitchTo){\n  button.innerHTML = '';\n  if(themeToSwitchTo == true) {\n    button.insertAdjacentHTML('afterbegin', moonIconString);\n  }\n  else {\n    button.insertAdjacentHTML('afterbegin', sunIconString);\n  }\n}\n</script>"
+      },
+      {
+       "id": "28e2446c-93e3-4c6c-a5c4-f0ab78537f90:::cc0c234a-ec78-485f-82fa-657112fbd2ea",
+       "content": "<script>\n  const nativeMax = Math.max;\nconst nativeMin = Math.min;\nconst smoothScrollDuration = 1000;\n\nwindow.disableBgChangeOnChange = false;\nwindow.preventPushingToHistory = false;\n\nconst width = window.innerWidth;\nconst height = window.innerHeight;\n\nupdateVHWithJS();\nwindow.addEventListener('resize', updateVHWithJS);\nfunction updateVHWithJS(){\n  let vh = window.innerHeight * 0.01;\n  document.documentElement.style.setProperty('--vh', `${vh}px`);\n}\n\nconsole.count(\"Times this script ran\");\nconst perf0 = performance.now();\n\n//#region assign classes so my css doesnt affect other nodes in different pages\nconst addLPClasses = [{\n    selector: \".super-root\",\n    classToAdd: [\"lp-super-root\"]\n  },\n  {\n    selector: \".super-content\",\n    classToAdd: [\"lp-super-content\"]\n  },\n  {\n    selector: \".notion-navbar\",\n    classToAdd: [\"lp-notion-navbar\", \"lp-desktop-notion-navbar\"]\n  },\n  {\n    selector: \".notion-icon__search-path\",\n    classToAdd: [\"lp-notion-icon__search-path\"]\n  },\n  {\n    selector: \".super-footer\",\n    classToAdd: [\"lp-super-footer\"]\n  },\n  {\n    selector: \".notion-navbar__search\",\n    idToAssign: \"desktop-search\"\n  }\n];\naddLPClasses.forEach(lp => {\n  var el = document.querySelector(lp.selector);\n  if(el != null){\n    if(lp.idToAssign){\n      el.id = lp.idToAssign;\n    }\n    else{\n      el.classList.add(...lp.classToAdd);\n    }\n  }\n});\n//#endregion\n\n//#region add mouse trailer\nconst trailer = document.createElement(\"div\");\ntrailer.classList.add(\"lp-mouse-trailer\");\ntrailer.insertAdjacentHTML('beforeend', `<i class=\"gg-chevron-down\"></i>`);\n/*trailer.insertAdjacentHTML('beforeend', `<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 32 32\" style=\"enable-background:new 0 0 32 32;\" xml:space=\"preserve\">\n<g>\n\t<g id=\"arrow_x5F_down\">\n\t\t<path d=\"M32,16.016l-5.672-5.664c0,0-3.18,3.18-6.312,6.312V0h-8.023v16.664l-6.32-6.32L0,16.016L16,32\n\t\t\tL32,16.016z\"/>\n\t</g>\n</g>\n</svg>`);*/\ndocument.querySelector(\".super-root\").parentElement.appendChild(trailer);\n//#endregion\n\n//navigationParameterQuery is obtained by writing going to the page and executing \"history.state\" in the dev tool console\nconst landingPageItems = [\n  {\n    navigationText: \"Writings\",\n    navigationPath: \"/writings-and-notes\",\n    navigationParameterQuery: \"/[...page]?page=writing-db&page=writings-and-notes\",\n    bgPictureLinkGetter: function(width, height){\n      if(width <= 745){\n        return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_west,h_${height},w_${width}/v1669009342/Heye.earth/Projects/High%20Res%20Backgrounds/Writings_and_Notes_Background_sssvel.png`\n      }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_west,h_${height},q_100,w_${width},x_0,y_0/v1669009342/Heye.earth/Projects/High%20Res%20Backgrounds/Writings_and_Notes_Background_sssvel.png`\n    },\n    bgPictureClasses: \"lp-bg bg-writings\",\n    bgPictureAlt: \"Writings and Notes\",\n    textLinkGetter: function(width, height){\n      if(width <= 745){\n        return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_crop,g_east,h_893,w_676/v1669001425/Heye.earth/Projects/Fonts/2_tuhqcg.svg`\n      }\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/2_tuhqcg.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/v1670455121/Heye.earth/Projects/Arrows/Writing_Arrow_hzu1rv.svg\",\n    textClasses: \"lp-text lp-text-writings\",\n    currentBgForButton: \"lp-read-more-button-writings\"\n  },\n  {\n    navigationText: \"N\u00e6xt.one\",\n    navigationPath: \"/nxtone\",\n    navigationParameterQuery: \"/[...page]?page=nxtone\",\n    bgPictureLinkGetter: function(width, height){\n      if(width <= 745){\n        return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669009320/Heye.earth/Projects/High%20Res%20Backgrounds/Naext_one_background__horizontal_fjrnww.jpg`\n      }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,g_center,h_${height},w_${width}/v1669009320/Heye.earth/Projects/High%20Res%20Backgrounds/Naext_one_background__horizontal_fjrnww.jpg`\n    },\n    bgPictureAlt: \"N\u00e6xt.one\",\n    bgPictureClasses: \"lp-bg bg-naext\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669276814/Heye.earth/Projects/Fonts/Naext-logo-combined_itagq1.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933106/Heye.earth/Projects/Arrows/Naext_arrow_oaoxwb.svg\",\n    textClasses: \"lp-text lp-text-naext\",\n    currentBgForButton: \"lp-read-more-button-naext\"\n  },\n  {\n    navigationText: \"Arcadia\",\n    navigationPath: \"/arcadia\",\n    navigationParameterQuery: \"/[...page]?page=arcadia\",\n    bgPictureLinkGetter: function(width, height){\n      if(width <= 745){\n        return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,h_${height},w_${width}/v1669013734/Heye.earth/Projects/High%20Res%20Backgrounds/Arcadia_Background_k0earl.jpg`\n    }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/v1669013734/Heye.earth/Projects/High%20Res%20Backgrounds/Arcadia_Background_k0earl.jpg`\n    },\n    bgPictureAlt: \"Arcadia\",\n    bgPictureClasses: \"lp-bg bg-arcadia\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/5_fsguhv.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/Arcadia_Arrow_qthklm.svg\",\n    textClasses: \"lp-text lp-text-arcadia\",\n    currentBgForButton: \"lp-read-more-button-arcadia\"\n  },\n  {\n    navigationText: \"DEEPWAVE\",\n    navigationPath: \"/deepwave\",\n    navigationParameterQuery: \"/[...page]?page=deepwave\",\n    bgPictureLinkGetter: function(width, height){\n            if(width <= 745){\n      return `https://res.cloudinary.com/deepwave-org/image/upload/a_90/c_scale,h_${height}/c_crop,h_${height},w_${width}/v1669013918/Heye.earth/Projects//High%20Res%20Backgrounds/DEEPWAVE_Background_Desktop_fsgrr0_32322d_2.png`\n    }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,h_${height},w_${width},g_west,x_0,y_0/v1669013918/Heye.earth/Projects//High%20Res%20Backgrounds/DEEPWAVE_Background_Desktop_fsgrr0_32322d_2.png`\n    },\n    bgPictureAlt: \"DEEPWAVE\",\n    bgPictureClasses: \"lp-bg lp-bg-deepwave\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_west,h_893,w_663/v1669001425/Heye.earth/Projects/Fonts/11_hiq2id.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Deepwave_arrow_azum1t.svg\",\n    textClasses: \"lp-text lp-text-deepwave\",\n    currentBgForButton: \"lp-read-more-button-deepwave\"\n  },\n  {\n    navigationText: \"Future Forum\",\n    navigationPath: \"/future-forum\",\n    navigationParameterQuery: \"/[...page]?page=future-forum\",\n    bgPictureLinkGetter: function(width, height){\n      if(width <= 745){\n        return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669845133/Heye.earth/Projects/High%20Res%20Backgrounds/52e8cfed-4ac2-4d97-91d4-d755527507de_6192x4128_zik8b3.jpg`\n      }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,h_${height},w_${width}/v1669845133/Heye.earth/Projects/High%20Res%20Backgrounds/52e8cfed-4ac2-4d97-91d4-d755527507de_6192x4128_zik8b3.jpg`\n    },\n    bgPictureAlt: \"Future Forum\",\n    bgPictureClasses: \"lp-bg lp-bg-future-forum\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669844781/Heye.earth/Projects/Fonts/R2_Future-Forum-White-Logo-Animation_R1_qkldkz.gif\";\n    },\n    cursorLink: \"\",\n    textClasses: \"lp-text lp-text-future-forum\",\n    currentBgForButton: \"lp-read-more-button-future-forum\"\n  },\n  {\n    navigationText: \"ML Explainer\",\n    navigationPath: \"/make-machines-learn-explainer\",\n    navigationParameterQuery: \"/[...page]?page=make-machines-learn-explainer\",\n    bgPictureLinkGetter: function(width, height){\n      if(width <= 745){\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_center,h_${height},w_${width}/v1669010010/Heye.earth/Projects/High%20Res%20Backgrounds/ML_Explainer_Background_am8pvf.png`\n    }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,g_east,h_${height},w_${width}/v1669010010/Heye.earth/Projects/High%20Res%20Backgrounds/ML_Explainer_Background_am8pvf.png`\n    },\n    bgPictureAlt: \"\u201cMake Machines Learn\u201d Explainer\",\n    bgPictureClasses: \"lp-bg lp-bg-ml-explainer\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/8_dux6mo.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/ML_Arrow_twf9fo.svg\",\n    textClasses: \"lp-text lp-text-ml-explainer\",\n    currentBgForButton: \"lp-read-more-button-ml-explainer\"\n  },\n  {\n    navigationText: \"The Hike\",\n    navigationPath: \"/the-hike\",\n    navigationParameterQuery: \"/[...page]?page=the-hike\",\n    bgPictureLinkGetter: function(width, height){\n      if(width <= 745){\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669009989/Heye.earth/Projects/High%20Res%20Backgrounds/The_Hike_Backgroun_p1xfb2.webp`\n    }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,g_north,h_${height},w_${width},y_0,y_200/v1669009989/Heye.earth/Projects/High%20Res%20Backgrounds/The_Hike_Backgroun_p1xfb2.webp`\n    },\n    bgPictureAlt: \"The Hike\",\n    bgPictureClasses: \"lp-bg lp-bg-the-hike\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669011925/Heye.earth/Projects/Fonts/The_Hike_Font_octbmz.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/The_hike_arrow_abe3ea.svg\",\n    textClasses: \"lp-text lp-text-the-hike\",\n    currentBgForButton: \"lp-read-more-button-the-hike\"\n  },\n  {\n    navigationText: \"Art\",\n    navigationPath: \"/ai-art\",\n    navigationParameterQuery: \"/[...page]?page=ai-art\",\n    bgPictureLinkGetter: function(width, height){\n      if(width <= 745){\n        return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669013716/Heye.earth/Projects/High%20Res%20Backgrounds/AI_Art_Background_ae3c2d.png`\n      }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,g_north,h_${height},w_${width},x_0,y_120/v1669013716/Heye.earth/Projects/High%20Res%20Backgrounds/AI_Art_Background_ae3c2d.png`\n    },\n    bgPictureAlt: \"(AI-) Art\",\n    bgPictureClasses: \"lp-bg lp-bg-ai-art\",\n    textLinkGetter: function(width, height){\n      if(width <= 745){\n        return \"https://res.cloudinary.com/deepwave-org/image/upload/v1669144557/Heye.earth/Projects/Fonts/AI_Art_Font_ymvkbz.svg\"\n      }\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669144557/Heye.earth/Projects/Fonts/AI_Art_Font_ymvkbz.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/AI_art_arrow_oucham.svg\",\n    textClasses: \"lp-text lp-text-ai-art\",\n    currentBgForButton: \"lp-read-more-button-ai-art\"\n  },/*\n  {\n    navigationText: \"Fake News\",\n    navigationPath: \"/fake-db/how-to-deal-with-fake-news\",\n    navigationParameterQuery: \"/[...page]?page=fake-db&page=how-to-deal-with-fake-news\",\n    bgPictureLinkGetter: function(width, height){\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,h_${height},w_${width}/v1669013716/Heye.earth/Projects/High%20Res%20Backgrounds/Fake_News_Background_desktop_hqcv63.png`\n    },\n    bgPictureAlt: \"How to deal with Fake News\",\n    bgPictureClasses: \"lp-bg lp-bg-fake-news\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669012106/Heye.earth/Projects/Fonts/Fake_News_Font_oonkrk.png\";\n    },\n    textClasses: \"lp-text lp-text-fake-news\",\n    currentBgForButton: \"lp-read-more-button-fake-news\"\n  },*/\n  {\n    navigationText: \"Onno, Anna & Tjark\",\n    navigationPath: \"/onno-anna\",\n    navigationParameterQuery: \"/[...page]?page=onna-anna\",\n    bgPictureLinkGetter: function(width, height){\n      if(width <= 745){\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_north,h_${height},w_${width}/v1669013682/Heye.earth/Projects/High%20Res%20Backgrounds/Onno_Background_ypldvs.png`\n    }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_crop,g_north_east,h_${height},w_${width},x_0,y_200/v1669013682/Heye.earth/Projects/High%20Res%20Backgrounds/Onno_Background_ypldvs.png`\n    },\n    bgPictureAlt: \"Onno, Anna & Tjark\",\n    bgPictureClasses: \"lp-bg lp-bg-onna-anna\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/14_mnl60i.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Onno_Anna_Tjark_arrow_igizy2.svg\",\n    textClasses: \"lp-text lp-text-onna-anna\",\n    currentBgForButton: \"lp-read-more-button-onna-anna\"\n  },\n  {\n    navigationText: \"About Me\",\n    navigationPath: \"/hi-i-am-heye-high-ye\",\n    navigationParameterQuery: \"/[...page]?page=hi-i-am-heye-high-ye\",\n    bgPictureLinkGetter: function(width, height){\n            if(width <= 745){\n        return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,h_${height}/c_crop,g_east,h_${height},w_${width}/v1669009360/Heye.earth/Projects/High%20Res%20Backgrounds/About_me_Background_mpnje8.png`\n      }\n      return `https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_${width}/c_crop,g_east,h_${height},w_${width},x_0,y_200/v1669009360/Heye.earth/Projects/High%20Res%20Backgrounds/About_me_Background_mpnje8.png`\n    },\n    bgPictureAlt: \"Hi! I am Heye [High ye] \ud83d\udd90\ufe0f\",\n    bgPictureClasses: \"lp-bg lp-bg-about-me\",\n    textLinkGetter: function(width, height){\n      return  \"https://res.cloudinary.com/deepwave-org/image/upload/v1669001425/Heye.earth/Projects/Fonts/16_e6kpjc.svg\";\n    },\n    cursorLink: \"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/About_Me_arrow_ugfnsj.svg\",\n    textClasses: \"lp-text lp-text-about-me\",\n    currentBgForButton: \"lp-read-more-button-about-me\"\n  }\n];\n\nconst navbar = document.querySelector(\".lp-notion-navbar\");\nnavbar.insertAdjacentHTML('beforeend', `<div class=\"lp-custom-navbar-progress\"></div>`);\nlet navbarProgress = document.querySelectorAll(\".lp-custom-navbar-progress\");\n\nconst covers = document.querySelector(\".notion-collection-card__cover\");\nvar contentNotionColumn = covers.parentElement.parentElement.parentElement.parentElement;\nvar upperNotionColumn = contentNotionColumn.parentElement;\nupperNotionColumn.classList.add(\"lp-selector-upper-notion\");\ncontentNotionColumn.remove()\n\nvar darkBg = document.createElement(\"div\");\ndarkBg.classList.add(\"lp-dark-bg\");\n\nupperNotionColumn.insertAdjacentHTML('afterbegin', `<div class=\"lp-effect-line-upper-container\">\n  <div class=\"lp-effect-line-container\">\n    <div class=\"lp-effect-line\">\n    </div>\n  </div>\n</div>`);\n\nconst readMoreButtonContainer = document.createElement(\"div\");\nreadMoreButtonContainer.classList.add(\"lp-read-more-button-container\");\nreadMoreButtonUpperContainer = document.createElement(\"div\");\nreadMoreButtonUpperContainer.classList.add(\"lp-read-more-button-upper-container\");\nreadMoreButtonContainer.insertAdjacentHTML('beforeend', `<button class=\"lp-read-more-button lp-show\" data-current-bg=\"${landingPageItems[0].currentBgForButton}\">\n  <span>\n    <i class=\"gg-chevron-down\"></i>\n  </span>\n</button>`);\n\nreadMoreButtonUpperContainer.append(readMoreButtonContainer);\nupperNotionColumn.append(readMoreButtonUpperContainer);\n\nvar bgPics = document.createElement(\"div\");\nbgPics.append(darkBg);\nbgPics.classList.add(\"lp-bg-pics\");\nupperNotionColumn.append(bgPics);\n\nconst lazyLoadedContent = document.createElement(\"div\");\nlazyLoadedContent.classList.add(\"lp-ll-content\");\nupperNotionColumn.parentElement.insertBefore(lazyLoadedContent, upperNotionColumn.nextSibling);\n\nvar bgTexts = document.createElement(\"div\");\nbgTexts.classList.add(\"lp-bg-texts\");\nupperNotionColumn.append(bgTexts);\n\n//iterate through landingPageItems to append neccessary HTML\nvar navitationAnchorsContainer = document.createElement(\"div\");\nnavitationAnchorsContainer.classList.add(\"lp-nav-container\");\n\nvar mobileNavitationAnchorsContainer = document.createElement(\"div\");\nmobileNavitationAnchorsContainer.classList.add(\"lp-mobile-nav-container\");\n\nvar upperMobileNavitationAnchorsContainer = document.createElement(\"div\");\nupperMobileNavitationAnchorsContainer.classList.add(\"lp-mobile-nav-upper-container\");\nupperMobileNavitationAnchorsContainer.appendChild(mobileNavitationAnchorsContainer);\n\nconst lastIndexOfItems = landingPageItems.length - 1;\n\nmobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class=\"lp-mobile-navlink infinite-workaround\" data-index=\"${lastIndexOfItems - 1}\">\n  <a href=\"${landingPageItems[lastIndexOfItems - 1].navigationPath}\">${landingPageItems[lastIndexOfItems - 1].navigationText}</a>\n</div>`);\nmobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class=\"lp-mobile-navlink infinite-workaround\" data-index=\"${lastIndexOfItems}\">\n  <a href=\"${landingPageItems[lastIndexOfItems].navigationPath}\">${landingPageItems[lastIndexOfItems].navigationText}</a>\n</div>`);\n\nlandingPageItems.forEach((landingPageItem,i) => {\n  bgPics.insertAdjacentHTML('beforeend', `<span class=\"default-bg-pic-container-style lp-bg-pic ${i == 0 ? \"active-bg\" : \"\"} ${landingPageItem.bgPictureClasses}\">\n    ${i == 6 ? '<video src=\"https://res.cloudinary.com/deepwave-org/video/upload/v1670496048/Heye.earth/Projects/High%20Res%20Backgrounds/Hike-back-animated_sewivx.mp4\" autoplay=\"\" muted=\"\" loop=\"\" type=\"video/mp4\" class=\"default-bg-pic-style\" style=\"object-position: center 20%;\">' : \"\"}\n    ${i == 8 ? '<video src=\"https://res.cloudinary.com/deepwave-org/video/upload/v1670499021/Heye.earth/Projects/High%20Res%20Backgrounds/ONNO_Background_Animated_k7wve5.mp4\" autoplay=\"\" muted=\"\" type=\"video/mp4\" class=\"default-bg-pic-style\" style=\"object-position: center 20%;\">' : \"\"}\n    <img class=\"default-bg-pic-style\" alt=\"${landingPageItem.bgPictureAlt}\" src=\"${landingPageItem.bgPictureLinkGetter(width, height)}\" decoding=\"async\" data-nimg=\"fill\" >\n  ${i == 6 || i == 8 ? \"</video>\" : \"\"}</span>`);\n\n  navitationAnchorsContainer.insertAdjacentHTML('beforeend', `<span class=\"lp-desktop-navlink ${i == 0 ? \"lp-active\" : \"\"}\">\n    <a class=\"notion-link link\" href=\"${landingPageItem.navigationPath}\" data-parameter-query=\"${landingPageItem.navigationParameterQuery}\">${landingPageItem.navigationText}</a>\n    <div class=\"lp-navigation-link-left-border\"></div>\n  </span>`);\n\n  bgTexts.insertAdjacentHTML('beforeend', `\n    <div class=\"${landingPageItem.textClasses} align-start page-width ${i == 0 ? \"active-bg-text\" : \"\"}\">\n      <span>\n        <span>\n        </span>\n        ${i == 1 ? '<video src=\"https://res.cloudinary.com/deepwave-org/video/upload/v1670500323/Heye.earth/Projects/Fonts/Naext.one_Main_Animation_wbbwtm.webm\" autoplay=\"\" muted=\"\" type=\"video/webm\">' : \"\"}\n        <img alt=\"image\" src=\"${landingPageItem.textLinkGetter(width, height)}\" decoding=\"async\" data-nimg=\"responsive\" >\n        ${i == 1 ? \"</video>\" : \"\"}\n      </span>\n    </div>`);\n\n  mobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class=\"lp-mobile-navlink ${i == 0 ? \"lp-mobile-active\" : \"\"}\" data-index=\"${i}\">\n      <a href=\"${landingPageItem.navigationPath}\">${landingPageItem.navigationText}</a>\n    </div>`);\n});\n\nmobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class=\"lp-mobile-navlink infinite-workaround\" data-index=\"${0}\">\n  <a href=\"${landingPageItems[0].navigationPath}\">${landingPageItems[0].navigationText}</a>\n</div>`);\n\nmobileNavitationAnchorsContainer.insertAdjacentHTML('beforeend', `<div class=\"lp-mobile-navlink infinite-workaround\" data-index=\"${1}\">\n  <a href=\"${landingPageItems[1].navigationPath}\">${landingPageItems[1].navigationText}</a>\n</div>`);\n\nupperNotionColumn.append(navitationAnchorsContainer);\nupperNotionColumn.append(upperMobileNavitationAnchorsContainer);\n\n//#region mobile topbar workaround\nvar upperNotionColumn = document.querySelector(\".lp-selector-upper-notion\");\n\nvar mobileNavbar = document.createElement(\"div\");\nmobileNavbar.classList.add(\"notion-navbar\", \"lp-notion-navbar\", \"lp-mobile-notion-navbar\");\n\nmobileNavbar.insertAdjacentHTML('beforeend', `<div class=\"notion-breadcrumb\">\n  <a class=\"notion-link notion-breadcrumb__item single has-icon\" href=\"/\">\n    <span style=\"box-sizing: border-box; display: inline-block; overflow: hidden; width: 16px; height: 16px; background: none; opacity: 1; border: 0px none; margin: 0px; padding: 0px; position: relative;\"><img alt=\"Heye.Earth\" srcset=\"https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/73d9389b-43e3-42e7-8b9b-11eb7e29be03.svg 1x, https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/73d9389b-43e3-42e7-8b9b-11eb7e29be03.svg 2x\" src=\"https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/73d9389b-43e3-42e7-8b9b-11eb7e29be03.svg\" decoding=\"async\" data-nimg=\"fixed\" class=\"notion-breadcrumb__icon\" style=\"position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: medium none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;\">\n    </span>\n    <div class=\"notion-navbar__title notion-breadcrumb__title\">Heye.Earth</div>\n  </a>\n</div>\n<div id=\"mobile-theme-switcher\" class=\"lp-theme-switcher topbar-icons\">\n  <a>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-moon\"><path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"></path></svg>\n  </a>\n</div>\n<div id=\"mobile-search\" class=\"notion-navbar__search topbar-icons\">\n  <svg class=\"notion-icon notion-icon__search\" viewBox=\"0 0 24 24\" style=\"width: 1.25rem; height: 1.25rem; fill: var(--color-text-default-light);\">\n    <path class=\"notion-icon__search-path lp-notion-icon__search-path\" d=\"M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z\"></path>\n  </svg>\n</div>\n<div class=\"lp-custom-navbar-progress\"></div>\n<div id=\"nav-toggle-mobile\" class=\"js-menu menu topbar-icons\">\n  <span class=\"bar\"></span>\n</div>`);\n\nupperNotionColumn.parentNode.insertBefore(mobileNavbar, upperNotionColumn.nextSibling);\n\nconst menuToggler = document.querySelector(\"#nav-toggle-mobile\");\nmenuToggler.addEventListener(\"click\", function(){\n  const body = document.querySelector(\"body\")\n  const sidebar = document.querySelector(\"article.notion-root > .notion-column-list > .notion-column:first-child\");\n\n  if(sidebar){\n    if(sidebar.classList.contains(\"show-nav\") == true){\n      //is open\n      sidebar.classList.remove(\"show-nav\");\n      body.classList.remove(\"menu-open\");\n      menuToggler.classList.remove(\"active\");\n    }\n    else{\n      //is closed\n      sidebar.classList.add(\"show-nav\");\n      body.classList.add(\"menu-open\");\n      menuToggler.classList.add(\"active\");\n    }\n  }\n});\nconst mobileThemeSwitcher = document.querySelector(\"#mobile-theme-switcher\");\nmobileThemeSwitcher.addEventListener(\"click\", function(){\n  document.querySelector(`#desktop-theme-switcher`)?.click();\n});\nconst mobileSearch = document.querySelector(\"#mobile-search\");\nmobileSearch.addEventListener(\"click\", function(){\n  console.log(document.querySelector(\"#desktop-search\"));\n  document.querySelector(\"#desktop-search\")?.click();\n});\n\nnavbarProgress = document.querySelectorAll(\".lp-custom-navbar-progress\");\n\n//#endregion\n\nconst timerTime = 10000;\nlet timerToSwitchBackground = setInterval(switchBackground, timerTime);\n\nconst selectedBgPics = Array.from(document.querySelectorAll(\".lp-bg-pic\"));\nconst navLinks = Array.from(document.querySelectorAll(\".lp-desktop-navlink\"));\nconst selectedBgTexts = Array.from(document.querySelectorAll(\".lp-text\"));\nconst readMoreButton = document.querySelector(\".lp-read-more-button\");\nconst mobileNavLinks = Array.from(document.querySelectorAll(\".lp-mobile-navlink\")).filter(el => !el.classList.contains(\"infinite-workaround\"));\nconst unfilteredMobileNavLinks = Array.from(document.querySelectorAll(\".lp-mobile-navlink\"));\n\nlet initialPixelTranslation = 0;\ninitialPixelTranslation = (initialPixelTranslation + window.innerWidth * 0.5) - mobileNavLinks[0].offsetWidth * 0.5;\n\ninitialPixelTranslation -= mobileNavLinks[0].previousSibling.offsetWidth;\ninitialPixelTranslation -= mobileNavLinks[0].previousSibling.previousSibling.offsetWidth;\n\nmobileNavitationAnchorsContainer.style.transform = `translate3d(${initialPixelTranslation}px, 0px, 0px)`;\n\n//add event listeners\nnavLinks.forEach((item, i) => {\n  item.onmouseenter = () => {\n    switchBetweenBackground(navLinks, selectedBgPics, selectedBgTexts, mobileNavLinks, i);\n\n    upperNotionColumn.classList.add(\"selecting-from-menu\");\n    navbar.classList.add(\"selecting-from-menu\");\n    mobileNavbar.classList.add(\"selecting-from-menu\");\n    clearInterval(timerToSwitchBackground);\n  };\n  item.onmouseleave = () => {\n    navbar.classList.remove(\"selecting-from-menu\");\n    mobileNavbar.classList.remove(\"selecting-from-menu\");\n    upperNotionColumn.classList.remove(\"selecting-from-menu\");\n    timerToSwitchBackground = setInterval(switchBackground, timerTime);\n  }\n\n  //anchor on click\n  item.querySelector(\".notion-link.link\").addEventListener(\"click\", e => {\n    e.preventDefault();\n    switchBetweenBackground(navLinks, selectedBgPics, selectedBgTexts, mobileNavLinks, i);\n\n    if(window.preventPushingToHistory == false){\n      window.history.pushState(e.target.getAttribute(\"data-parameter-query\"), \"\", e.target.href);\n    }\n    window.preventPushingToHistory = false;\n\n    //add skeleton\n    const skeleton = document.createElement(\"div\");\n    skeleton.classList.add(\"skeleton\");\n    for(let i = 0; i < height / 30; i++){\n      var iteratingSkeleton = skeleton.cloneNode();\n      iteratingSkeleton.style.width = `clamp(30%, calc(600px + ${Math.random() * 2 * 100}px), calc(100% - 2rem))`;\n      lazyLoadedContent.appendChild(iteratingSkeleton);\n    }\n    lazyLoadedContent.firstChild.classList.add(\"skeleton-title\");\n\n    window.disableBgChangeOnChange = true;\n\n    smoothScrollTo(window.innerHeight - 60, smoothScrollDuration);\n\n    fetch(e.target.href)\n    .then(html => {\n      return html.text();\n    })\n    .then(html => {\n      try{\n        var parser = new DOMParser();\n        var doc = parser.parseFromString(html, 'text/html');\n        if(doc){\n          doc.querySelector(\"head\").remove();\n        }\n\n        Array.from(doc.querySelectorAll(\"img\")).forEach(img => {\n          if(img.src.includes(\"data:image/gif;base64\")){\n            img.src = img.nextSibling.firstChild.src;\n          }\n        })\n\n        var article = doc.querySelector(\"article.notion-root\").cloneNode(true);\n        lazyLoadedContent.innerHTML = \"\";\n        lazyLoadedContent.append(article);\n\n        if(e.target.href.includes(\"/make-machines-learn-explainer\")){\n          document.querySelector(\".notion-embed__loader\").remove();\n          document.querySelector(\".LazyLoad\").insertAdjacentHTML('beforeend', `<div class=\"notion-external-object\"><a href=\"https://github.com/DonSqualo/Machine-Learning-Explainer\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"notion-external-object__attributes-wrapper\"><div class=\"notion-external-object__attributes\"><picture><img class=\"notion-external-object__avatar\" loading=\"lazy\" width=\"100%\"></picture><div class=\"notion-external-object__details\"><p>Machine-Learning-Explainer</p><p class=\"notion-external-object__last-modified\">Last modified 8 days ago</p></div></div></a></div>`);\n        }\n        else if(e.target.href.includes(\"/nxtone\")){\n          document.querySelector(\".notion-embed__loader\").remove();\n          document.querySelector(\".LazyLoad\").insertAdjacentHTML('beforeend', `<div class=\"notion-external-object\"><a href=\"https://github.com/DonSqualo/naext-one-plugin\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"notion-external-object__attributes-wrapper\"><div class=\"notion-external-object__attributes\"><picture><img class=\"notion-external-object__avatar\" loading=\"lazy\" width=\"100%\"></picture><div class=\"notion-external-object__details\"><p>naext-one-plugin</p><p class=\"notion-external-object__last-modified\">Last modified 8 days ago</p></div></div></a></div>`);\n        }\n        else if(e.target.href.includes(\"/deepwave\")){\n          document.querySelector(\".notion-embed__loader\").remove();\n\n          var link = \"https://www.deepwave.org/icrs-filmfestival-2022/\"\n          var iframe = document.createElement('iframe');\n          iframe.title= \"www.deepwave.org\";\n          iframe.setAttribute(\"sandbox\", \"allow-scripts allow-popups allow-forms allow-same-origin allow-top-navigation-by-user-activation\");\n          iframe.setAttribute(\"allowfullscreen\", \"\");\n          iframe.setAttribute(\"loading\", \"lazy\");\n          iframe.setAttribute(\"frameborder\", \"0\");\n          iframe.setAttribute(\"src\", link);\n          document.querySelector(\".LazyLoad\").appendChild(iframe);\n        }\n        else if(e.target.href.includes(\"/onno-anna\")){\n          document.querySelector(\".notion-embed__loader\").remove();\n\n          var link = \"https://player.vimeo.com/video/343616752?h=94a6754689&app_id=122963\"\n          var iframe = document.createElement('iframe');\n          iframe.title= \"player.vimeo.com\";\n          iframe.setAttribute(\"sandbox\", \"allow-scripts allow-popups allow-forms allow-same-origin allow-top-navigation-by-user-activation\");\n          iframe.setAttribute(\"allowfullscreen\", \"\");\n          iframe.setAttribute(\"loading\", \"lazy\");\n          iframe.setAttribute(\"frameborder\", \"0\");\n          iframe.setAttribute(\"src\", link);\n          document.querySelector(\".LazyLoad\").appendChild(iframe);\n        }\n\n        if(lazyLoadedContent.offsetHeight > height * 3){\n          const columns = lazyLoadedContent.querySelectorAll(\".notion-column\"); \n          const leftSidebar = columns[0];\n          const rightSidebar = columns[columns.length - 1];\n          console.log(leftSidebar);\n          console.log(rightSidebar);\n\n          leftSidebar.classList.add(\"hide-sidebars\");\n          rightSidebar.classList.add(\"hide-sidebars\");\n        }\n      }\n      catch(e){\n      }\n      \n    }).catch(e => {\n    });\n  });\n});\n\n//mobile nav links\nmobileNavLinks.forEach((item, i) => {\n  item.querySelector(\"a\").addEventListener(\"click\", e => {\n    e.preventDefault();\n    const index = item.getAttribute(\"data-index\");\n    navLinks[index].querySelector(\"a.link\").click();\n  });\n});\n\n\nlet lastScrollTop = document.documentElement.scrollTop || 0;\nconst topbarIcons = Array.from(document.querySelectorAll(\".topbar-icons\"));\nwindow.addEventListener(\"scroll\", e => {\n  var st = window.pageYOffset || document.documentElement.scrollTop;\n  if(!navbar.classList.contains(\"lp-scrolled\")){\n    if(st > 30){\n      navbar.classList.add(\"lp-scrolled\");\n      mobileNavbar.classList.add(\"lp-scrolled\");\n    }\n  }\n  else{\n    if(st < 30){\n      navbar.classList.remove(\"lp-scrolled\");\n      mobileNavbar.classList.remove(\"lp-scrolled\");\n\n      if(window.preventPushingToHistory == false){\n        window.history.pushState(null, \"\", \"/\");\n      }\n      window.preventPushingToHistory = false;\n\n      window.disableBgChangeOnChange = false;\n      lazyLoadedContent.innerHTML = \"\";\n    }\n  }\n\n  if(width < 745){\n    if(height - 60 >= st){\n      const progress = Math.min(1, st / (height - 60)) * 100;\n      const progressAnimation = {\n        width: `${progress}%`\n      };\n      const topbarIconsAnimation = {\n        transform: `translateX(${Math.max(0, (32 - (32 / 100) * (progress * 3)))}px)`\n      }\n\n      navbarProgress.forEach(navbarProgresses => {\n        navbarProgresses.animate(progressAnimation, {\n          duration: 50,\n          fill: \"forwards\"\n        });\n      }) \n\n      topbarIcons.forEach(topbarIcon => {\n        topbarIcon.animate(topbarIconsAnimation, {\n          duration: 0,\n          fill: \"forwards\"\n        })\n      })\n    }\n  }\n\n  lastScrollTop = st <= 0 ? 0 : st;\n}, false);\n\nwindow.addEventListener(\"wheel\", throttle(e => {\n  try{\n    if(Math.abs(e.deltaY) < 10) return\n    clearInterval(timerToSwitchBackground);\n    timerToSwitchBackground = setInterval(switchBackground, timerTime);\n    var index = navLinks.indexOf(document.querySelector(\".lp-desktop-navlink.lp-active\"));\n    switchBetweenBackground(navLinks, selectedBgPics, selectedBgTexts, mobileNavLinks, e.deltaY > 0 ? index + 1 : index - 1);\n  }\n  catch{\n  }\n}, 400));\n\ntry{\n  document.querySelector(\".lp-notion-navbar > div > a\").addEventListener(\"click\", e => {\n    e.preventDefault();\n\n    if(window.preventPushingToHistory == false){\n      window.history.pushState(null, \"\", \"/\");\n    }\n    window.preventPushingToHistory = false;\n\n    window.disableBgChangeOnChange = true;\n\n    smoothScrollTo(0, smoothScrollDuration);\n  });\n}\ncatch(e){\n\n}\n\ndocument.querySelector(\".lp-read-more-button\").addEventListener(\"click\", (e) => {\n  clearInterval(timerToSwitchBackground);\n  timerToSwitchBackground = setInterval(switchBackground, timerTime);\n  document.querySelector(\".lp-desktop-navlink.lp-active\").querySelector(\"a\").click();\n});\n\nwindow.addEventListener(\"popstate\", function(e) { \n  if(e.state != null){\n    Array.from(navitationAnchorsContainer.querySelectorAll(\".notion-link.link\")).forEach(anchor => {\n      if(anchor.getAttribute(\"data-parameter-query\") == e.state){\n        window.preventPushingToHistory = true;\n        anchor.click();\n      }\n    });\n  }\n});\n\nlet touchStartPos = {x:0, y:0};\nconst swipeThreshhold = width*0.05;\nlet validToSwitchOnTouchMove = false;\n\nwindow.addEventListener('touchstart', (e) => {\n  touchStartPos = utilGetPosition(e);\n  validToSwitchOnTouchMove = true;\n});\nwindow.addEventListener('touchmove', (e) => {\n  const currentPosition = utilGetPosition(e);\n  const verticalDifference = currentPosition.y - touchStartPos.y;\n  const horizontalDifference = currentPosition.x - touchStartPos.x;\n\n  if(horizontalDifference != verticalDifference){\n    if((Math.abs(touchStartPos.x - currentPosition.x) >= swipeThreshhold || Math.abs(touchStartPos.y - currentPosition.y) >= swipeThreshhold) && validToSwitchOnTouchMove == true)\n    {\n      console.log(validToSwitchOnTouchMove);\n      validToSwitchOnTouchMove = false;\n      if(Math.abs(horizontalDifference) > Math.abs(verticalDifference)){\n        clearInterval(timerToSwitchBackground);\n        timerToSwitchBackground = setInterval(switchBackground, timerTime);\n\n        if(horizontalDifference > 0){\n          switcToPreviousBackground();\n        }\n        else{\n          switchBackground();\n        }\n        e.preventDefault();\n        return\n      }\n      else{\n        clearInterval(timerToSwitchBackground);\n        timerToSwitchBackground = setInterval(switchBackground, timerTime);\n\n        if(verticalDifference < 0){\n          if(!navbar.classList.contains(\"lp-scrolled\")){\n            document.querySelector(\".lp-desktop-navlink.lp-active\").querySelector(\"a\").click();\n          }\n        }\n\n        e.preventDefault();\n        return\n      }\n    }\n  }\n});\nwindow.addEventListener('touchend', (e) => {\n  validToSwitchOnTouchMove = true;\n});\n\n\n//#region add mouse trailer\nif(width > 745){\n  const trailerAnimation = (e, interacting) => {\n    const x = e.clientX - trailer.offsetWidth * 0.5;\n    const y = e.clientY - trailer.offsetHeight * 0.5;\n\n    const positionAnimation = {\n      transform: `translate(${x}px, ${y}px) scale(${interacting ? 8 : 1})`\n    };\n\n    if(interacting && !trailer.classList.contains(\"show-arrow\")){\n      changeCursor(trailer, e.target.getAttribute(\"data-current-bg\"));\n      trailer.classList.add(\"show-arrow\");\n    }\n    else if(!interacting && trailer.classList.contains(\"show-arrow\")){\n      removeAllImageCursor(trailer);\n      trailer.classList.remove(\"show-arrow\");\n    }\n\n    trailer.animate(positionAnimation, {\n      duration: 800,\n      fill: \"forwards\"\n    });\n\n  }\n  window.onmousemove = e => {\n    const interactable = e.target.closest(\".lp-read-more-button\");\n    const interacting =  interactable != null;\n\n    trailerAnimation(e, interacting);\n  }\n}\ndocument.onkeydown = function (event) {\n  if(!navbar.classList.contains(\"lp-scrolled\")){\n    switch (event.keyCode) {\n      case 37:\n        switcToPreviousBackground();\n        break;\n      case 38:\n        switcToPreviousBackground();\n        break;\n      case 39:\n        switchBackground();\n        break;\n      case 40:\n        switchBackground();\n        break;\n    }\n  }\n};\n\nfunction changeCursor(mouseTrailerEl, cursorCode){\n  removeAllImageCursor(mouseTrailerEl);\n\n  const lpItem = landingPageItems.find(lp => lp.currentBgForButton == cursorCode);\n  const cursorLink = lpItem.cursorLink;\n  if(cursorLink != null && cursorLink != \"\"){\n    console.log(cursorLink);\n    mouseTrailerEl.insertAdjacentHTML('afterbegin', \n      `<img alt=\"Mouse trailer cursor\" class=\"cursor-picture\" src=\"${cursorLink}\">`\n    );\n  }\n}\nfunction removeAllImageCursor(mouseTrailerEl){\n  const cursors = Array.from(mouseTrailerEl.querySelectorAll(\".cursor-picture\"));\n  cursors.forEach(cursor => {\n    cursor.remove();\n  });\n}\n//#endregion\n  //window.addEventListener('touchmove', throttle((e) => {\n    //console.log(\"touchmove fired\");\n    //// Different devices give different values with different decimal percentages.\n    //const currentPageX = Math.round(e.changedTouches[0].screenY);\n    //if (touchStartPosX === currentPageX) return;\n\n    //if (touchStartPosX - currentPageX > 0) {\n      //clearInterval(timerToSwitchBackground);\n      //timerToSwitchBackground = setInterval(switchBackground, timerTime);\n      //console.log(\"down\");\n      //switchBackground();\n    //} \n    //else {\n      //clearInterval(timerToSwitchBackground);\n      //timerToSwitchBackground = setInterval(switchBackground, timerTime);\n      //console.log(\"up\");\n      //switcToPreviousBackground();\n    //}\n    //touchStartPosX = currentPageX;\n  //}, 1000));\n\nfunction smoothScrollTo(to, duration) {\n  const element = document.scrollingElement || document.documentElement,\n    start = element.scrollTop,\n    change = to - start,\n    startDate = +new Date();\n\n  const linearTween = (t, b, c, d) => {\n    return c*t/d + b;\n  };\n\n  const animateScroll = _ => {\n    const currentDate = +new Date();\n    const currentTime = currentDate - startDate;\n    element.scrollTop = parseInt(linearTween(currentTime, start, change, duration));\n    if(currentTime < duration) {\n      requestAnimationFrame(animateScroll);\n    }\n    else {\n      element.scrollTop = to;\n    }\n  };\n  animateScroll();\n};\n  \nfunction debounce(func, wait, options) {\n  let lastArgs,\n    lastThis,\n    maxWait,\n    result,\n    timerId,\n    lastCallTime,\n    lastInvokeTime = 0,\n    leading = false,\n    maxing = false,\n    trailing = true;\n  if (typeof func !== 'function') {\n    throw new TypeError(FUNC_ERROR_TEXT);\n  }\n  wait = Number(wait) || 0;\n  if (typeof options === 'object') {\n    leading = !!options.leading;\n    maxing = 'maxWait' in options;\n    maxWait = maxing\n      ? nativeMax(Number(options.maxWait) || 0, wait)\n      : maxWait;\n    trailing = 'trailing' in options\n      ? !!options.trailing\n      : trailing;\n  }\n\n  function invokeFunc(time) {\n    let args = lastArgs,\n      thisArg = lastThis;\n\n    lastArgs = lastThis = undefined;\n    lastInvokeTime = time;\n    result = func.apply(thisArg, args);\n    return result;\n  }\n\n  function leadingEdge(time) {\n    // Reset any `maxWait` timer.\n    lastInvokeTime = time;\n    // Start the timer for the trailing edge.\n    timerId = setTimeout(timerExpired, wait);\n    // Invoke the leading edge.\n    return leading\n      ? invokeFunc(time)\n      : result;\n  }\n\n  function remainingWait(time) {\n    let timeSinceLastCall = time - lastCallTime,\n      timeSinceLastInvoke = time - lastInvokeTime,\n      result = wait - timeSinceLastCall;\n    console.log('remainingWait');\n    return maxing\n      ? nativeMin(result, maxWait - timeSinceLastInvoke)\n      : result;\n  }\n\n  function shouldInvoke(time) {\n    let timeSinceLastCall = time - lastCallTime,\n      timeSinceLastInvoke = time - lastInvokeTime;\n    // Either this is the first call, activity has stopped and we're at the trailing\n    // edge, the system time has gone backwards and we're treating it as the\n    // trailing edge, or we've hit the `maxWait` limit.\n    return (lastCallTime === undefined || (timeSinceLastCall >= wait) || (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));\n  }\n\n  function timerExpired() {\n    const time = Date.now();\n    if (shouldInvoke(time)) {\n      return trailingEdge(time);\n    }\n    // Restart the timer.\n    timerId = setTimeout(timerExpired, remainingWait(time));\n  }\n\n  function trailingEdge(time) {\n    timerId = undefined;\n\n    // Only invoke if we have `lastArgs` which means `func` has been debounced at\n    // least once.\n    if (trailing && lastArgs) {\n      return invokeFunc(time);\n    }\n    lastArgs = lastThis = undefined;\n    return result;\n  }\n\n  function cancel() {\n    if (timerId !== undefined) {\n      clearTimeout(timerId);\n    }\n    lastInvokeTime = 0;\n    lastArgs = lastCallTime = lastThis = timerId = undefined;\n  }\n\n  function flush() {\n    return timerId === undefined\n      ? result\n      : trailingEdge(Date.now());\n  }\n\n  function debounced() {\n    let time = Date.now(),\n      isInvoking = shouldInvoke(time);\n    lastArgs = arguments;\n    lastThis = this;\n    lastCallTime = time;\n\n    if (isInvoking) {\n      if (timerId === undefined) {\n        return leadingEdge(lastCallTime);\n      }\n      if (maxing) {\n        // Handle invocations in a tight loop.\n        timerId = setTimeout(timerExpired, wait);\n        return invokeFunc(lastCallTime);\n      }\n    }\n    if (timerId === undefined) {\n      timerId = setTimeout(timerExpired, wait);\n    }\n    return result;\n  }\n  debounced.cancel = cancel;\n  debounced.flush = flush;\n  return debounced;\n}\n\nfunction throttle(func, wait, options) {\n  let leading = true,\n    trailing = true;\n\n  if (typeof func !== 'function') {\n    throw new TypeError(FUNC_ERROR_TEXT);\n  }\n  if (typeof options === 'object') {\n    leading = 'leading' in options\n      ? !!options.leading\n      : leading;\n    trailing = 'trailing' in options\n      ? !!options.trailing\n      : trailing;\n  }\n  return debounce(func, wait, {\n    leading,\n    maxWait: wait,\n    trailing,\n  });\n}\n\nfunction throttleAlt(func, limit) {\n  let inThrottle\n  return function() {\n    const args = arguments\n    const context = this\n    if (!inThrottle) {\n      func.apply(context, args)\n      inThrottle = true\n      setTimeout(() => inThrottle = false, limit)\n    }\n  }\n}\n\nfunction switchBetweenBackground(itemArray,  backgroundPictures, backgroundTexts, mobileNavLinks, index, resetCounter = true){\n  //console.error(\"where is it being fired from\");\n  if(window.disableBgChangeOnChange == true){\n    return;\n  }\n\n  if(resetCounter == true){\n    console.log(\"inside reset counter\");\n    clearInterval(timerToSwitchBackground);\n    timerToSwitchBackground = setInterval(switchBackground, timerTime);\n  }\n\n  modifiedIndex = index >= itemArray.length ? 0 : index;\n  modifiedIndex = modifiedIndex < 0 ? itemArray.length - 1 : modifiedIndex;\n\n  itemArray.forEach(innerItem => {\n    innerItem.classList.remove(\"lp-active\");\n  });\n\n  backgroundPictures.forEach((bgItem) => {\n    bgItem.classList.remove(\"active-bg\");\n  });\n\n  backgroundTexts.forEach((bgText) => {\n    bgText.classList.remove(\"active-bg-text\");\n  });\n\n  mobileNavLinks.forEach(mobileNavLink => {\n    mobileNavLink.classList.remove(\"lp-mobile-active\");\n  });\n\n  itemArray[modifiedIndex].classList.add(\"lp-active\");\n  backgroundPictures[modifiedIndex].classList.add(\"active-bg\");\n  backgroundTexts[modifiedIndex].classList.add(\"active-bg-text\");\n  mobileNavLinks[modifiedIndex].classList.add(\"lp-mobile-active\");\n\n  //reset gif animations\n  const backgroundTextsImg = backgroundTexts[modifiedIndex].querySelector(\"img\");\n  if(backgroundTextsImg.src.includes(\".gif\")){\n    const link = backgroundTextsImg.src;\n    backgroundTextsImg.src = \"\";\n    backgroundTextsImg.src = link;\n  }\n  const backgroundTextsVideo = backgroundTexts[modifiedIndex].querySelector(\"video\");\n  if(backgroundTextsVideo){\n    backgroundTextsVideo.pause();\n    backgroundTextsVideo.currentTime = 0;\n    backgroundTextsVideo.load();\n  }\n  const backgroundVideo = backgroundPictures[modifiedIndex].querySelector(\"video\");\n  if(backgroundVideo){\n    backgroundVideo.pause();\n    backgroundVideo.currentTime = 0;\n    backgroundVideo.load();\n  }\n  //update cursor\n  changeCursor(trailer, landingPageItems[modifiedIndex].currentBgForButton);\n\n  readMoreButton.setAttribute(\"data-current-bg\", landingPageItems[modifiedIndex].currentBgForButton);\n\n  let pixelsToTranslate = 0;\n  mobileNavLinks.forEach((mobileNavLink, i) => {\n    if(i < modifiedIndex){\n      pixelsToTranslate -= mobileNavLink.offsetWidth;\n    }\n  });\n  pixelsToTranslate = (pixelsToTranslate + width * 0.5) - mobileNavLinks[modifiedIndex].offsetWidth * 0.5;\n  pixelsToTranslate -= mobileNavLinks[0].previousSibling.offsetWidth;\n  pixelsToTranslate -= mobileNavLinks[0].previousSibling.previousSibling.offsetWidth;\n\n  //transition baihgui bolgo\n  if(index == modifiedIndex){\n    mobileNavLinks[modifiedIndex].parentElement.style.transform = `translate3d(${pixelsToTranslate}px, 0px, 0px)`;\n  }\n  else{\n    window.disableBgChangeOnChange = true;\n\n    let pixels = 0;\n\n    if(index < modifiedIndex){\n      unfilteredMobileNavLinks.forEach((mobileNavLink, i) => {\n        if(i < 0){\n          pixels -= mobileNavLink.offsetWidth;\n        }\n      });\n      pixels = (pixels + width * 0.5) - mobileNavLinks[0].previousSibling.offsetWidth * 0.5;\n      pixels -= mobileNavLinks[0].previousSibling.previousSibling.offsetWidth;\n      mobileNavLinks[0].previousSibling.classList.add(\"lp-mobile-active\");\n    }\n    else{\n      unfilteredMobileNavLinks.forEach((mobileNavLink, i) => {\n        if(i < unfilteredMobileNavLinks.length - 2){\n          pixels -= mobileNavLink.offsetWidth;\n        }\n      });\n      pixels = (pixels + width * 0.5) - mobileNavLinks[mobileNavLinks.length - 2].nextSibling.offsetWidth * 0.5;\n      mobileNavLinks[mobileNavLinks.length - 1].nextSibling.classList.add(\"lp-mobile-active\");\n    }\n\n    mobileNavLinks[modifiedIndex].parentElement.style.transform = `translate3d(${pixels}px, 0px, 0px)`;\n\n    setTimeout(() => {\n\n      mobileNavLinks[modifiedIndex].parentElement.style.transition = \"none\";\n      mobileNavLinks[modifiedIndex].parentElement.style.transform = `translate3d(${pixelsToTranslate}px, 0px, 0px)`;\n\n      setTimeout(() => {\n        mobileNavLinks[modifiedIndex].parentElement.style.transition = null;\n\n        mobileNavLinks[0].previousSibling.classList.remove(\"lp-mobile-active\");\n        mobileNavLinks[mobileNavLinks.length - 1].nextSibling.classList.remove(\"lp-mobile-active\");\n        window.disableBgChangeOnChange = false;\n      }, 1);\n    }, 600);\n  }\n}\n\nfunction switchBackground(){\n  var index = navLinks.indexOf(document.querySelector(\".lp-desktop-navlink.lp-active\"));\n  switchBetweenBackground(navLinks, selectedBgPics, selectedBgTexts, mobileNavLinks, index + 1);\n}\nfunction switcToPreviousBackground(){\n  var index = navLinks.indexOf(document.querySelector(\".lp-desktop-navlink.lp-active\"));\n  switchBetweenBackground(navLinks, selectedBgPics, selectedBgTexts, mobileNavLinks, index - 1);\n}\n\nfunction utilGetPosition(e){\n  var x=0,y=0;\n  if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){\n      var evt = (typeof e.originalEvent === 'undefined') ? e : e.originalEvent;\n      var touch = evt.touches[0] || evt.changedTouches[0];\n      x = touch.pageX;\n      y = touch.pageY;\n  } \n  else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {\n      x = e.clientX;\n      y = e.clientY;\n  }\n  return {x, y};\n}\n\n//add Twitter\nconst aboutMe = document.querySelector(\".lp-desktop-navlink:last-child a\")\naboutMe.insertAdjacentHTML('afterend', `<a href=\"mailto:me@heye.earth\" class=\"notion-link lp-mail\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://res.cloudinary.com/deepwave-org/image/upload/v1669925228/Heye.earth/Projects/mail-142_1_p9c3yd.svg\"></a>`)\naboutMe.insertAdjacentHTML('afterend', `<a href=\"https://twitter.com/HeyeGross\" class=\"notion-link lp-twitter\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://res.cloudinary.com/deepwave-org/image/upload/v1669936109/Heye.earth/Projects/icons8-twitter_v4kazt.svg\"></a>`);\n\nconst perf1= performance.now();\nconsole.log(`Performance between start and end of written script`);\nconsole.log(`Start: ${perf0}`);\nconsole.log(`End: ${perf1}`);\n</script>"
+      }
+     ],
+     "style": [
+      {
+       "id": "28e2446c-93e3-4c6c-a5c4-f0ab78537f90:::bc8283cb-1a58-43a9-8b66-86356c29da7a",
+       "content": ":root {\r\n  --color-primary: #3f6964 !important;\t\r\n    --color-blue: #3f6964 !important;\r\n    --collection-card-cover-size-medium: 18% !important;\r\n    --collection-card-cover-size-large: 100% !important;\r\n    --collection-card-cover-size-small: 48% !important;\r\n}\r\n.super-footer {\r\n  display: none !important;\r\n}\r\n/* not elegant, but I inserted one text block at the bottom in the template */\r\n.notion-root > div:last-child {\r\n  display: none;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:nth-child(1) {\r\n  height:calc(100vh - 60px) !important;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:nth-child(2) {\r\n  max-width: 1000px !important;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:nth-child(3) {\r\n  height: ; calc(100vh - 70px) !important;\r\n  width: 265px !important;\r\n  padding-left: 30px !important;\r\n  font-family: var(--primary-font)!important;\r\n  -ms-overflow-style: none;  /* IE and Edge */\r\n  scrollbar-width: none;  /* Firefox */\r\n}\r\n.notion-text {\r\n    min-height: auto;\r\n}\r\n/* Hide scrollbar for Chrome, Safari and Opera */\r\n.notion-root > .notion-column-list > .notion-column:nth-child(3)::-webkit-scrollbar {\r\n  display: none;\r\n}\r\n\r\n.notion-root > .notion-column-list > .notion-column:first-child a {\r\n    opacity: 0.8 !important;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:first-child a div {\r\n    opacity: 1 !important;\r\n    text-transform: none !important;\r\n    letter-spacing: normal;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:first-child .notion-link {\r\n      border-bottom: none !important;\r\n}\r\n.notion-root .notion-column:nth-child(2) .notion-link {\r\n  color: var(--color-blue);\r\n}\r\n.notion-root .notion-column:nth-child(2) .notion-link:hover {\r\n  text-decoration: underline;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:first-child .notion-toggle__trigger {\r\n  width: 20px;\r\n  opacity: 0.6;\r\n  margin-right: 0px;\r\n  font-size: 32px;\r\n  margin-top: -1px;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:first-child .notion-toggle__content .notion-text__content {\r\n  margin-top: -8px!important;\r\n}\r\n\r\n  .notion-root > .notion-quote {\r\n    display: none!important;\r\n  }\r\n.max-width {\r\n  max-width: none !important;\r\n}\r\n@media (max-width: 764px) {\r\n\r\n  :root {\r\n    --collection-card-cover-size-medium: 25% !important;\r\n  }\r\n}\r\n.notion-breadcrumb__item.has-icon div.notion-breadcrumb__title {margin-inline-start: 12px;font-size: 124% !important;\r\n}\r\na.notion-breadcrumb__item.has-icon span {width: 26px!important;\r\n  height: 32px!important;\r\n  margin-top: -4px!important;\r\n}\r\n.notion-column:first-child .notion-link, .notion-column:first-child .notion-text  {\r\n  font-family: var(--primary-font);\r\n}\r\n.notion-column:last-child {\r\n  width: calc((100% - var(--column-spacing) * 2) * 0.12500000000000006)!important;\r\n  border-left: 1px solid var(--color-border-default) !important;\r\n}\r\n.notion-column:last-child .notion-text:first-child {\r\n  display: none;\r\n}\r\n.notion-navbar .notion-breadcrumb {\r\n  margin-left: 1rem;\r\n}\r\n.notion-text__content{\r\n    max-width: 700px!important;\r\n    margin-left: auto!important;\r\n    margin-right: auto!important;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-heading, .notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-quote, .notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-bookmark, .notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-divider {\r\n    max-width: 750px !important;\r\n    margin-left: auto!important;\r\n    margin-right: auto!important;\r\n    width: 100%;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-bulleted-list, .notion-root > .notion-column-list > .notion-column:nth-child(2) .notion-numbered-list, .notion-root > .notion-column-list > .notion-column:nth-child(2) > .notion-to-do {\r\n    max-width: 700px !important;\r\n    margin-left: auto!important;\r\n    margin-right: auto!important;\r\n    width: 100%;\r\n}\r\n\r\n\r\n.lp-theme-switcher{\r\n}\r\n\r\n.lp-theme-switcher > a {\r\n  padding: 6px;\r\n  display: flex;\r\n  cursor: pointer;\r\n}\r\n\r\n.lp-theme-switcher > a:hover {\r\n  color: black !important;\r\n}\r\n\r\nhtml.global-dark-theme .lp-theme-switcher > a:hover {\r\n  color: white !important;\r\n}\r\n\r\n.lp-theme-switcher > a > svg {\r\n  transform: scale(88%);\r\n}\r\n\r\n.lp-theme-switcher > a:hover > svg > circle {\r\n  fill: black !important;\r\n}\r\nhtml.global-dark-theme .lp-theme-switcher > a:hover > svg > circle {\r\n  fill: white !important;\r\n}\r\n\r\n.notion-navbar__search {\r\n  margin-right: 5px !important;  \r\n}\r\n\r\nhtml body{\r\n  color: black;\r\n  background: white;\r\n}\r\nhtml.global-dark-theme body{\r\n  color: var(--color-text-default);\r\n  background: var(--color-bg-default);\r\n}\r\n\r\nhtml .notion-navbar{\r\n  color: black;\r\n  background: white;\r\n}\r\n\r\nhtml.global-dark-theme .notion-navbar{\r\n  color: #fff;\r\n  background: var(--color-bg-default);\r\n}\r\n\r\n.notion-breadcrumb__icon{\r\n  filter: brightness(0);\r\n}\r\n\r\n.notion-root > .notion-column-list > .notion-column:first-child{\r\n  background: white !important;\r\n}\r\n\r\nhtml.global-dark-theme .notion-root > .notion-column-list > .notion-column:first-child{\r\n  background: var(--color-bg-default) !important;\r\n}\r\n\r\nhtml.global-dark-theme .notion-breadcrumb__icon{\r\n  filter: brightness(100%);\r\n}\r\n.notion-icon__search-path{\r\n  fill: black !important;;\r\n}\r\nhtml.global-dark-theme .notion-icon__search-path{\r\n  fill: white !important;;\r\n}\r\n.bar, .bar:after, .bar:before{\r\n  background: black;\r\n}\r\nhtml.global-dark-theme .bar, html.global-dark-theme .bar:after, html.global-dark-theme .bar:before{\r\n  background: white;\r\n}\r\n\r\n.notion-collection-card{\r\n  background: unset;\r\n}\r\n\r\nhtml.global-dark-theme .notion-collection-card{\r\n  background: var(--color-card-bg);\r\n}\r\n\r\n.notion-table-of-contents__item{\r\n  color: black;\r\n}\r\n\r\nhtml.global-dark-theme .notion-table-of-contents__item{\r\n  color: var(--color-text-default-light);\r\n}\r\n\r\n.super-footer{\r\n  color: black;\r\n  background: white;\r\n}\r\nhtml.global-dark-theme .super-footer{\r\n  color: var(--footer-text-color);\r\n  background: var(--footer-background-color);\r\n}\r\n.super-footer__footnote{\r\n  color: rgb(100,100,100);\r\n}\r\nhtml.global-dark-theme .super-footer__footnote{\r\n  color: var(--footer-text-color);\r\n}\r\n\r\n#block-62afdec900804ccb88139c02f3ae3e4f{\r\n  display: none;\r\n}\r\n\r\n.notion-bookmark:hover, .notion-external-object__attributes:hover {\r\n  background: unset;\r\n}\r\n\r\nhtml.global-dark-theme .notion-bookmark:hover, html.global-dark-theme .notion-external-object__attributes:hover{\r\n  background: var(--color-ui-hover-bg);\r\n}\r\n\r\nhtml.global-dark-theme .notion-external-object__details{\r\n  color: white;\r\n}\r\n.notion-root > .notion-column-list > .notion-column:nth-child(3){\r\n  width: 265px !important;\r\n}\r\n\r\nhtml:not(.global-dark-theme) .notion-search__box{\r\n  background-color: white !important;\r\n}\r\n\r\n.notion-search__input{\r\n  background-color: inherit !important;\r\n}\r\n\r\n.notion-search__input input{\r\n  color:inherit;\r\n}\r\n\r\nhtml:not(.global-dark-theme) .notion-search__result-item.active, \r\nhtml:not(.global-dark-theme) .notion-search__result-item:hover{\r\n  background: #DCDCDC;}\r\n.notion-root > .notion-column-list > .notion-column:nth-child(2) .notion-column:last-child {\r\n\twidth: 40%!important;\r\n    padding-left: 30px;\r\n}\r\n\r\n\r\n@media only screen and (max-width: 745px){\r\n  body.menu-open{\r\n    overflow-y: hidden;\r\n  }\r\n\r\n  .notion-root > .notion-column-list > .notion-column:first-child{\r\n    width: 100% !important;\r\n  }\r\n\r\n  .lp-theme-switcher{\r\n    margin-top: 2px;\r\n  }\r\n\r\n}"
+      },
+      {
+       "id": "28e2446c-93e3-4c6c-a5c4-f0ab78537f90:::b7b5fb8f-cf99-4951-b6ca-2403327b3bbc",
+       "content": ".gg-chevron-down{\r\n    box-sizing:border-box;\r\n    position:relative;\r\n    display: block;\r\n    transform: scale(var(--ggs,2));\r\n    width: 22px;\r\n    height: 22px;\r\n    border: 2px solid transparent;\r\n    border-radius:100px;\r\n    color: white;\r\n  }\r\n  .gg-chevron-down::after {\r\n    content: \"\";\r\n    display: block;\r\n    box-sizing: border-box;\r\n    position: absolute;\r\n    width: 10px;\r\n    height: 10px;\r\n    border-bottom: 2px solid; \r\n    border-right: 2px solid;\r\n    transform: rotate(45deg);\r\n    left: 4px;\r\n    top: 2px;\r\n  }\r\n  .lp-mouse-trailer .gg-chevron-down {\r\n    transform: none;\r\n  }\r\n  .lp-read-more-button.lp-show span {\r\n    display: none;\r\n  }\r\n  .lp-twitter img {\r\n    margin-bottom: -3px;\r\n    margin-left: 10px;\r\n    width: 23px;\r\n  }\r\n  .lp-mail img {\r\n    margin-bottom: -4px;\r\n    margin-left: 10px;\r\n    color: white;\r\n    width: 24px;\r\n  }\r\n  .lp-super-root{\r\n  }\r\n  .lp-super-content{\r\n    height: 100%;\r\n  }\r\n  .lp-super-content>article.notion-root{\r\n    display: block;\r\n    height: 100%;\r\n  }\r\n  .lp-super-content>article.notion-root>*:last-child{\r\n    display: none;\r\n  }\r\n  .lp-super-content>.notion-root>.notion-column-list{\r\n    height: calc(100vh - 70px);;\r\n  }\r\n  .lp-super-footer{\r\n    display: none !important;\r\n  }\r\n  \r\n  .lp-selector-upper-notion > .notion-column{\r\n    display: none !important;\r\n  }\r\n  \r\n  .lp-nav-container{\r\n    display: flex;\r\n  }\r\n  \r\n  div.notion-navbar__title notion-breadcrumb__title {\r\n    margin-inline-start: 12px;\r\n  }\r\n  .notion-breadcrumb__item span {\r\n    width: 26px !important;\r\n    height: 32px !important;\r\n  }\r\n  \r\n  .default-bg-pic-container-style{\r\n    box-sizing: border-box; \r\n    display: block; \r\n    overflow: hidden; \r\n    width: initial; \r\n    height: initial; \r\n    background: none; \r\n    opacity: 1; \r\n    border: 0px none; \r\n    margin: 0px; \r\n    padding: 0px; \r\n    position: absolute; \r\n    inset: 0px;\r\n  }\r\n  .default-bg-pic-style{\r\n    position: absolute; \r\n    inset: 0px; \r\n    box-sizing: border-box; \r\n    padding: 0px; \r\n    border: medium none; \r\n    margin: auto; \r\n    display: block; \r\n    width: 0px; \r\n    height: 0px; \r\n    min-width: 100%; \r\n    max-width: 100%; \r\n    min-height: 100%; \r\n    max-height: 100%; \r\n    object-fit: cover; \r\n    object-position: center 50%;\r\n  \r\n    transition: all 0.2s ease-in-out;\r\n    opacity: 0;\r\n  }\r\n  \r\n  /*.lp-notion-navbar{\r\n    border: none !important;\r\n    color: white;\r\n    background: rgba(15, 15, 15, 0);\r\n    transition: all 2s cubic-bezier(0.25, 1, 0.5, 1);\r\n  }*/\r\n  .lp-notion-navbar{\r\n    border: none !important;\r\n    color: white;\r\n    transition: background-color 2s cubic-bezier(0.25, 1, 0.5, 1);\r\n    background: rgba(25,25,25,1);\r\n  }\r\n\r\n  .lp-notion-navbar:not(.lp-scrolled){\r\n    background: transparent !important;\r\n    color: white;\r\n  }\r\n  .lp-notion-navbar:not(.lp-scrolled) .notion-breadcrumb__icon{\r\n    filter: brightness(100%) !important;\r\n  }\r\n  .lp-notion-navbar:not(.lp-scrolled) .notion-icon__search-path{\r\n    fill: white !important;\r\n  }\r\n\r\n  html.global-dark-theme .lp-notion-navbar.lp-scrolled{\r\n    background: rgba(25,25,25,1);\r\n    transition: none;\r\n  }\r\n  html.global-dark-theme .notion-navbar {\r\n    background:rgba(25, 25, 25, 0);\r\n  }\r\n  .lp-notion-icon__search-path{\r\n    fill: white;\r\n  }\r\n  \r\n  .lp-custom-navbar-progress{\r\n      position: absolute;\r\n      height: 1px;\r\n      top: 69px;\r\n      left: 0;\r\n      width: 5%;\r\n      background-color: black;\r\n      opacity: 0.6;\r\n      transition: all 0.6s ease-in-out;\r\n  }\r\n\r\n  html.global-dark-theme .lp-custom-navbar-progress{\r\n    background-color: white;\r\n  }\r\n\r\n  .lp-bg-pics{\r\n    width: 100%;\r\n    height: 100%;\r\n    position: relative;\r\n  }\r\n  .lp-bg-pics > span {\r\n    top: -70px !important;\r\n  }\r\n  .lp-bg-pic{\r\n    height: calc(100% + 70px);\r\n    width: auto;\r\n  }\r\n  .lp-bg-pic.active-bg  .default-bg-pic-style{\r\n    transform: scale(1.05) !important;\r\n    opacity: 1;\r\n  }\r\n  .lp-dark-bg{\r\n    width: 100%;\r\n    height: 100vh;\r\n    top: -70px;\r\n    left: 0;\r\n    position: absolute;\r\n    z-index: 2;\r\n    background: linear-gradient(78deg, rgb(0, 0, 0) 15%, rgba(0,0,0,0.8) 30%, transparent 100%);\r\n    background-size: 200%;\r\n    background-position: 50% 50%;\r\n    transition: all 0.5s ease-in-out;\r\n  }\r\n  \r\n  .lp-effect-line-upper-container{\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    height: calc(100%);\r\n    overflow: hidden;\r\n  }\r\n  .lp-effect-line-container{\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n  .lp-effect-line{\r\n      position: absolute;\r\n      bottom: -44%;\r\n      left: 340px;\r\n      width: 1px;\r\n      height: 100%;\r\n      z-index: 3;\r\n      background-color: white;\r\n      transform: rotate(-12deg);\r\n      opacity: 0.6;\r\n      transition: all 1s ease-out;\r\n  }\r\n  .lp-notion-navbar.lp-scrolled ~ .super-content-wrapper .lp-effect-line{\r\n    bottom: 0;\r\n    left: calc(265px - 1px);\r\n    width: 1px;\r\n    color: var(--color-border-default);\r\n    transform: rotate(0deg) ;\r\n    transition: all 2.4s ease-in-out;\r\n  }\r\n  \r\n  .lp-nav-container{\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 0;\r\n    z-index: 5;\r\n    display: none;\r\n    width: 6rem;\r\n    display: flex;\r\n    flex-direction: column;\r\n    width: 220px;\r\n    margin: 0 0 3rem 3rem;\r\n    line-height: 3.4rem;\r\n  }\r\n  .lp-desktop-navlink{\r\n    color: white !important;\r\n    font-size: 1.5rem !important;\r\n    transition: all 0.5s ease-in-out;\r\n    width: 100%;\r\n    filter: brightness(70%);\r\n    line-height: 2.3rem;\r\n    font-family: var(--primary-font);\r\n    position: relative;\r\n  }\r\n  \r\n  .lp-desktop-navlink.lp-active{\r\n    filter:brightness(100%);\r\n  }\r\n  \r\n  .lp-desktop-navlink>.notion-link.link{\r\n    display: inline-block;\r\n  }\r\n  \r\n  .lp-navigation-link-left-border{\r\n    position: absolute;\r\n    bottom: 0;\r\n    top: auto;\r\n    left: -10px;\r\n    height: 0;\r\n    width: 1px;\r\n    background: white;\r\n    transition: all 0.4s ease-in-out;\r\n  }\r\n  \r\n  .lp-desktop-navlink.lp-active .lp-navigation-link-left-border{\r\n    bottom: auto;\r\n    top: 0;\r\n    height: 100%;\r\n  }\r\n  \r\n  .lp-nav-container:hover .lp-desktop-navlink>a{\r\n    filter:brightness(70%);\r\n  }\r\n  .lp-mobile-nav-upper-container{\r\n    display: none;\r\n  }\r\n  .lp-selector-upper-notion.selecting-from-menu .lp-dark-bg{\r\n    background-position: 20% 20%;\r\n  }\r\n  \r\n  .lp-desktop-navlink.lp-active > a{\r\n    color: white !important;\r\n    filter: brightness(100%) !important;\r\n  }\r\n  \r\n  .lp-selector-upper-notion{\r\n    position: sticky;\r\n    top: 0;\r\n  }\r\n\r\n  .lp-ll-content {\r\n    background-color: white;\r\n    color: black;\r\n\r\n    z-index: 49;\r\n    position: relative;\r\n  }\r\n  html.global-dark-theme .lp-ll-content{\r\n    background-color: var(--color-bg-default);\r\n    color: white;\r\n  }\r\n  \r\n  .lp-ll-content .notion-semantic-string{\r\n    color: inherit;\r\n  }\r\n  \r\n  .lp-bg-texts{\r\n    position: absolute;\r\n    bottom: 0;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n    width: 100%;\r\n    height: 100%;\r\n    z-index: 4;\r\n    overflow: hidden;\r\n  }\r\n  \r\n  .lp-text{\r\n    opacity: 0;\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    transition: all 0.4s ease-out;\r\n  }\r\n  .lp-text > span{\r\n    box-sizing:border-box;\r\n    display:block;\r\n    overflow:hidden;\r\n    width:initial;\r\n    height:initial;\r\n    background:none;\r\n    opacity:1;\r\n    border:0;\r\n    margin:0;\r\n    padding:0;\r\n    position:relative;\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n  .lp-text > span > span{\r\n    box-sizing:border-box;\r\n    display:block;\r\n    width:initial;\r\n    height:initial;\r\n    background:none;\r\n    opacity:1;\r\n    border:0;\r\n    margin:0;\r\n    padding:0;\r\n    padding-top:72.24919093851133%;\r\n  }\r\n  .lp-text > span > img, .lp-text > span > video {\r\n    position:absolute;\r\n    top:0;\r\n    left:0;\r\n    bottom:0;\r\n    right:0;\r\n    box-sizing:border-box;\r\n    padding:0;\r\n    border:none;\r\n    margin:auto;\r\n    display:block;\r\n    width:0;\r\n    height:0;\r\n    min-width:100%;\r\n    max-width:100%;\r\n    min-height:100%;\r\n    max-height:100%;\r\n    object-fit:contain;\r\n    object-position:center;\r\n    transform: translateY(-50px);\r\n    transition: all 0.1s ease-out;\r\n  }\r\n  \r\n  .lp-text > image{\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n  .lp-text.active-bg-text{\r\n    opacity: 1;\r\n  }\r\n  .lp-text.active-bg-text > span > img {\r\n    transform: translateY(0px);\r\n    transition: all 0.4s ease-out;\r\n  }\r\n  \r\n  .lp-text-future-forum{\r\n    top: calc(50%);\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    width: 600px;\r\n    height: 406px;\r\n  }\r\n  .lp-text-writings img{\r\n    object-position: top right!important;\r\n  }\r\n  .lp-text-naext video{\r\n    transform: translate(5%, 0)!important;\r\n  }\r\n  .lp-text-arcadia img {\r\n    object-position: bottom right!important;\r\n  }\r\n  .lp-text-ml-explainer img{\r\n    object-position: bottom right!important;\r\n  }\r\n  .lp-text-deepwave img {\r\n    object-position: top left!important;\r\n  }\r\n  .lp-text-the-hike img{\r\n   object-position: top left!important;\r\n   margin-top: 70px!important;\r\n  }\r\n  .lp-text-fake-news{\r\n    top: calc(50%);\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    width: 600px;\r\n    height: 406px;\r\n  }\r\n  .lp-text-ai-art img {\r\n    object-position: top left!important;\r\n  }\r\n  .lp-text-onna-anna img{\r\n    object-position: bottom right!important;\r\n  }\r\n  .lp-text-about-me img{\r\n  \r\n  }\r\n  \r\n  .lp-read-more-button-upper-container{\r\n    position: absolute;\r\n    top:0;\r\n    left:0;\r\n    height: 100%;\r\n    width: 100%;\r\n    z-index: 5;\r\n  }\r\n  .lp-read-more-button-container{\r\n    position: relative;\r\n    height: 100%;\r\n    width: 100%;\r\n  }\r\n  .lp-read-more-button{\r\n    width: calc(100% - 320px);\r\n    height: calc(100% - 70px);\r\n    right: 10px;\r\n    top: 70px;\r\n    position: absolute;\r\n    cursor: pointer;\r\n    background-color: transparent;\r\n    font-size: 1.5rem;\r\n    color: white;\r\n    border: none;\r\n    opacity: 0;\r\n    /*transition: all 0.2s ease-in-out;*/\r\n  }\r\n  .lp-read-more-button:hover > span > i{\r\n    transform: scale(2.5);\r\n    \r\n  }\r\n  .lp-read-more-button > span{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    position: absolute;\r\n    width: 100%;\r\n    bottom: 50px;\r\n    right: 11%;\r\n    animation: MoveUpDown 1.5s linear infinite;\r\n  }\r\n  @keyframes MoveUpDown {\r\n    0% {\r\n      opacity: 0;\r\n    }\r\n    20% {\r\n      bottom: 55px;\r\n      opacity: 0;\r\n    }\r\n    95% {\r\n      bottom: 45px;\r\n      opacity: 1;\r\n    }\r\n    100% {\r\n      bottom: 45px;\r\n      opacity: 0;\r\n    }\r\n  }\r\n  @keyframes MoveUpDownMobile {\r\n    0% {\r\n      opacity: 0;\r\n      bottom: -25px;\r\n    }\r\n    20% {\r\n      bottom: 0px;\r\n      opacity: 0;\r\n    }\r\n    95% {\r\n      bottom: -25px;\r\n      opacity: 1;\r\n    }\r\n    100% {\r\n      bottom: -25px;\r\n      opacity: 0;\r\n    }\r\n  }\r\n  \r\n  .lp-read-more-button:hover {\r\n    opacity: 1;\r\n  }\r\n  [data-current-bg=\"lp-read-more-button-writings\"]{\r\n  }\r\n  .bg-writings img {\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-naext\"]{\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-arcadia\"]{\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-ml-explainer\"]{\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-deepwave\"]{\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-future-forum\"]{\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-the-hike\"]{\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-fake-news\"]{\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-onna-anna\"]{\r\n  \r\n  }\r\n  [data-current-bg=\"lp-read-more-button-about-me\"]{\r\n  \r\n  }\r\nimg[src=\"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/Arcadia_Arrow_qthklm.svg\"], img[src=\"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Deepwave_arrow_azum1t.svg\"], img[src=\"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/The_hike_arrow_abe3ea.svg\"], img[src=\"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/AI_art_arrow_oucham.svg\"], img[src=\"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933105/Heye.earth/Projects/Arrows/ML_Arrow_twf9fo.svg\"], img[src=\"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/Onno_Anna_Tjark_arrow_igizy2.svg\"] {\r\n    transform: scale(1.1, 0.7);\r\n  }\r\n  img[src=\"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669933106/Heye.earth/Projects/Arrows/Naext_arrow_oaoxwb.svg\"] {\r\n    transform: scale(1, 1.2);\r\n  }\r\n  img[src=\"https://res.cloudinary.com/deepwave-org/image/upload/v1670455121/Heye.earth/Projects/Arrows/Writing_Arrow_hzu1rv.svg\"] {\r\n    transform: scale(1, 0.7);\r\n  }\r\n  img[src=\"https://res.cloudinary.com/deepwave-org/image/upload/c_scale,w_22/v1669935663/Heye.earth/Projects/Arrows/About_Me_arrow_ugfnsj.svg\"]  {\r\n    transform: scale(2, 0.7);\r\n  }\r\n  .notion-bookmark__content{\r\n    color:white;\r\n  }\r\n  \r\n  .notion-bookmark:hover{\r\n    background-color: rgb(30,30,30);\r\n  }\r\n  \r\n  .notion-external-object__details{\r\n    color:white;\r\n  }\r\n\r\n  @keyframes skeleton-loading-light{\r\n    0% {\r\n      background-color: rgb(230,230,230);\r\n    }\r\n    100%{\r\n      background-color: rgb(180,180,180);\r\n    }\r\n  }\r\n  @keyframes skeleton-loading-dark{\r\n    0% {\r\n      background-color: rgb(15,15,15);\r\n    }\r\n    100%{\r\n      background-color: rgb(50,50,50);\r\n    }\r\n  }\r\n\r\n  .lp-ll-content{\r\n    padding-top: 20px;\r\n  }\r\n  .lp-ll-content:empty{\r\n    padding-top: 0px !important;;\r\n  }\r\n\r\n  .skeleton{\r\n    width: clamp(30%, 500px, calc(100% - 2rem));\r\n    height: 20px;\r\n    border-radius: 5rem;\r\n    animation: skeleton-loading-light 1s linear infinite alternate;\r\n    margin: 1rem 0 0 1rem;\r\n    margin-left: 10% !important;\r\n  }\r\n  .skeleton.skeleton-title{\r\n    width: clamp(30%, 400px, 80%);\r\n    height: 50px;\r\n    margin-top: 0;\r\n  }\r\n\r\n  html.global-dark-theme .skeleton{\r\n    animation: skeleton-loading-dark 1s linear infinite alternate;\r\n  }\r\n\r\n  .hide-sidebars{\r\n    transition: opacity 0.6s linear;\r\n    opacity: 0;\r\n  }\r\n\r\n  .lp-notion-navbar.lp-mobile-notion-navbar{\r\n    position: sticky !important;\r\n    top: 0 !important;\r\n    overflow-x: hidden;\r\n  }\r\n\r\n  .lp-notion-navbar.lp-mobile-notion-navbar:not(.lp-scrolled){\r\n    background-color: rgba(0, 0, 0, 1) !important;\r\n  }\r\n\r\n  .topbar-icons{\r\n    transform: translateX(32px);\r\n  }\r\n\r\n  @media only screen and (min-width: 745px){\r\n    .lp-mobile-notion-navbar{\r\n      display: none !important;\r\n    }\r\n\r\n    .lp-mouse-trailer{\r\n      width: 20px;\r\n      height: 20px;\r\n      background-color: black;\r\n      border-radius: 20px;\r\n      position: fixed;\r\n      left: 0;\r\n      top:0;\r\n      z-index: 10;\r\n      opacity: 0;\r\n      transition: opacity 500ms ease;\r\n      fill: white;\r\n      pointer-events: none;\r\n    }\r\n    html.global-dark-theme .lp-mouse-trailer{\r\n      background-color: white;\r\n    }\r\n\r\n    body:hover .lp-mouse-trailer{\r\n      opacity: 1;\r\n    }\r\n    .lp-mouse-trailer.show-arrow{\r\n      background-color: transparent !important;\r\n    }\r\n\r\n    .lp-mouse-trailer:not(.show-arrow) > *{\r\n      display: none;\r\n    }\r\n    .lp-mouse-trailer.show-arrow > .cursor-picture{\r\n      width: 22px;\r\n      height: 22px;\r\n    }\r\n    .lp-mouse-trailer.show-arrow > *:nth-child(2){\r\n      display: none;\r\n    }\r\n\r\n    .lp-notion-navbar.lp-scrolled .lp-custom-navbar-progress{\r\n      width: 100%;\r\n    }\r\n\r\n    .lp-read-more-button{\r\n      width: calc(100% - 320px);\r\n      height: calc(100% - 70px);\r\n      right: 10px;\r\n      top: 70px;\r\n      position: absolute;\r\n      cursor: pointer;\r\n      background-color: transparent;\r\n      font-size: 1.5rem;\r\n      color: white;\r\n      border: none;\r\n      opacity: 1;\r\n      /*transition: all 0.2s ease-in-out;*/\r\n    }\r\n    .lp-read-more-button:hover > span > i{\r\n      transform: scale(2.5);\r\n      \r\n    }\r\n    .lp-read-more-button > span{\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      position: absolute;\r\n      width: 100%;\r\n      bottom: 50px;\r\n      right: 11%;\r\n      animation: MoveUpDown 1.5s linear infinite;\r\n    }\r\n  }\r\n\r\n  @media only screen and (max-width: 745px){\r\n    .lp-desktop-notion-navbar{\r\n      display: none !important;\r\n    }\r\n\r\n    .lp-mouse-trailer{\r\n      display: none;\r\n    }\r\n  \r\n    .lp-super-root{\r\n      flex-direction: column-reverse;\r\n    }\r\n    .lp-notion-navbar{\r\n      position: absolute;\r\n      top: calc(100% - 60px);\r\n    }\r\n    .lp-notion-navbar:not(.lp-scrolled){\r\n      position: absolute;\r\n    }\r\n    .lp-notion-navbar.lp-scrolled{\r\n    }\r\n    .lp-nav-container{\r\n      display: none;\r\n    }\r\n    .lp-dark-bg{\r\n      background: none; \r\n    }\r\n    .lp-custom-navbar-progress{\r\n      top: 59px;\r\n      right: 0;\r\n      left: unset;\r\n    }\r\n    .lp-bg-texts{\r\n      top:0px;\r\n      height: unset;\r\n      bottom: 90px;\r\n    }\r\n    .lp-super-content > .notion-root > .notion-column-list{\r\n      height: 100vh;\r\n      height: calc(var(--vh, 1vh) * 100 - 60px);\r\n    }\r\n  \r\n    .lp-read-more-button-upper-container{\r\n      display: none;\r\n    }\r\n    .lp-read-more-button-container{\r\n      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.8) 15%, transparent 100%); \r\n      height: calc(100% - 60px);\r\n    }\r\n    .lp-read-more-button{\r\n      position: absolute;\r\n      left: 50%;\r\n      transform: translateX(-50%);\r\n      height: 10%;\r\n      top: unset;\r\n      width: 100%;\r\n      bottom: 0px;\r\n      font-size: 1.5rem;\r\n      color: white;\r\n      border: 3px solid white;\r\n      padding: 0.5rem 2rem;\r\n      border-radius: 50px; \r\n      opacity: 1;\r\n      transition: all 0.2s ease-in-out;\r\n      background: transparent;\r\n      border: none;\r\n      overflow: hidden;\r\n      cursor: pointer;\r\n    }\r\n    .lp-read-more-button > span{\r\n      position: relative;\r\n      animation: MoveUpDownMobile 1.5s linear infinite;\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      right:auto;\r\n      bottom:auto;\r\n      width: auto;\r\n    }\r\n  \r\n    .lp-bg-texts .lp-text-naext video{\r\n      transform: translate(0, -60px) scale(1.2) !important;\r\n      object-position: bottom!important;\r\n    }\r\n    .lp-text-future-forum > span{\r\n      transform: scale(50%);\r\n    }\r\n    .lp-text-writings video{\r\n      transform: translate(0, -60px) scale(1.2) !important;\r\n      object-position: bottom!important;\r\n    }\r\n    .lp-text-writings {\r\n      transform: scale(150%);\r\n      left: -35%;\r\n      top: 25%;\r\n    }\r\n    .lp-text-the-hike{\r\n      left: 0px;\r\n      width: 200%;\r\n      top: -40px;\r\n    }\r\n  \r\n    .lp-text-ai-art{\r\n      transform: translateY(-21px);\r\n    }\r\n    .lp-text-onna-anna{\r\n      transform: translateY(-50px);\r\n    }\r\n    .lp-text-ml-explainer{\r\n      transform: translateY(-60px);\r\n      width: 120%;\r\n      left: -25%;\r\n    }\r\n    .lp-text-about-me {\r\n      transform: scale(150%);\r\n      left: -10%;\r\n    }\r\n    .lp-mobile-nav-upper-container{\r\n      position: absolute;\r\n      bottom: 25px;\r\n      color: white;\r\n      height: 200px;\r\n      display: flex;\r\n      align-items: flex-end;\r\n      width: 100%;\r\n      overflow-x: hidden;\r\n      z-index: 5;\r\n    }\r\n    .lp-text-arcadia {\r\n      transform: translateY(-30px);\r\n    }\r\n    .lp-mobile-nav-container{\r\n      display: flex;\r\n      position: relative;\r\n      align-items: flex-end;\r\n      transition: all 600ms ease 0s;\r\n    }\r\n  \r\n    .lp-mobile-navlink{\r\n      display: inline-block;\r\n      font-size: 1.1rem;\r\n      width: 50%;\r\n      text-align: center;\r\n      white-space: nowrap;\r\n      transition: all 0.3s ease;\r\n      font-family: var(--primary-font);\r\n    }\r\n  \r\n    .lp-mobile-navlink.lp-mobile-active{\r\n      transform: translateY(-50%);\r\n    }\r\n  \r\n    .lp-mobile-navlink > a{\r\n      margin: 0 1.5rem;\r\n      text-decoration: none;\r\n      color: white;\r\n    }\r\n\r\n    .lp-super-root{\r\n      min-height: unset;\r\n    }\r\n  \r\n    .lp-selector-upper-notion{\r\n      background: linear-gradient(0deg, rgb(0, 0, 0) 00%, rgba(0,0,0,0.3) 15%, transparent 100%); \r\n    }\r\n  \r\n    .lp-effect-line-upper-container{\r\n      height: 100vh;\r\n      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.66) 25%, transparent 100%);\r\n      z-index: 3;\r\n      bottom: 0;\r\n    }\r\n    .lp-effect-line-container{\r\n      display: none;\r\n    }\r\n  }\r\n  #block-f22d35e5b6df40edb75e08a662a3afec {\r\n  align-items: center;\r\n  justify-content: center;\r\n}"
+      }
+     ]
+    },
+    "hasPassword": false
+   },
+   "head": {
+    "url": "https://heye.earth/",
+    "title": "Heye.Earth",
+    "description": "Writings\n\u2023\n\u2023\nML Explainer\n\u2023 \n\u2023\n\u2023 \nFake News\n\u2023 \n\u2023 \nAbout Me",
+    "root": {
+     "id": "2015554ad5ae4339b9488ff1a73817bd",
+     "uri": "/",
+     "title": "Heye.Earth",
+     "icon": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/e94f1419-40f3-49e0-a855-4892e82c1d76.svg?b=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAIAAACDyf9SAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVRIidWU0Q7FIAhD+/8/3T0sWwxYQC832/qmwKEYInCJTvhFFOonchvKdiIGqGnQgDv1eiK7HhF/MoguIsKbqqZbsmmQeo25tIwmOyWeWnCkCijykxHU/S0bNX0U0VzOoymrOC9M6hKOysGGO8b5Pjatj2YcZcLer+80as4q/u8Momm9OnqFfZz9+MuiwXmKegqofimruJULSp/iIRY+Y61ScAB2dXqwgroXGAAAAABJRU5ErkJggg=="
+    },
+    "image": null,
+    "favicon": "https://super-static-assets.s3.amazonaws.com/28e2446c-93e3-4c6c-a5c4-f0ab78537f90/images/e94f1419-40f3-49e0-a855-4892e82c1d76.svg?b=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAIAAACDyf9SAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVRIidWU0Q7FIAhD+/8/3T0sWwxYQC832/qmwKEYInCJTvhFFOonchvKdiIGqGnQgDv1eiK7HhF/MoguIsKbqqZbsmmQeo25tIwmOyWeWnCkCijykxHU/S0bNX0U0VzOoymrOC9M6hKOysGGO8b5Pjatj2YcZcLer+80as4q/u8Momm9OnqFfZz9+MuiwXmKegqofimruJULSp/iIRY+Y61ScAB2dXqwgroXGAAAAABJRU5ErkJggg==",
+    "breadcrumbs": []
+   },
+   "hasBlocks": true,
+   "isValidPage": true,
+   "pageId": "2015554ad5ae4339b9488ff1a73817bd",
+   "pageLocation": "/",
+   "passwords": null
+  },
+  "__N_SSP": true
+ },
+ "page": "/",
+ "query": {},
+ "buildId": "pZ0901zZavqju-W0EV8RT",
+ "isFallback": false,
+ "dynamicIds": [
+  40242,
+  67571,
+  96727,
+  45581,
+  51512,
+  70919,
+  71205,
+  5263
+ ],
+ "gssp": true,
+ "scriptLoader": []
+}
